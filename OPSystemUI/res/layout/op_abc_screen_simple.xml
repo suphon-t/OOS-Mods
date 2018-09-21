@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oneplus.lib.app.appcompat.FitWindowsLinearLayout android:orientation="vertical" android:id="@id/action_bar_root" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.oneplus.lib.app.appcompat.ViewStubCompat android:id="@id/action_mode_bar_stub" android:layout="@layout/op_abc_action_mode_bar" android:inflatedId="@id/action_mode_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/op_abc_screen_content_include" />
+</com.oneplus.lib.app.appcompat.FitWindowsLinearLayout>

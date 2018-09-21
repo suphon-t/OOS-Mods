@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="true">
+        <shape android:shape="oval"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <stroke android:width="@dimen/car_action_bar_activation_ring_stroke_width" android:color="@color/car_tint" />
+            <size android:height="@dimen/car_action_bar_activation_ring_radius" android:width="@dimen/car_action_bar_activation_ring_radius" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <stroke android:width="@dimen/car_action_bar_activation_ring_stroke_width" android:color="#00000000" />
+            <size android:height="@dimen/car_action_bar_activation_ring_radius" android:width="@dimen/car_action_bar_activation_ring_radius" />
+        </shape>
+    </item>
+</selector>

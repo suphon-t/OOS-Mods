@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">SIM PIN દાખલ કરો, તમારુ ઉપકરણ અનલૉક કરવા માટે તમારા કેરીયરનો સંપર્ક કરતા પહેલા તમારી પાસે %d પ્રયાસો બાકી છે.</item>
+        <item quantity="one">SIM PIN દાખલ કરો, તમારુ ઉપકરણ અનલૉક કરવા માટે તમારા કેરીયરનો સંપર્ક કરતા પહેલા તમારી પાસે %d પ્રયાસ બાકી છે.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">SIM%1$d PIN દાખલ કરો, તમારી પાસે %2$d પ્રયાસો બાકી છે.</item>
+        <item quantity="one">SIM%1$d PIN દાખલ કરો, તમારી પાસે %2$d પ્રયાસ બાકી છે, તે પછી તમારે તમારા ઉપકરણને અનલૉક કરવા માટે તમારા કૅરિઅરનો સંપર્ક કરવો આવશ્યક છે.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">SIM હવે અક્ષમ છે. ચાલુ રાખવા માટે PUK કોડ દાખલ કરો. SIM કાયમીપણે બિનઉપયોગી બની જાય છે તે પહેલા તમારી %d પ્રયાસો બાકી છે. વિગતો માટે કેરિયરનો સંપર્ક કરો.</item>
+        <item quantity="one">SIM હવે અક્ષમ છે. ચાલુ રાખવા માટે PUK કોડ દાખલ કરો. SIM કાયમીપણે બિનઉપયોગી બની જાય છે તે પહેલા તમારી %d પ્રયાસ બાકી છે. વિગતો માટે કેરિયરનો સંપર્ક કરો.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">SIM%1$d PIN કોડ દાખલ કરો, તમારી પાસે %2$d પ્રયાસો બાકી છે.</item>
+        <item quantity="one">SIM%1$d PIN કોડ દાખલ કરો, તમારી પાસે %2$d પ્રયાસ બાકી છે, તે પછી તમારે તમારા ઉપકરણને અનલૉક કરવા માટે તમારા કૅરિઅરનો સંપર્ક કરવો આવશ્યક છે.</item>
+    </plurals>
+</resources>

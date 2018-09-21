@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="abc_slice_duration_days">
+        <item quantity="other">%d ദിവസം മുൻപ്</item>
+        <item quantity="one">%d ദിവസം മുൻപ്</item>
+    </plurals>
+    <plurals name="abc_slice_duration_min">
+        <item quantity="other">%d മിനിറ്റ് മുൻപ്</item>
+        <item quantity="one">%d മിനിറ്റ് മുൻപ്</item>
+    </plurals>
+    <plurals name="abc_slice_duration_years">
+        <item quantity="other">%d വർഷം മുൻപ്</item>
+        <item quantity="one">%d വർഷം മുൻപ്</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">SIM PIN നല്‍കുക, നിങ്ങള്‍‌ക്ക് %d ശ്രമങ്ങള്‍ അവശേഷിക്കുന്നുണ്ട്.</item>
+        <item quantity="one">SIM PIN നല്‍കുക, നിങ്ങളുടെ ഡിവൈസിന്‍റെ ലോക്ക് ഒഴിവാക്കുന്നതിന് ക്യാരിയറെ ബന്ധപ്പെടുന്നതിന് മുമ്പായി നിങ്ങള്‍ക്ക് %d ശ്രമങ്ങള്‍ അവശേഷിക്കുന്നുണ്ട്.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">SIM%1$d PIN നൽകുക, നിങ്ങൾക്ക് %2$d ശ്രമങ്ങൾ അവശേഷിക്കുന്നു.</item>
+        <item quantity="one">SIM%1$d PIN നൽകുക, ഉപകരണം അൺലോക്കുചെയ്യുന്നതിനായി കാരിയറെ ബന്ധപ്പെടുന്നതിന് മുമ്പ് നിങ്ങൾക്ക് %2$d ശ്രമം അവശേഷിക്കുന്നു.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">SIM ഇപ്പോള്‍ അപ്രാപ്തമാക്കി. തുടരുന്നതിന് PUK കോ‍ഡ് നല്‍കുക. SIM പൂര്‍ണ്ണമായും ഉപയോഗ ശൂന്യമാകുന്നതിന് മുമ്പ് നിങ്ങള്‍ക്ക് %d ശ്രമങ്ങള്‍ അവശേഷിക്കുന്നുണ്ട്. വിശദവിവരങ്ങള്‍ക്ക് ക്യാരിയറുമായി ബന്ധപ്പെടുക.</item>
+        <item quantity="one">SIM ഇപ്പോള്‍ അപ്രാപ്തമാക്കി. തുടരുന്നതിന് PUK കോ‍ഡ് നല്‍കുക. SIM പൂര്‍ണ്ണമായും ഉപയോഗ ശൂന്യമാകുന്നതിന് മുമ്പ് നിങ്ങള്‍ക്ക് %d ശ്രമം അവശേഷിക്കുന്നുണ്ട്. വിശദവിവരങ്ങള്‍ക്ക് ക്യാരിയറുമായി ബന്ധപ്പെടുക.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">സിം പിൻ കോഡ് തെറ്റാണ്, നിങ്ങൾക്ക് %d ശ്രമങ്ങൾ കൂടി ശേഷിക്കുന്നു.</item>
+        <item quantity="one">സിം പിൻ കോഡ് തെറ്റാണ്, ഉപകരണം അൺലോക്കുചെയ്യാൻ സേവനദാതാവുമായി ബന്ധപ്പെടേണ്ടിവരുന്നതിനു മുമ്പായി നിങ്ങൾക്ക് %d ശ്രമം കൂടി ശേഷിക്കുന്നു.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">തെറ്റായ SIM%1$d PIN കോഡ്, നിങ്ങൾക്ക് %2$d ശ്രമങ്ങൾ അവശേഷിക്കുന്നു.</item>
+        <item quantity="one">തെറ്റായ SIM%1$d PIN കോഡ്, ഉപകരണം അൺലോക്കുചെയ്യുന്നതിനായി കാരിയറെ ബന്ധപ്പെടുന്നതിന് മുമ്പ് നിങ്ങൾക്ക് %2$d ശ്രമം അവശേഷിക്കുന്നു.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">സിം PUK കോഡ് തെറ്റാണ്, സിം ശാശ്വതമായി ഉപയോഗശൂന്യമാകുന്നതിന് മുമ്പായി നിങ്ങൾക്ക് %d ശ്രമങ്ങൾ കൂടി ശേഷിക്കുന്നു.</item>
+        <item quantity="one">സിം PUK കോഡ് തെറ്റാണ്, സിം ശാശ്വതമായി ഉപയോഗശൂന്യമാകുന്നതിന് മുമ്പായി നിങ്ങൾക്ക് %d ശ്രമം കൂടി ശേഷിക്കുന്നു.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="other">ഉപകരണം %d മണിക്കൂറായി അൺലോക്ക് ചെയ്തിട്ടില്ല. പാസ്‌വേഡ് സ്ഥിരീകരിക്കുക.</item>
+        <item quantity="one">ഉപകരണം %d മണിക്കൂറായി അൺലോക്ക് ചെയ്തിട്ടില്ല. പാസ്‌വേഡ് സ്ഥിരീകരിക്കുക.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="other">ഉപകരണം %d മണിക്കൂറായി അൺലോക്ക് ചെയ്തിട്ടില്ല. പാറ്റേൺ സ്ഥിരീകരിക്കുക.</item>
+        <item quantity="one">ഉപകരണം %d മണിക്കൂറായി അൺലോക്ക് ചെയ്തിട്ടില്ല. പാറ്റേൺ സ്ഥിരീകരിക്കുക.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="other">ഉപകരണം %d മണിക്കൂറായി അൺലോക്ക് ചെയ്തിട്ടില്ല. പിൻ സ്ഥിരീകരിക്കുക.</item>
+        <item quantity="one">ഉപകരണം %d മണിക്കൂറായി അൺലോക്ക് ചെയ്തിട്ടില്ല. പിൻ സ്ഥിരീകരിക്കുക.</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="other">%d സെക്കൻഡുകൾക്കുള്ളിൽ വീണ്ടും ശ്രമിക്കുക.</item>
+        <item quantity="one">ഒരു സെക്കൻഡിനുള്ളിൽ വീണ്ടും ശ്രമിക്കുക.</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="other">ഉള്ളിൽ %s അറിയിപ്പുകൾ കൂടിയുണ്ട്.</item>
+        <item quantity="one">ഉള്ളിൽ %s അറിയിപ്പ് കൂടിയുണ്ട്.</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="other">%d ഉപകരണങ്ങൾ</item>
+        <item quantity="one">%d ഉപകരണം</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="other">%d മണിക്കൂർ</item>
+        <item quantity="one">%d മണിക്കൂർ</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="other">%d മിനിറ്റ്</item>
+        <item quantity="one">%d മിനിറ്റ്</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">ചുരുക്കവിവരണത്തിലെ %d സ്‌ക്രീനുകൾ</item>
+        <item quantity="one">ചുരുക്കവിവരണത്തിലെ ഒരു സ്‌ക്രീൻ</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="other">%1$d ഉപകരണങ്ങൾ കണക്‌റ്റ് ചെയ്‌തു</item>
+        <item quantity="one">%1$d ഉപകരണം കണക്‌റ്റ് ചെയ്‌തു</item>
+    </plurals>
+</resources>

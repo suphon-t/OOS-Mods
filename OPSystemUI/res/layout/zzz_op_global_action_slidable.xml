@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/zzz_entry_icon" android:layout_width="244.0dip" android:layout_height="55.0dip" />
+    <TextView android:textSize="23.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/zzz_entry_label" android:layout_width="244.0dip" android:layout_height="55.0dip" android:alpha="1.0" />
+    <TextView android:textSize="23.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/zzz_entry_confirm_label" android:layout_width="244.0dip" android:layout_height="55.0dip" android:alpha="0.0" />
+</merge>

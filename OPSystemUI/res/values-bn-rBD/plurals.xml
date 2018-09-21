@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">SIM PIN লিখুন, আপনার ডিভাইস আনলক হলে আপনাকে অবশ্যই আপনার পরিষেবা প্রদানকারীর সঙ্গে কথা বলতে হবে তার আগে আপনার কাছে %dটি প্রচেষ্টা অবশিষ্ট আছে।</item>
+        <item quantity="one">SIM PIN লিখুন, আপনার ডিভাইস আনলক হলে আপনাকে অবশ্যই আপনার পরিষেবা প্রদানকারীর সঙ্গে কথা বলতে হবে তার আগে আপনার কাছে %dটি প্রচেষ্টা অবশিষ্ট আছে।</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">SIM%1$d PIN দিন, আপনি আর %2$d বার চেষ্টা করতে পারবেন।</item>
+        <item quantity="one">SIM%1$d PIN দিন, আপনি আর %2$d বার চেষ্টা করতে পারবেন, তাতেও ভুল করলে ডিভাইস আনলক করতে ক্যারিয়ারের সাথে যোগাযোগ করতে হবে।</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">SIM এখন অক্ষম হয়ে গেছে। অবিরত রাখতে PUK কোড দিন। SIM চিরতরে অব্যবহারযোগ্য হওয়ার আগে আপনার %dটি প্রচেষ্টা অবশিষ্ট আছে। আরো বিশদে জানতে পরিষেবা প্রদানকারীর সঙ্গে যোগাযোগ করুন।</item>
+        <item quantity="one">SIM এখন অক্ষম হয়ে গেছে। অবিরত রাখতে PUK কোড দিন। SIM চিরতরে অব্যবহারযোগ্য হওয়ার আগে আপনার %dটি প্রচেষ্টা অবশিষ্ট আছে। আরো বিশদে জানতে পরিষেবা প্রদানকারীর সঙ্গে যোগাযোগ করুন।</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">SIM%1$d PIN কোডটি ভুল, আপনি আর %2$d বার চেষ্টা করতে পারবেন।</item>
+        <item quantity="one">SIM%1$d PIN কোডটি ভুল, আপনি আর %2$d বার চেষ্টা করতে পারবেন, তাতেও ভুল করলে ডিভাইস আনলক করতে ক্যারিয়ারের সাথে যোগাযোগ করতে হবে।</item>
+    </plurals>
+</resources>

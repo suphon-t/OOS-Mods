@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">Introduïu el PIN de la SIM, us queden %d intents.</item>
+        <item quantity="one">"Introduïu el PIN de la SIM, us queda %d intent abans que hàgiu de posar-vos en contacte amb l'operador per desbloquejar el dispositiu."</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">Introduïu el PIN de la SIM%1$d, teniu %2$d intents restants.</item>
+        <item quantity="one">Introduïu el PIN de la SIM%1$d, teniu %2$d intents restants abans que hàgiu de contactar amb el vostre operador per desbloquejar el dispositiu.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">"Ara la SIM ara està deshabilitada. Introduïu el codi PUK per continuar. Us queden %d intents abans que la SIM quedi inutilitzada permanentment. Poseu-vos en contacte amb l'operador per a més detalls."</item>
+        <item quantity="one">"Ara la SIM ara està deshabilitada. Introduïu el codi PUK per continuar. Us queda %d intent abans que la SIM quedi inutilitzada permanentment. Poseu-vos en contacte amb l'operador per a més detalls."</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">El codi PIN de la SIM no és correcte. Et queden %d intents.</item>
+        <item quantity="one">"El codi PIN de la SIM no és correcte. Et queda %d intent; si no l'encertes, contacta amb l'operador de telefonia mòbil per desbloquejar el dispositiu."</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">Codi PIN de la SIM%1$d incorrecte, teniu %2$d intents restants.</item>
+        <item quantity="one">Codi PIN de la SIM%1$d incorrecte, teniu %2$d intents restants abans que hàgiu de contactar amb el vostre operador per desbloquejar el dispositiu.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">El codi PUK de la SIM no és correcte. Et queden %d intents; si els esgotes tots, la SIM no es podrà tornar a fer servir.</item>
+        <item quantity="one">"El codi PUK de la SIM no és correcte. Et queda %d intent; si no l'encertes, la SIM no es podrà tornar a fer servir."</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="other">Fa %d hores que no es desbloqueja el dispositiu. Confirma la contrasenya.</item>
+        <item quantity="one">Fa %d hora que no es desbloqueja el dispositiu. Confirma la contrasenya.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="other">Fa %d hores que no es desbloqueja el dispositiu. Confirma el patró.</item>
+        <item quantity="one">Fa %d hora que no es desbloqueja el dispositiu. Confirma el patró.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="other">Fa %d hores que no es desbloqueja el dispositiu. Confirma el PIN.</item>
+        <item quantity="one">Fa %d hora que no es desbloqueja el dispositiu. Confirma el PIN.</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="other">"Torna-ho a provar d'aquí a %d segons."</item>
+        <item quantity="one">"Torna-ho a provar d'aquí a 1 segon."</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="other">"%s notificacions més a l'interior."</item>
+        <item quantity="one">"%s notificació més a l'interior."</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="other">%d dispositius</item>
+        <item quantity="one">%d dispositiu</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="other">%d hores</item>
+        <item quantity="one">%d hora</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="other">%d minuts</item>
+        <item quantity="one">%d minut</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">%d pantalles en la visió general</item>
+        <item quantity="one">1 pantalla en la visió general</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="other">%1$d dispositius connectats</item>
+        <item quantity="one">%1$d dispositiu connectat</item>
+    </plurals>
+</resources>

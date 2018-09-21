@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:theme="@style/qs_theme" android:tag="row" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/volume_dialog_panel_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.Volume.Header" android:textColor="?android:colorControlNormal" android:ellipsize="end" android:id="@id/volume_row_header" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="10" />
+        <FrameLayout android:id="@id/volume_row_slider_frame" android:layout_width="fill_parent" android:layout_height="@dimen/volume_dialog_slider_height" android:layout_marginTop="@dimen/volume_dialog_slider_margin_top" android:layout_marginBottom="@dimen/volume_dialog_slider_margin_bottom" android:layoutDirection="rtl">
+            <SeekBar android:layout_gravity="center" android:id="@id/volume_row_slider" android:clickable="true" android:layout_width="@dimen/volume_dialog_slider_height" android:layout_height="fill_parent" android:rotation="90.0" android:layoutDirection="rtl" />
+        </FrameLayout>
+        <com.android.keyguard.AlphaOptimizedImageButton android:id="@id/volume_row_icon" android:background="@drawable/ripple_drawable_20dp" android:layout_width="@dimen/volume_dialog_tap_target_size" android:layout_height="@dimen/volume_dialog_tap_target_size" android:layout_marginBottom="@dimen/volume_dialog_row_margin_bottom" android:tint="@color/accent_tint_color_selector" android:soundEffectsEnabled="false" style="@style/VolumeButtons" />
+    </LinearLayout>
+    <include layout="@layout/volume_dnd_icon" />
+</FrameLayout>

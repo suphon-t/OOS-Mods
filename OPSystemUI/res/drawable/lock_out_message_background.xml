@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="96.0dip" android:width="480.0dip" android:viewportWidth="480.0" android:viewportHeight="96.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:name="base" android:scaleX="0.994" android:scaleY="0.994" android:translateX="240.0" android:translateY="48.0">
+        <group android:name="base_pivot" android:translateX="-240.0" android:translateY="-47.0">
+            <group android:name="base" android:scaleY="0.99">
+                <path android:name="base_path" android:fillColor="@color/speed_bump_background" android:pathData="M 480.0,48.0 c 0.0,26.5096740723 -21.4903259277,48.0 -48.0,48.0 c 0.0,0.0 -384.0,0.0 -384.0,0.0 c -26.5096740723,0.0 -48.0,-21.4903259277 -48.0,-48.0 c 0.0,-26.5096740723 21.4903259277,-48.0 48.0,-48.0 c 0.0,0.0 384.0,0.0 384.0,0.0 c 26.5096740723,0.0 48.0,21.4903259277 48.0,48.0 Z" />
+            </group>
+        </group>
+    </group>
+    <group android:name="bar" android:translateX="240.0" android:translateY="48.0">
+        <group android:name="bar_pivot" android:translateX="-240.0" android:translateY="-48.0">
+            <clip-path android:name="bar_mask" android:pathData="M 96.5,48.5 c 0.0,26.5096740723 -21.4903259277,48.0 -48.0,48.0 c 0.0,0.0 -384.0,0.0 -384.0,0.0 c -26.5096740723,0.0 -48.0,-21.4903259277 -48.0,-48.0 c 0.0,-26.5096740723 21.4903259277,-48.0 48.0,-48.0 c 0.0,0.0 384.0,0.0 384.0,0.0 c 26.5096740723,0.0 48.0,21.4903411865 48.0,48.0 Z" />
+            <group android:name="base">
+                <path android:name="bar_path" android:fillColor="#ff029ae5" android:pathData="M 480.0,48.0 c 0.0,26.5096740723 -21.4903259277,48.0 -48.0,48.0 c 0.0,0.0 -384.0,0.0 -384.0,0.0 c -26.5096740723,0.0 -48.0,-21.4903259277 -48.0,-48.0 c 0.0,-26.5096740723 21.4903259277,-48.0 48.0,-48.0 c 0.0,0.0 384.0,0.0 384.0,0.0 c 26.5096740723,0.0 48.0,21.4903259277 48.0,48.0 Z" />
+            </group>
+        </group>
+    </group>
+</vector>

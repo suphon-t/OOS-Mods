@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.FooterView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="13.0px" android:paddingEnd="13.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.systemui.statusbar.AlphaOptimizedFrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.android.systemui.statusbar.FooterViewButton android:textAppearance="@style/oneplus_contorl_text_style_button" android:textSize="@dimen/manage_notifications_text_size" android:textColor="?wallpaperTextColor" android:layout_gravity="end" android:id="@id/manage_text" android:focusable="true" android:layout_width="wrap_content" android:layout_height="126.0px" android:text="@string/manage_notifications_text" android:textAllCaps="true" style="@android:style/Widget.Material.Button.Borderless" />
+        <com.android.systemui.statusbar.FooterViewButton android:textColor="?wallpaperTextColor" android:layout_gravity="end" android:id="@id/dismiss_text" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clear_all_notifications_text" android:contentDescription="@string/accessibility_clear_all" style="@android:style/Widget.Material.Button.Borderless" />
+    </com.android.systemui.statusbar.AlphaOptimizedFrameLayout>
+</com.android.systemui.statusbar.FooterView>

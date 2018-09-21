@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.car.widget.PagedListView android:theme="@style/Theme.Car.NoActionBar" android:id="@id/volume_list" android:background="@drawable/car_card_rounded_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@dimen/volume_dialog_panel_width" android:layout_marginStart="@dimen/car_margin" android:layout_marginEnd="@dimen/car_margin" app:dividerEndMargin="@dimen/car_keyline_1" app:dividerStartMargin="@dimen/car_keyline_1" app:gutter="none" app:scrollBarEnabled="false" app:showPagedListViewDivider="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

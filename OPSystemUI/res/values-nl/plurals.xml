@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">Voer SIM PIN in, u heeft %d pogingen over.</item>
+        <item quantity="one">Voer SIM PIN in, u heeft %d poging over voordat u de leverancier dient te contacteren om uw toestel te ontgrendelen.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">Voer SIM%1$d PIN in, u heeft %2$d pogingen over.</item>
+        <item quantity="one">Voer SIM%1$d PIN in, u heeft %2$d pogingen over voordat u de leverancier dient te contacteren om uw toestel te ontgrendelen.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">SIM is nu uitgeschakeld. Voer de PUK-code in om verder te gaan. U heeft %d pogingen over alvorens de SIM permanent onbruikbaar wordt. Contacteer leverancier voor details.</item>
+        <item quantity="one">SIM is nu uitgeschakeld. Voer de PUK-code in om verder te gaan. U heeft %d poging over alvorens de SIM permanent onbruikbaar wordt. Contacteer leverancier voor details.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">Onjuiste pincode voor simkaart. Je hebt nog %d pogingen over.</item>
+        <item quantity="one">Onjuiste pincode voor simkaart. Je hebt nog %d poging over voordat je contact met je provider moet opnemen om je apparaat te ontgrendelen.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">Incorrecte SIM%1$d PIN, u heeft %2$d pogingen over.</item>
+        <item quantity="one">Incorrecte SIM%1$d PIN,u heeft %2$d pogingen over voordat u de leverancier dient te contacteren om uw toestel te ontgrendelen.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">Onjuiste pukcode voor simkaart. Je hebt nog %d pogingen over voordat de simkaart definitief onbruikbaar wordt.</item>
+        <item quantity="one">Onjuiste pukcode voor simkaart. Je hebt nog %d poging over voordat de simkaart definitief onbruikbaar wordt.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="other">Apparaat is al %d uur niet ontgrendeld. Bevestig het wachtwoord.</item>
+        <item quantity="one">Apparaat is al %d uur niet ontgrendeld. Bevestig het wachtwoord.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="other">Apparaat is al %d uur niet ontgrendeld. Bevestig het patroon.</item>
+        <item quantity="one">Apparaat is al %d uur niet ontgrendeld. Bevestig het patroon.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="other">Apparaat is al %d uur niet ontgrendeld. Bevestig de pincode.</item>
+        <item quantity="one">Apparaat is al %d uur niet ontgrendeld. Bevestig de pincode.</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="other">Probeer het over %d seconden opnieuw.</item>
+        <item quantity="one">Probeer het over één seconde opnieuw.</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="other">Nog %s meldingen in deze groep.</item>
+        <item quantity="one">Nog %s melding in deze groep.</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="other">%d apparaten</item>
+        <item quantity="one">%d apparaat</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="other">%d uur</item>
+        <item quantity="one">%d uur</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="other">%d minuten</item>
+        <item quantity="one">%d minuut</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">%d schermen in Overzicht</item>
+        <item quantity="one">1 scherm in Overzicht</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="other">%1$d apparaten verbonden</item>
+        <item quantity="one">%1$d apparaat verbonden</item>
+    </plurals>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/fingerprint_dialog_bg_color" />
+    <corners android:radius="1.0dip" android:topLeftRadius="@dimen/fingerprint_dialog_corner_size" android:topRightRadius="@dimen/fingerprint_dialog_corner_size" android:bottomLeftRadius="0.0dip" android:bottomRightRadius="0.0dip" />
+</shape>

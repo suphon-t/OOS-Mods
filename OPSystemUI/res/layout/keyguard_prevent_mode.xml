@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.plugin.PreventModeView android:id="@id/prevent_mode_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/pevent_mode_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:background="#99000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/prevent_mode_inner_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:gravity="center" android:id="@id/prevent_view_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prevent_view_title" style="@style/prevent_view_title" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/prevent_mode_phone" android:layout_width="311.0px" android:layout_height="623.0px" android:src="@drawable/prevent_mode_phone" />
+        </LinearLayout>
+        <TextView android:gravity="bottom" android:id="@id/prevent_view_title_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" android:text="@string/prevent_view_title_cancel" style="@style/prevent_view_title_cancel" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/prevent_view_top_tag_view1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="32.0dip">
+            <TextView android:id="@id/prevent_view_top_tag_number1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prevent_view_top_tag_numbuer1" style="@style/prevent_view_top_tag" />
+            <TextView android:id="@id/prevent_view_top_tag_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prevent_view_top_tag_cancel" style="@style/prevent_view_top_tag" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/prevent_view_top_tag_view2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="21.0px" android:layout_marginRight="32.0dip">
+            <TextView android:id="@id/prevent_view_top_tag_number2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prevent_view_top_tag_numbuer2" style="@style/prevent_view_top_tag" />
+            <TextView android:id="@id/prevent_view_top_tag_cancel2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prevent_view_top_tag_cancel2" style="@style/prevent_view_top_tag" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.android.systemui.plugin.RippleView android:id="@id/rippleview_first" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.android.systemui.plugin.PreventModeView>

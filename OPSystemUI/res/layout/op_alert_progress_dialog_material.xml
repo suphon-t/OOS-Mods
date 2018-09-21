@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/parentPanel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingEnd="@dimen/op_progress_dialog_right_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/op_alert_progress_dialog_title_material" />
+    <FrameLayout android:id="@id/contentPanel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ScrollView android:id="@id/scrollView" android:paddingTop="@dimen/oneplus_contorl_layout_margin_top3" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/oneplus_contorl_text_color_secondary_default" android:id="@android:id/message" android:paddingBottom="@dimen/oneplus_contorl_layout_margin_bottom3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/oneplus_contorl_layout_margin_left3" android:paddingEnd="@dimen/oneplus_contorl_layout_margin_right3" style="@style/oneplus_contorl_text_style_subheading" />
+                <Space android:id="@id/textSpacerNoButtons" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/oneplus_contorl_layout_margin_top3" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <FrameLayout android:id="@id/customPanel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@android:id/custom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <include layout="@layout/op_alert_progress_dialog_button_bar_material" />
+</LinearLayout>

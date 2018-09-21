@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.NetworkSpeedView android:textAppearance="@style/TextAppearance.StatusBar.Clock" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingEnd="@dimen/network_speed_padding_end" android:autoSizeTextType="uniform" android:autoSizeStepGranularity="1.0sp" android:autoSizeMinTextSize="8.0sp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

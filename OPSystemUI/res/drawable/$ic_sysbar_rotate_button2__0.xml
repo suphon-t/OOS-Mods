@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:name="root" android:height="24.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:name="icon" android:pivotX="12.0" android:pivotY="12.0" android:scaleX="?rotateButtonScaleX">
+        <path android:fillColor="#ff000000" android:pathData="M12.0724,17.3862C10.1502,17.4127 8.3346,16.3712 7.4042,14.6303C6.3223,12.606 6.6915,10.1122 8.3137,8.4883L7.643,7.8184C5.726,9.7376 5.2896,12.6847 6.5682,15.0771C7.707,17.2079 9.9677,18.4521 12.3285,18.3259L10.7712,19.8832L11.4414,20.5535L13.6757,18.3193C13.8608,18.1342 13.8608,17.8341 13.6757,17.649L11.4414,15.4147L10.7712,16.085L12.0724,17.3862ZM11.9276,6.9639C13.8498,6.9374 15.6654,7.9789 16.5958,9.7198C17.6777,11.7441 17.3085,14.2379 15.6863,15.8618L16.357,16.5317C18.274,14.6125 18.7104,11.6654 17.4318,9.273C16.293,7.1422 14.0323,5.898 11.6715,6.0241L13.2288,4.4668L12.5586,3.7966L10.3243,6.0308C10.1392,6.2159 10.1392,6.516 10.3243,6.7011L12.5586,8.9354L13.2288,8.2651L11.9276,6.9639Z" />
+    </group>
+</vector>

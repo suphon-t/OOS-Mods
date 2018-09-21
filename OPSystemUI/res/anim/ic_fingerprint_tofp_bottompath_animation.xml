@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@android:interpolator/linear" android:duration="250" android:valueFrom="M 0.0,-1.1 l 0.0,0.0 c 0.60751322478,0.0 1.1,0.49248677522 1.1,1.1 l 0.0,0.0 c 0.0,0.60751322478 -0.49248677522,1.1 -1.1,1.1 l 0.0,0.0 c -0.60751322478,0.0 -1.1,-0.49248677522 -1.1,-1.1 l 0.0,0.0 c 0.0,-0.60751322478 0.49248677522,-1.1 1.1,-1.1 Z" android:valueTo="M 0.0,-1.1 l 0.0,0.0 c 0.60751322478,0.0 1.1,0.49248677522 1.1,1.1 l 0.0,0.0 c 0.0,0.60751322478 -0.49248677522,1.1 -1.1,1.1 l 0.0,0.0 c -0.60751322478,0.0 -1.1,-0.49248677522 -1.1,-1.1 l 0.0,0.0 c 0.0,-0.60751322478 0.49248677522,-1.1 1.1,-1.1 Z" android:valueType="pathType" android:propertyName="pathData" />
+        <objectAnimator android:interpolator="@interpolator/ic_fingerprint_tofp_animation_interpolator_1" android:duration="150" android:valueFrom="M 0.0,-1.1 l 0.0,0.0 c 0.60751322478,0.0 1.1,0.49248677522 1.1,1.1 l 0.0,0.0 c 0.0,0.60751322478 -0.49248677522,1.1 -1.1,1.1 l 0.0,0.0 c -0.60751322478,0.0 -1.1,-0.49248677522 -1.1,-1.1 l 0.0,0.0 c 0.0,-0.60751322478 0.49248677522,-1.1 1.1,-1.1 Z" android:valueTo="M 0.0,0.0 l 0.0,0.0 c 0.0,0.0 0.0,0.0 0.0,0.0 l 0.0,0.0 c 0.0,0.0 0.0,0.0 0.0,0.0 l 0.0,0.0 c 0.0,0.0 0.0,0.0 0.0,0.0 l 0.0,0.0 c 0.0,0.0 0.0,0.0 0.0,0.0 Z" android:valueType="pathType" android:propertyName="pathData" />
+    </set>
+</set>

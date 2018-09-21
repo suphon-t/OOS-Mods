@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="car_action_bar_height">128.0dip</dimen>
+    <dimen name="car_app_bar_height">96.0dip</dimen>
+    <dimen name="car_drawer_list_item_icon_size">108.0dip</dimen>
+    <dimen name="car_headline2_size">36.0sp</dimen>
+    <dimen name="car_padding_2">16.0dip</dimen>
+    <dimen name="car_padding_3">28.0dip</dimen>
+    <dimen name="car_padding_4">32.0dip</dimen>
+    <dimen name="car_padding_5">64.0dip</dimen>
+    <dimen name="car_padding_6">96.0dip</dimen>
+    <dimen name="car_scroll_bar_button_size">76.0dip</dimen>
+    <dimen name="car_secondary_icon_size">36.0dip</dimen>
+    <dimen name="car_single_line_list_item_height">116.0dip</dimen>
+    <dimen name="car_slide_up_menu_initial_height">116.0dip</dimen>
+    <dimen name="car_vertical_line_divider_height">76.0dip</dimen>
+</resources>

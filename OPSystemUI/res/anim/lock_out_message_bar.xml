@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:interpolator="@interpolator/speed_bump_interpolator" android:duration="@integer/speed_bump_lock_out_duration_ms" android:valueFrom="M 96.5,48.5 c 0.0,26.5096740723 -21.4903259277,48.0 -48.0,48.0 c 0.0,0.0 -384.0,0.0 -384.0,0.0 c -26.5096740723,0.0 -48.0,-21.4903259277 -48.0,-48.0 c 0.0,-26.5096740723 21.4903259277,-48.0 48.0,-48.0 c 0.0,0.0 384.0,0.0 384.0,0.0 c 26.5096740723,0.0 48.0,21.4903411865 48.0,48.0 Z" android:valueTo="M 480.5,48.5 c 0.0,26.5096740723 -21.4903259277,48.0 -48.0,48.0 c 0.0,0.0 -384.0,0.0 -384.0,0.0 c -26.5096740723,0.0 -48.0,-21.4903259277 -48.0,-48.0 c 0.0,-26.5096740723 21.4903259277,-48.0 48.0,-48.0 c 0.0,0.0 384.0,0.0 384.0,0.0 c 26.5096740723,0.0 48.0,21.4903259277 48.0,48.0 Z" android:valueType="pathType" android:propertyName="pathData" />
+</set>

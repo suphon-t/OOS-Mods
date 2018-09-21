@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.NotificationPanelView android:id="@id/notification_panel" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+    <include android:visibility="gone" layout="@layout/keyguard_status_view" />
+    <com.android.systemui.statusbar.phone.NotificationsQuickSettingsContainer android:layout_gravity="@integer/notification_panel_layout_gravity" android:id="@id/notification_container_parent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="@integer/notification_panel_layout_gravity" android:id="@id/qs_frame" android:clipChildren="false" android:clipToPadding="false" android:layout="@layout/qs_panel" android:layout_width="@dimen/qs_panel_width" android:layout_height="fill_parent" systemui:viewType="com.android.systemui.plugins.qs.QS" />
+        <com.android.systemui.statusbar.stack.NotificationStackScrollLayout android:layout_gravity="@integer/notification_panel_layout_gravity" android:id="@id/notification_stack_scroller" android:layout_width="@dimen/notification_panel_width" android:layout_height="fill_parent" android:layout_marginTop="@dimen/notification_panel_margin_top" android:layout_marginBottom="@dimen/close_handle_underlap" />
+        <include android:id="@id/ambient_indication_container" layout="@layout/ambient_indication" />
+        <ViewStub android:id="@id/keyguard_user_switcher" android:layout="@layout/keyguard_user_switcher" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:visibility="invisible" layout="@layout/keyguard_status_bar" />
+        <ImageButton android:layout_gravity="bottom|center" android:id="@id/clear_notifications" android:background="@drawable/floating_action_button" android:visibility="gone" android:layout_width="@dimen/dismiss_all_button_width" android:layout_height="@dimen/dismiss_all_button_height" android:layout_marginBottom="@dimen/dismiss_all_button_margin_bottom" android:src="@drawable/recents_dismiss_all_icon" android:scaleType="centerInside" android:elevation="79.0px" />
+        <Button android:id="@id/report_rejected_touch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/status_bar_header_height_keyguard" android:text="@string/report_rejected_touch" />
+    </com.android.systemui.statusbar.phone.NotificationsQuickSettingsContainer>
+    <include android:visibility="gone" layout="@layout/keyguard_bottom_area" />
+    <com.android.systemui.statusbar.AlphaOptimizedView android:layout_gravity="bottom" android:id="@id/qs_navbar_scrim" android:background="@drawable/qs_navbar_scrim" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="96.0dip" />
+</com.android.systemui.statusbar.phone.NotificationPanelView>

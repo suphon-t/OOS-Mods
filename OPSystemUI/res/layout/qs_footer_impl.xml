@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.qs.QSFooterImpl android:id="@id/qs_footer" android:background="@android:color/transparent" android:clickable="false" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/qs_footer_height" android:baselineAligned="false" android:elevation="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="top" android:id="@id/qs_footer_divider" android:background="?android:dividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="end" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="start|center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:paddingStart="16.0dip">
+            <include android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8.0dip" layout="@layout/mobile_signal_group" />
+            <com.android.keyguard.CarrierText android:textAppearance="@style/oneplus_contorl_text_style_body1" android:textColor="?android:textColorPrimary" android:ellipsize="marquee" android:id="@id/qs_carrier_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:textDirection="locale" android:layout_marginEnd="32.0dip" />
+        </LinearLayout>
+        <com.android.systemui.qs.PageIndicator android:layout_gravity="center_vertical" android:id="@id/footer_page_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <com.android.keyguard.AlphaOptimizedLinearLayout android:gravity="end|center" android:id="@id/qs_footer_actions_container" android:layout_width="@integer/qs_footer_actions_width" android:layout_height="fill_parent" android:layout_weight="@integer/qs_footer_actions_weight">
+            <com.android.systemui.statusbar.phone.MultiUserSwitch android:id="@id/multi_user_switch" android:background="@drawable/ripple_drawable" android:focusable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_alignParentEnd="true">
+                <ImageView android:layout_gravity="center" android:id="@id/multi_user_avatar" android:layout_width="@dimen/multi_user_avatar_expanded_size" android:layout_height="@dimen/multi_user_avatar_expanded_size" android:scaleType="centerInside" />
+            </com.android.systemui.statusbar.phone.MultiUserSwitch>
+            <com.android.systemui.statusbar.AlphaOptimizedImageView android:id="@android:id/edit" android:background="?android:selectableItemBackgroundBorderless" android:padding="15.0dip" android:focusable="true" android:clickable="true" android:clipToPadding="false" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_mode_edit" android:tint="?android:colorForeground" android:contentDescription="@string/accessibility_quick_settings_edit" />
+            <com.android.systemui.statusbar.AlphaOptimizedFrameLayout android:id="@id/settings_button_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="48.0dip" android:layout_height="48.0dip">
+                <com.android.systemui.statusbar.phone.SettingsButton android:id="@id/settings_button" android:background="@drawable/ripple_drawable" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_settings_16dp" android:tint="?android:colorForeground" android:contentDescription="@string/accessibility_quick_settings_settings" style="@android:style/Widget.Material.Button.Borderless" />
+                <com.android.systemui.statusbar.AlphaOptimizedImageView android:id="@id/tuner_icon" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/tuner" android:tint="?android:textColorTertiary" android:paddingStart="36.0dip" android:paddingEnd="4.0dip" />
+            </com.android.systemui.statusbar.AlphaOptimizedFrameLayout>
+        </com.android.keyguard.AlphaOptimizedLinearLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom|center" android:id="@id/qs_drag_handle_view" android:background="@drawable/qs_footer_drag_handle" android:visibility="invisible" android:layout_width="24.0dip" android:layout_height="4.0dip" android:layout_marginBottom="16.0dip" />
+</com.android.systemui.qs.QSFooterImpl>

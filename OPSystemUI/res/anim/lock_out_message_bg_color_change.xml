@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:interpolator="@android:interpolator/linear" android:duration="@integer/speed_bump_lock_out_color_change_ms" android:startOffset="@integer/speed_bump_lock_out_color_change_start_delay_ms" android:valueFrom="#ff029ae5" android:valueTo="#ff26994b" android:propertyName="fillColor" />
+</set>

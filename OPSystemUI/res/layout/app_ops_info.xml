@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.AppOpsInfo android:theme="@android:style/Theme.DeviceDefault.Light" android:orientation="vertical" android:id="@id/app_ops_info" android:background="@color/notification_guts_bg_color" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@android:dimen/notification_content_margin_start" android:paddingEnd="@android:dimen/notification_content_margin_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@android:dimen/notification_header_padding_top">
+        <ImageView android:id="@id/pkgicon" android:layout_width="@dimen/notification_guts_header_height" android:layout_height="@dimen/notification_guts_header_height" android:layout_centerVertical="true" android:layout_marginEnd="3.0dip" />
+        <TextView android:textAppearance="@android:style/TextAppearance.Material.Notification.Info" android:id="@id/pkgname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="3.0dip" android:layout_marginEnd="2.0dip" android:layout_toEndOf="@id/pkgicon" />
+    </RelativeLayout>
+    <TextView android:id="@id/prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@android:dimen/notification_header_padding_top" style="@style/TextAppearance.NotificationInfo.Secondary" />
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/notification_guts_button_spacing" android:layout_marginBottom="@dimen/notification_guts_button_spacing">
+        <TextView android:id="@id/settings" android:background="@drawable/ripple_drawable" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/notification_appops_settings" style="@style/TextAppearance.NotificationInfo.Button" />
+        <TextView android:id="@id/ok" android:background="@drawable/ripple_drawable" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="48.0dip" android:text="@string/notification_appops_ok" android:layout_marginStart="8.0dip" android:layout_marginEnd="-8.0dip" style="@style/TextAppearance.NotificationInfo.Button" />
+    </LinearLayout>
+</com.android.systemui.statusbar.AppOpsInfo>

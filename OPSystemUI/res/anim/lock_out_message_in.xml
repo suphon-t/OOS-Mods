@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <alpha android:interpolator="@android:interpolator/accelerate_quint" android:duration="@integer/speed_bump_fade_duration_ms" android:fillBefore="true" android:fillAfter="true" android:fromAlpha="0.0" android:toAlpha="1.0" android:fillEnabled="true" />
+    <translate android:interpolator="@android:interpolator/linear_out_slow_in" android:duration="@integer/speed_bump_translate_y_duration_ms" android:fillBefore="true" android:fillAfter="true" android:fromYDelta="100.0%" android:toYDelta="0.0%" android:fillEnabled="true" />
+</set>

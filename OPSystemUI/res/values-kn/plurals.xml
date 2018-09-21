@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="abc_slice_duration_days">
+        <item quantity="other">%d ದಿನಗಳ ಹಿಂದೆ</item>
+        <item quantity="one">%d ದಿನಗಳ ಹಿಂದೆ</item>
+    </plurals>
+    <plurals name="abc_slice_duration_min">
+        <item quantity="other">%d ನಿಮಿಷದ ಹಿಂದೆ</item>
+        <item quantity="one">%d ನಿಮಿಷದ ಹಿಂದೆ</item>
+    </plurals>
+    <plurals name="abc_slice_duration_years">
+        <item quantity="other">%d ವರ್ಷದ ಹಿಂದೆ</item>
+        <item quantity="one">%d ವರ್ಷದ ಹಿಂದೆ</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">SIM PIN ನಮೂದಿಸಿ, ನಿಮಗೆ %d ಪ್ರಯತ್ನ ಉಳಿದಿದೆ, ನಂತರ ನೀವು ನಿಮ್ಮ ಸಾಧನವನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಲು ನಿಮ್ಮ ಕ್ಯಾರಿಯರ್ ಅನ್ನು ಸಂಪರ್ಕಿಸಬೇಕು.</item>
+        <item quantity="one">SIM PIN ನಮೂದಿಸಿ, ನಿಮಗೆ %d ಪ್ರಯತ್ನ ಉಳಿದಿದೆ, ನಂತರ ನೀವು ನಿಮ್ಮ ಸಾಧನವನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಲು ನಿಮ್ಮ ಕ್ಯಾರಿಯರ್ ಅನ್ನು ಸಂಪರ್ಕಿಸಬೇಕು.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">SIM%1$d PIN ನಮೂದಿಸಿ, ನೀವು %2$d ಪ್ರಯತ್ನಗಳನ್ನು ಹೊಂದಿರುವಿರಿ.</item>
+        <item quantity="one">SIM%1$d PIN ಅನ್ನು ನಮೂದಿಸಿ, ಸಾಧನವನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡುವಂತೆ ನಿಮ್ಮ ಕ್ಯಾರಿಯರ್‌ಗೆ ತಿಳಿಸುವ ಮೊದಲು ನೀವು %2$d ಪ್ರಯತ್ನಗಳನ್ನು ಮಾಡಬಹುದು.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">SIM ಈಗ ನಿಷ್ಕ್ರಿಯವಾಗಿದೆ. ಮುಂದುವರಿಯಲು PUK ಕೋಡ್ ನಮೂದಿಸಿ. ನಿಮಗೆ %d ಪ್ರಯತ್ನಗಳು ಉಳಿದಿವೆ. ನಂತರ SIM ಶಾಶ್ವತವಾಗಿ ಬಳಸಲು ಸಾಧ್ಯವಿಲ್ಲದಂತಾಗುತ್ತದೆ. ವಿವರಗಳಿಗಾಗಿ ಕ್ಯಾರಿಯರ್ ಸಂಪರ್ಕಿಸಿ.</item>
+        <item quantity="one">SIM ಈಗ ನಿಷ್ಕ್ರಿಯವಾಗಿದೆ. ಮುಂದುವರಿಯಲು PUK ಕೋಡ್ ನಮೂದಿಸಿ. ನಿಮಗೆ %d ಪ್ರಯತ್ನ ಉಳಿದಿದೆ. ನಂತರ SIM ಶಾಶ್ವತವಾಗಿ ಬಳಸಲು ಸಾಧ್ಯವಿಲ್ಲದಂತಾಗುತ್ತದೆ. ವಿವರಗಳಿಗಾಗಿ ಕ್ಯಾರಿಯರ್ ಸಂಪರ್ಕಿಸಿ.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">ಸಿಮ್‌ ಪಿನ್ ಕೋಡ್‌ ತಪ್ಪಾಗಿದೆ, ನಿಮಗೆ %d ಪ್ರಯತ್ನಗಳು ಬಾಕಿ ಉಳಿದಿವೆ.</item>
+        <item quantity="one">ಸಿಮ್‌ ಪಿನ್ ಕೋಡ್‌ ತಪ್ಪಾಗಿದೆ, ನಿಮಗೆ %d ಪ್ರಯತ್ನಗಳು ಬಾಕಿ ಉಳಿದಿವೆ.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">SIM%1$d PIN ಕೋಡ್ ತಪ್ಪಾಗಿದೆ. ನೀವು %2$d ಪ್ರಯತ್ನಗಳನ್ನು ಹೊಂದಿರುವಿರಿ.</item>
+        <item quantity="one">SIM%1$d PIN ತಪ್ಪಾಗಿದೆ. ಸಾಧನವನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡುವಂತೆ ನಿಮ್ಮ ಕ್ಯಾರಿಯರ್‌ಗೆ ತಿಳಿಸುವ ಮೊದಲು ನೀವು %2$d ಪ್ರಯತ್ನಗಳನ್ನು ಮಾಡಬಹುದು.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">ಸಿಮ್‌ PUK ಕೋಡ್‌ ತಪ್ಪಾಗಿದೆ, %d ಪ್ರಯತ್ನಗಳ ನಂತರ ಸಿಮ್‌ ಶಾಶ್ವತವಾಗಿ ನಿಷ್ಪ್ರಯೋಜಕವಾಗುತ್ತದೆ.</item>
+        <item quantity="one">ಸಿಮ್‌ PUK ಕೋಡ್‌ ತಪ್ಪಾಗಿದೆ, %d ಪ್ರಯತ್ನಗಳ ನಂತರ ಸಿಮ್‌ ಶಾಶ್ವತವಾಗಿ ನಿಷ್ಪ್ರಯೋಜಕವಾಗುತ್ತದೆ.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="other">ಸಾಧನವನ್ನು %d ಗಂಟೆಗಳವರೆಗೆ ಅನ್‌ಲಾಕ್‌ ಮಾಡಿರಲಿಲ್ಲ. ಪಾಸ್‌ವರ್ಡ್‌ ಖಚಿತಪಡಿಸಿ.</item>
+        <item quantity="one">ಸಾಧನವನ್ನು %d ಗಂಟೆಗಳವರೆಗೆ ಅನ್‌ಲಾಕ್‌ ಮಾಡಿರಲಿಲ್ಲ. ಪಾಸ್‌ವರ್ಡ್‌ ಖಚಿತಪಡಿಸಿ.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="other">ಸಾಧನವನ್ನು %d ಗಂಟೆಗಳವರೆಗೆ ಅನ್‌ಲಾಕ್‌ ಮಾಡಿರಲಿಲ್ಲ. ಪ್ಯಾಟರ್ನ್‌ ಖಚಿತಪಡಿಸಿ.</item>
+        <item quantity="one">ಸಾಧನವನ್ನು %d ಗಂಟೆಗಳವರೆಗೆ ಅನ್‌ಲಾಕ್‌ ಮಾಡಿರಲಿಲ್ಲ. ಪ್ಯಾಟರ್ನ್‌ ಖಚಿತಪಡಿಸಿ.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="other">ಸಾಧನವನ್ನು %d ಗಂಟೆಗಳವರೆಗೆ ಅನ್‌ಲಾಕ್‌ ಮಾಡಿರಲಿಲ್ಲ. ಪಿನ್ ದೃಢೀಕರಿಸಿ.</item>
+        <item quantity="one">ಸಾಧನವನ್ನು %d ಗಂಟೆಗಳವರೆಗೆ ಅನ್‌ಲಾಕ್‌ ಮಾಡಿರಲಿಲ್ಲ. ಪಿನ್ ದೃಢೀಕರಿಸಿ.</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="other">%d ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</item>
+        <item quantity="one">%d ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="other">%s ಕ್ಕಿಂತ ಹೆಚ್ಚು ಅಧಿಸೂಚನೆಗಳು ಒಳಗಿವೆ.</item>
+        <item quantity="one">%s ಕ್ಕಿಂತ ಹೆಚ್ಚು ಅಧಿಸೂಚನೆಗಳು ಒಳಗಿವೆ.</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="other">%d ಸಾಧನಗಳು</item>
+        <item quantity="one">%d ಸಾಧನಗಳು</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="other">%d ಗಂಟೆಗಳು</item>
+        <item quantity="one">%d ಗಂಟೆಗಳು</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="other">%d ನಿಮಿಷಗಳು</item>
+        <item quantity="one">%d ನಿಮಿಷಗಳು</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">ಸಮಗ್ರ ನೋಟದಲ್ಲಿರುವ %d ಪರದೆಗಳು</item>
+        <item quantity="one">ಸಮಗ್ರ ನೋಟದಲ್ಲಿರುವ %d ಪರದೆಗಳು</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="other">%1$d ಸಾಧನಗಳನ್ನು ಸಂಪರ್ಕಿಸಲಾಗಿದೆ</item>
+        <item quantity="one">%1$d ಸಾಧನಗಳನ್ನು ಸಂಪರ್ಕಿಸಲಾಗಿದೆ</item>
+    </plurals>
+</resources>

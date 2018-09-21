@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/btn_borderless_rect" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/op_output_chooser_dialog_detail_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="@dimen/op_output_chooser_dialog_detail_item_icon_1_width" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@android:id/icon" android:layout_width="@dimen/op_output_chooser_dialog_detail_item_icon_size" android:layout_height="@dimen/op_output_chooser_dialog_detail_item_icon_size" android:tint="?android:textColorPrimary" android:layout_marginStart="@dimen/oneplus_contorl_layout_margin_left2" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="12.0dip">
+        <TextView android:textAppearance="@style/oneplus_contorl_text_style_subheading" android:ellipsize="end" android:id="@android:id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="@string/oneplus_contorl_font_family_subheading" android:textDirection="locale" />
+        <TextView android:id="@android:id/summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="locale" style="@style/oneplus_contorl_text_style_body1" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="@dimen/op_output_chooser_dialog_detail_item_icon_2_width" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@android:id/icon2" android:focusable="true" android:clickable="true" android:layout_width="@dimen/op_output_chooser_dialog_detail_item_icon_size" android:layout_height="@dimen/op_output_chooser_dialog_detail_item_icon_size" android:scaleType="center" android:tint="?android:textColorPrimary" android:contentDescription="@android:string/media_route_controller_disconnect" android:layout_marginStart="@dimen/op_output_chooser_dialog_detail_item_icon_2_margen_start" style="@style/QSBorderlessButton" />
+    </FrameLayout>
+</LinearLayout>

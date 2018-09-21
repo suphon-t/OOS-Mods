@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView android:background="?android:selectableItemBackgroundBorderless" android:padding="@dimen/pip_action_padding" android:layout_width="@dimen/pip_action_size" android:layout_height="@dimen/pip_action_size" android:forceHasOverlappingRendering="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

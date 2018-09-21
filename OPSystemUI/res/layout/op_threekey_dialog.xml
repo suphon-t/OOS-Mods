@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="@dimen/op_threekey_dialog_padding" android:paddingTop="@dimen/op_threekey_dialog_padding" android:paddingRight="@dimen/op_threekey_dialog_padding" android:paddingBottom="@dimen/op_threekey_dialog_padding" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:id="@id/threekey_layout" android:background="@drawable/dialog_threekey_middle_bg" android:layout_width="wrap_content" android:layout_height="48.0dip" android:translationZ="2.0dip">
+        <FrameLayout android:layout_width="48.0dip" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/threekey_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+        </FrameLayout>
+        <TextView android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/threekey_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="slience" style="@style/oneplus_contorl_text_style_body1" />
+        <FrameLayout android:layout_width="24.0dip" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

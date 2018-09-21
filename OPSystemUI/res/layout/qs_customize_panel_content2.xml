@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.keyguard.AlphaOptimizedLinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/customize_container" android:background="@drawable/qs_customizer_background" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/toolbar_panel" android:layout_width="fill_parent" android:layout_height="50.51999dip" android:layout_marginTop="@android:dimen/quick_qs_offset_height">
+            <Toolbar android:id="@android:id/action_bar" android:layout_width="fill_parent" android:layout_height="@dimen/oneplus_contorl_list_item_height_one_line1" android:titleTextAppearance="@style/oneplus_contorl_text_style_title" android:navigationContentDescription="@android:string/action_bar_up_description" style="?android:toolbarStyle" />
+        </LinearLayout>
+        <View android:layout_gravity="top" android:id="@id/divider" android:background="?android:dividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/qs_upper_frame_height" android:layout_marginTop="12.0dip">
+            <com.android.systemui.qs.customize.QSEditViewPager android:layout_gravity="top" android:id="@id/upperPages" android:layout_width="fill_parent" android:layout_height="@dimen/qs_upper_pager_height" android:paddingStart="@dimen/qs_edit_panel_padding" android:paddingEnd="@dimen/qs_edit_panel_padding" />
+            <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/upper_indicator_panel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/upperIndicator" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginBottom="6.0dip" layout="@layout/qs_page_indicator" />
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:textAppearance="@style/oneplus_contorl_text_style_body1" android:textSize="14.0sp" android:gravity="center" android:id="@id/dragLabel" android:paddingTop="@dimen/qs_edit_drag_label_padding_top" android:layout_width="fill_parent" android:layout_height="@dimen/qs_edit_drag_label_height" android:layout_marginTop="8.0dip" android:text="@string/drag_to_add_tiles" android:paddingStart="22.0dip" android:paddingEnd="22.0dip" />
+        <com.android.systemui.qs.customize.QSEditViewPager android:id="@id/lowerPages" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:paddingStart="@dimen/qs_edit_panel_padding" android:paddingEnd="@dimen/qs_edit_panel_padding" />
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/lower_indicator_panel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/lowerIndicator" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginBottom="@dimen/margin_bottom1" layout="@layout/qs_page_indicator" />
+        </LinearLayout>
+    </com.android.keyguard.AlphaOptimizedLinearLayout>
+    <View android:layout_gravity="bottom" android:id="@id/nav_bar_background" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="@dimen/navigation_bar_size" />
+</merge>

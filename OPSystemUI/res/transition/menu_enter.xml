@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet android:transitionOrdering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <transition android:duration="@integer/oneplus_contorl_time_part5" class="com.oneplus.lib.menu.EpicenterTranslateClipReveal" />
+    <fade android:duration="@integer/oneplus_contorl_time_part5" android:fromAlpha="0.0" android:toAlpha="@dimen/oneplus_contorl_alpha11" />
+</transitionSet>

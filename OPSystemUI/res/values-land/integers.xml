@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="keyguard_max_notification_count">1</integer>
+    <integer name="navigation_bar_deadzone_orientation">1</integer>
+    <integer name="qs_footer_actions_weight">1</integer>
+    <integer name="qs_footer_actions_width">0</integer>
+    <integer name="quick_settings_num_columns">4</integer>
+    <integer name="quick_settings_user_time_settings_tile_span">2</integer>
+    <integer name="quick_settings_max_rows">2</integer>
+    <integer name="kg_selector_gravity">0x00000013</integer>
+</resources>

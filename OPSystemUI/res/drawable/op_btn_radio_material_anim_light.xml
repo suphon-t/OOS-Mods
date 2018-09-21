@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:state_checked="true" android:drawable="@drawable/btn_radio_to_on_mtrl_checked_disable_light" />
+    <item android:state_enabled="false" android:drawable="@drawable/btn_radio_to_on_mtrl_disable_light" android:alpha="?android:disabledAlpha" />
+    <item android:state_checked="true" android:id="@id/on" android:drawable="@drawable/btn_radio_to_on_mtrl_010" />
+    <item android:id="@id/off" android:drawable="@drawable/btn_radio_to_on_mtrl_000_light" />
+    <transition android:toId="@id/on" android:fromId="@id/off">
+        <animation-list>
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_000_light" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_001" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_002" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_003" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_004" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_005" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_006" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_007" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_008" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_009" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_010" />
+        </animation-list>
+    </transition>
+    <transition android:toId="@id/off" android:fromId="@id/on">
+        <animation-list>
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_010" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_009" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_008" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_007" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_006" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_005" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_004" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_003" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_002" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_001" />
+            <item android:duration="15" android:drawable="@drawable/btn_radio_to_on_mtrl_000_light" />
+        </animation-list>
+    </transition>
+</animated-selector>

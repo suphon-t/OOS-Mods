@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="abc_slice_duration_days">
+        <item quantity="other">%d дн. назад</item>
+        <item quantity="one">%d дн. назад</item>
+        <item quantity="few">%d дн. назад</item>
+        <item quantity="many">%d дн. назад</item>
+    </plurals>
+    <plurals name="abc_slice_duration_min">
+        <item quantity="other">%d мин. назад</item>
+        <item quantity="one">%d мин. назад</item>
+        <item quantity="few">%d мин. назад</item>
+        <item quantity="many">%d мин. назад</item>
+    </plurals>
+    <plurals name="abc_slice_duration_years">
+        <item quantity="other">%d г. назад</item>
+        <item quantity="one">%d г. назад</item>
+        <item quantity="few">%d г. назад</item>
+        <item quantity="many">%d лет назад</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">Введите PIN-код для SIM-карты; осталось попыток: %d. Если вы исчерпаете все попытки, устройство сможет разблокировать только ваш оператор.</item>
+        <item quantity="one">Введите PIN-код для SIM-карты; осталось попыток: %d. Если вы исчерпаете все попытки, устройство сможет разблокировать только ваш оператор.</item>
+        <item quantity="few">Введите PIN-код для SIM-карты; осталось попыток: %d. Если вы исчерпаете все попытки, устройство сможет разблокировать только ваш оператор.</item>
+        <item quantity="many">Enter SIM PIN, you have %d remaining attempts.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">Введите PIN-код SIM%1$d. Осталось попыток: %2$d. При отсутствии оставшихся попыток для разблокировки устройства будет необходимо связаться с оператором.</item>
+        <item quantity="one">Введите PIN-код SIM%1$d. У вас осталась %2$d попытка перед тем, как для разблокировки устройства будет необходимо связаться с оператором.</item>
+        <item quantity="few">Введите PIN-код SIM%1$d. Осталось попыток: %2$d. При отсутствии оставшихся попыток для разблокировки устройства будет необходимо связаться с оператором.</item>
+        <item quantity="many">Введите PIN-код SIM%1$d. Осталось попыток: %2$d. При отсутствии оставшихся попыток для разблокировки устройства будет необходимо связаться с оператором.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">SIM-карта отключена. Для продолжения введите PUK-код; осталось попыток: %d. Если вы исчерпаете все попытки, SIM-карта заблокируется навсегда. Дополнительные сведения можно получить у оператора.</item>
+        <item quantity="one">SIM-карта отключена. Для продолжения введите PUK-код; осталось попыток: %d. Если вы исчерпаете все попытки, SIM-карта заблокируется навсегда. Дополнительные сведения можно получить у оператора.</item>
+        <item quantity="few">SIM-карта отключена. Для продолжения введите PUK-код; осталось попыток: %d. Если вы исчерпаете все попытки, SIM-карта заблокируется навсегда. Дополнительные сведения можно получить у оператора.</item>
+        <item quantity="many">SIM-карта теперь отключена. Для продолжения введите код PUK. У вас осталось %d попыток, после чего SIM-карта станет непригодной к использованию без возможности восстановления. Обратитесь к провайдеру за получением более подробной информации.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">Неверный PIN-код. Осталось %d попытки.</item>
+        <item quantity="one">Неверный PIN-код. Осталась %d попытка.</item>
+        <item quantity="few">Неверный PIN-код. Осталось %d попытки.</item>
+        <item quantity="many">Неверный PIN-код. Осталось %d попыток.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">Неверный PIN-код SIM%1$d. Осталось попыток: %2$d.</item>
+        <item quantity="one">Неверный PIN-код SIM%1$d. У вас осталась %2$d попытка перед тем, как для разблокировки устройства будет необходимо связаться с оператором.</item>
+        <item quantity="few">Неверный PIN-код SIM%1$d. Осталось попыток: %2$d. При отсутствии оставшихся попыток для разблокировки устройства будет необходимо связаться с оператором.</item>
+        <item quantity="many">Неверный PIN-код SIM%1$d. Осталось попыток: %2$d. При отсутствии оставшихся попыток для разблокировки устройства будет необходимо связаться с оператором.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">Неверный PUK-код. Осталось %d попытки. После этого SIM-карта будет заблокирована навсегда.</item>
+        <item quantity="one">Неверный PUK-код. Осталась %d попытка. После этого SIM-карта будет заблокирована навсегда.</item>
+        <item quantity="few">Неверный PUK-код. Осталось %d попытки. После этого SIM-карта будет заблокирована навсегда.</item>
+        <item quantity="many">Неверный PUK-код. Осталось %d попыток. После этого SIM-карта будет заблокирована навсегда.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="other">Устройство не разблокировалось в течение %d часа. Введите пароль ещё раз.</item>
+        <item quantity="one">Устройство не разблокировалось в течение %d часа. Введите пароль ещё раз.</item>
+        <item quantity="few">Устройство не разблокировалось в течение %d часов. Введите пароль ещё раз.</item>
+        <item quantity="many">Устройство не разблокировалось в течение %d часов. Введите пароль ещё раз.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="other">Устройство не разблокировалось в течение %d часа. Подтвердите графический ключ.</item>
+        <item quantity="one">Устройство не разблокировалось в течение %d часа. Подтвердите графический ключ.</item>
+        <item quantity="few">Устройство не разблокировалось в течение %d часов. Подтвердите графический ключ.</item>
+        <item quantity="many">Устройство не разблокировалось в течение %d часов. Подтвердите графический ключ.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="other">Устройство не разблокировалось в течение %d часа. Введите PIN-код ещё раз.</item>
+        <item quantity="one">Устройство не разблокировалось в течение %d часа. Введите PIN-код ещё раз.</item>
+        <item quantity="few">Устройство не разблокировалось в течение %d часов. Введите PIN-код ещё раз.</item>
+        <item quantity="many">Устройство не разблокировалось в течение %d часов. Введите PIN-код ещё раз.</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="other">Повторите попытку через %d секунды.</item>
+        <item quantity="one">Повторите попытку через %d секунду.</item>
+        <item quantity="few">Повторите попытку через %d секунды.</item>
+        <item quantity="many">Повторите попытку через %d секунд.</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="other">Ещё %s уведомления.</item>
+        <item quantity="one">Ещё %s уведомление.</item>
+        <item quantity="few">Ещё %s уведомления.</item>
+        <item quantity="many">Ещё %s уведомлений.</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="other">%d устройства</item>
+        <item quantity="one">%d устройство</item>
+        <item quantity="few">%d устройства</item>
+        <item quantity="many">%d устройств</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="other">%d часа</item>
+        <item quantity="one">%d час</item>
+        <item quantity="few">%d часа</item>
+        <item quantity="many">%d часов</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="other">%d минуты</item>
+        <item quantity="one">%d минута</item>
+        <item quantity="few">%d минуты</item>
+        <item quantity="many">%d минут</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">Показано %d экранов</item>
+        <item quantity="one">Показан %d экран</item>
+        <item quantity="few">Показано %d экрана</item>
+        <item quantity="many">Показано %d экранов</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="other">Подключено %1$d устройства</item>
+        <item quantity="one">Подключено %1$d устройство</item>
+        <item quantity="few">Подключено %1$d устройства</item>
+        <item quantity="many">Подключено %1$d устройств</item>
+    </plurals>
+</resources>

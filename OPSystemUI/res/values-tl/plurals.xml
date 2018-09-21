@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="abc_slice_duration_days">
+        <item quantity="other">%d na araw ang nakalipas</item>
+        <item quantity="one">%d araw ang nakalipas</item>
+    </plurals>
+    <plurals name="abc_slice_duration_min">
+        <item quantity="other">%d na minuto ang nakalipas</item>
+        <item quantity="one">%d minuto ang nakalipas</item>
+    </plurals>
+    <plurals name="abc_slice_duration_years">
+        <item quantity="other">%d na taon ang nakalipas</item>
+        <item quantity="one">%d taon ang nakalipas</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">Ipasok ang PIN ng SIM, ikaw ay mayroong%d ng nalalabing mga pagsubok.</item>
+        <item quantity="one">Ipasok ang PIN ng SIM, ikaw ay mayroong%d ng nalalabing pagsubok bago ka makipag-ugnayan sa inyong tagapaghatid upang buksan ang inyong aparato.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">Ilagay ang PIN ng SIM%1$d, mayroon ka pang %2$d (na) natitirang pagtatangka.</item>
+        <item quantity="one">Ilagay ang PIN ng SIM%1$d, mayroon ka pang %2$d (na) natitirang pagtatangka bago mo kailanganing makipag-ugnayan sa iyong carrier para ma-unlock ang iyong device.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">Ang SIM ay hindi na gagana. Ipasok ang inyong PUK code para magpatuloy. Ikaw ay mayroong %d nalalabing mga pag-subok bago ang inyong SIM ay permanente nang hindi magagamit. Makipag-ugnayan sa inyong carrier para sa mga detalye.</item>
+        <item quantity="one">Ang SIM ay hindi na gagana. Ipasok ang inyong PUK code para magpatuloy. Ikaw ay mayroong %d nalalabing mga pag-subok bago ang inyong SIM ay permanente nang hindi magagamit. Makipag-ugnayan sa inyong carrier para sa mga detalye.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">Mali ang PIN code ng SIM, mayroon kang %d na natitirang pagsubok.</item>
+        <item quantity="one">Mali ang PIN code ng SIM, mayroon kang %d natitirang pagsubok.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">Maling PIN code ng SIM%1$d, mayroon ka pang %2$d (na) natitirang pagtatangka bago mo kailanganing makipag-ugnayan sa iyong carrier para ma-unlock ang device mo.</item>
+        <item quantity="one">Maling PIN code ng SIM%1$d, mayroon ka pang %2$d (na) natitirang pagtatangka bago mo kailanganing makipag-ugnayan sa iyong carrier para ma-unlock ang device mo.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">Mali ang PUK code ng SIM, mayroon kang %d na natitirang pagsubok bago tuluyang hindi magamit ang SIM.</item>
+        <item quantity="one">Mali ang PUK code ng SIM, mayroon kang %d natitirang pagsubok bago tuluyang hindi magamit ang SIM.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="other">Hindi na-unlock ang device sa loob ng %d na oras. Kumpirmahin ang password.</item>
+        <item quantity="one">Hindi na-unlock ang device sa loob ng %d oras. Kumpirmahin ang password.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="other">Hindi na-unlock ang device sa loob ng %d na oras. Kumpirmahin ang pattern.</item>
+        <item quantity="one">Hindi na-unlock ang device sa loob ng %d oras. Kumpirmahin ang pattern.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="other">Hindi na-unlock ang device sa loob ng %d na oras. Kumpirmahin ang PIN.</item>
+        <item quantity="one">Hindi na-unlock ang device sa loob ng %d oras. Kumpirmahin ang PIN.</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="other">Subukang muli sa loob ng %d na segundo.</item>
+        <item quantity="one">Subukang muli sa loob ng %d segundo.</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="other">May %s pang notification sa loob.</item>
+        <item quantity="one">May %s pang notification sa loob.</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="other">%d na device</item>
+        <item quantity="one">%d device</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="other">%d na oras</item>
+        <item quantity="one">%d oras</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="other">%d na minuto</item>
+        <item quantity="one">%d minuto</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">%d na screen sa Pangkalahatang-ideya</item>
+        <item quantity="one">%d screen sa Pangkalahatang-ideya</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="other">%1$d na device ang nakakonekta</item>
+        <item quantity="one">%1$d device ang nakakonekta</item>
+    </plurals>
+</resources>

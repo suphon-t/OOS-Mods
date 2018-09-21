@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.car.widget.ColumnCardView android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/car_padding_4" android:layout_marginBottom="@dimen/car_padding_4" android:elevation="@dimen/car_dialog_elevation" app:cardBackgroundColor="?dialogBackgroundColor" app:cardCornerRadius="@dimen/car_radius_3">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="start|center" android:id="@id/title" android:background="?dialogBackgroundColor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/car_dialog_header_height" android:paddingStart="@dimen/car_keyline_1" android:paddingEnd="@dimen/car_keyline_1" style="?dialogTitleStyle" />
+            <androidx.car.widget.PagedListView android:theme="?dialogListTheme" android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" app:dividerEndMargin="@dimen/car_keyline_1" app:dividerStartMargin="@dimen/car_keyline_1" app:gutter="none" app:scrollBarEnabled="false" app:showPagedListViewDivider="true" />
+        </LinearLayout>
+    </androidx.car.widget.ColumnCardView>
+    <androidx.car.widget.PagedScrollBarView android:layout_gravity="start|center|top" android:id="@id/scrollbar" android:visibility="invisible" android:clickable="true" android:layout_width="@dimen/car_margin" android:layout_height="fill_parent" android:layout_marginTop="@dimen/car_padding_4" android:layout_marginBottom="@dimen/car_padding_4" />
+</FrameLayout>

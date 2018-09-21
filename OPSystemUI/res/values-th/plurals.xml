@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="abc_slice_duration_days">
+        <item quantity="other">%d วันที่แล้ว</item>
+        <item quantity="one">%d วันที่แล้ว</item>
+    </plurals>
+    <plurals name="abc_slice_duration_min">
+        <item quantity="other">%d นาทีที่แล้ว</item>
+        <item quantity="one">%d นาทีที่แล้ว</item>
+    </plurals>
+    <plurals name="abc_slice_duration_years">
+        <item quantity="other">%d ปีที่แล้ว</item>
+        <item quantity="one">%d ปีที่แล้ว</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">ใส่ PIN ของซิม คุณยังลองได้อีก %d ครั้งก่อนที่จะต้องติดต่อผู้ให้บริการเพื่อปลดล็อคเครื่อง</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">ป้อน PIN ของซิม%1$d คุณลองได้อีก %2$d ครั้งก่อนที่คุณจะต้องติดต่อผู้ให้บริการเพื่อปลดล็อคอุปกรณ์ ป้อน PIN ของซิม%3$d คุณลองได้อีก %4$d ครั้ง</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">ตอนนี้ปิดใช้งานซิมแล้ว ใส่รหัส PUK เพื่อดำเนินการต่อ คุณยังลองได้อีก %d ครั้งก่อนที่ซิมจะใช้งานไม่ได้อย่างถาวร ติดต่อผู้ให้บริการสำหรับรายละเอียดเพิ่มเติม</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">รหัส PIN ของซิมไม่ถูกต้อง คุณพยายามได้อีก %d ครั้ง</item>
+        <item quantity="one">รหัส PIN ของซิมไม่ถูกต้อง คุณพยายามได้อีก %d ครั้งก่อนที่จะต้องติดต่อผู้ให้บริการเพื่อปลดล็อกอุปกรณ์ของคุณ</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">รหัส PIN ซิม %1$d ไม่ถูกต้อง คุณลองได้อีก %2$d ครั้งก่อนที่คุณจะต้องติดต่อผู้ให้บริการเพื่อปลดล็อคอุปกรณ์ รหัส PIN ซิม%3$d ไม่ถูกต้อง คุณลองได้อีก %4$d ครั้ง</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">รหัส PUK ของซิมไม่ถูกต้อง คุณพยายามได้อีก %d ครั้งก่อนที่ซิมจะไม่สามารถใช้งานได้อย่างถาวร</item>
+        <item quantity="one">รหัส PUK ของซิมไม่ถูกต้อง คุณพยายามได้อีก %d ครั้งก่อนที่ซิมจะไม่สามารถใช้งานได้อย่างถาวร</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="other">ไม่มีการปลดล็อกอุปกรณ์มา %d ชั่วโมงแล้ว ยืนยันรหัสผ่าน</item>
+        <item quantity="one">ไม่มีการปลดล็อกอุปกรณ์มา %d ชั่วโมงแล้ว ยืนยันรหัสผ่าน</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="other">ไม่มีการปลดล็อกอุปกรณ์มา %d ชั่วโมงแล้ว ยืนยันรูปแบบ</item>
+        <item quantity="one">ไม่มีการปลดล็อกอุปกรณ์มา %d ชั่วโมงแล้ว ยืนยันรูปแบบ</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="other">ไม่มีการปลดล็อกอุปกรณ์มา %d ชั่วโมงแล้ว ยืนยัน PIN</item>
+        <item quantity="one">ไม่มีการปลดล็อกอุปกรณ์มา %d ชั่วโมงแล้ว ยืนยัน PIN</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="other">ลองอีกครั้งใน %d วินาที</item>
+        <item quantity="one">ลองอีกครั้งใน 1 วินาที</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="other">มีการแจ้งเตือนอีก %s รายการด้านใน</item>
+        <item quantity="one">มีการแจ้งเตือนอีก %s รายการด้านใน</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="other">อุปกรณ์ %d เครื่อง</item>
+        <item quantity="one">อุปกรณ์ %d เครื่อง</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="other">%d ชั่วโมง</item>
+        <item quantity="one">%d ชั่วโมง</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="other">%d นาที</item>
+        <item quantity="one">%d นาที</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">%d หน้าจอในภาพรวม</item>
+        <item quantity="one">1 หน้าจอในภาพรวม</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="other">มีอุปกรณ์ที่เชื่อมต่อ %1$d เครื่อง</item>
+        <item quantity="one">มีอุปกรณ์ที่เชื่อมต่อ %1$d เครื่อง</item>
+    </plurals>
+</resources>

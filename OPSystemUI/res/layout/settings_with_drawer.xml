@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content_parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Toolbar android:theme="?android:actionBarTheme" android:id="@id/action_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="18.0dip" android:navigationContentDescription="@android:string/action_bar_up_description" style="?android:actionBarStyle" />
+    <FrameLayout android:id="@id/content_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:actionBarStyle" />
+    <FrameLayout android:id="@id/content_frame" android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

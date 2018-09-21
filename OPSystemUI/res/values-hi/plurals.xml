@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">सिम पिन डालें, आपके पास %d प्रयास शेष हैं इससे पहले कि आपको अपनी डिवाइस अनलॉक करने के लिए सेवाप्रदाता से संपर्क करना पड़े।</item>
+        <item quantity="one">सिम पिन डालें, आपके पास %d प्रयास शेष है इससे पहले कि आपको अपनी डिवाइस अनलॉक करने के लिए सेवाप्रदाता से संपर्क करना पड़े।</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">सिम%1$d PIN दर्ज करें, आपके पास %2$d प्रयास शेष हैं।</item>
+        <item quantity="one">सिम%1$d PIN दर्ज करें, आपकी डिवाइस को अनलॉक करने के लिए अपने कैरियर से संपर्क करने के लिए आपके पास %2$d प्रयास शेष हैं।</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">सिम अक्षम कर दिया गया है। जारी रखने के लिए PUK कोड डालें। आपके पास %d प्रयास शेष हैं, वरना उसके बाद सिम स्थायी तौर पर बेकार हो जाएगा। विवरण के लिए सेवाप्रदाता से संपर्क करें।</item>
+        <item quantity="one">सिम अक्षम कर दिया गया है। जारी रखने के लिए PUK कोड डालें। आपके पास %d प्रयास शेष है, वरना उसके बाद सिम स्थायी तौर पर बेकार हो जाएगा। विवरण के लिए सेवाप्रदाता से संपर्क करें।</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">गलत सिम पिन कोड, आप %d बार और कोशिश कर सकते हैं.</item>
+        <item quantity="one">गलत सिम पिन कोड, आप %d बार और कोशिश कर सकते हैं.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">गलत सिम%1$d PIN कोड, आपके पास %2$d प्रयास शेष हैं।</item>
+        <item quantity="one">गलत सिम%1$d PIN कोड, अपनी डिवाइस अनलॉक करने से पहले अपने कैरियर से संपर्क सुनिश्चित करने से पहले आपके पास %2$d प्रयास शेष हैं।</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">SIM PUK कोड गलत है, SIM के हमेशा के लिए बेकार हो जाने से पहले आप %d बार और कोशिश कर सकते हैं.</item>
+        <item quantity="one">SIM PUK कोड गलत है, SIM के हमेशा के लिए बेकार हो जाने से पहले आप %d बार और कोशिश कर सकते हैं.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="other">डिवाइस को %d घंटों से अनलॉक नहीं किया गया है. पासवर्ड की पुष्टि करें.</item>
+        <item quantity="one">डिवाइस को %d घंटों से अनलॉक नहीं किया गया है. पासवर्ड की पुष्टि करें.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="other">डिवाइस को %d घंटों से अनलॉक नहीं किया गया है. पैटर्न की पुष्टि करें.</item>
+        <item quantity="one">डिवाइस को %d घंटों से अनलॉक नहीं किया गया है. पैटर्न की पुष्टि करें.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="other">डिवाइस को %d घंटों से अनलॉक नहीं किया गया है. पिन की पुष्‍टि करें.</item>
+        <item quantity="one">डिवाइस को %d घंटों से अनलॉक नहीं किया गया है. पिन की पुष्‍टि करें.</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="other">%d सेकंड में फिर से कोशिश करें.</item>
+        <item quantity="one">%d सेकंड में फिर से कोशिश करें.</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="other">इसमें %s और सूचनाएं हैं.</item>
+        <item quantity="one">इसमें %s और सूचनाएं हैं.</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="other">%d डिवाइस</item>
+        <item quantity="one">%d डिवाइस</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="other">%d घंटे</item>
+        <item quantity="one">%d घंटे</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="other">%d मिनट</item>
+        <item quantity="one">%d मिनट</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">%d स्क्रीन की खास जानकारी</item>
+        <item quantity="one">%d स्क्रीन की खास जानकारी</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="other">%1$d डिवाइस जुड़े हैं</item>
+        <item quantity="one">%1$d डिवाइस जुड़े हैं</item>
+    </plurals>
+</resources>

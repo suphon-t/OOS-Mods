@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.AppBarLayout android:id="@id/appbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar android:layout_gravity="center_vertical" android:id="@id/car_toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/car_app_bar_height" android:minHeight="@dimen/car_app_bar_height" style="?toolbarStyle" />
+        </android.support.design.widget.AppBarLayout>
+        <androidx.car.moderator.SpeedBumpView android:id="@id/content_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+    <include android:layout_gravity="start" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/car_margin" layout="@layout/car_drawer" />
+</android.support.v4.widget.DrawerLayout>

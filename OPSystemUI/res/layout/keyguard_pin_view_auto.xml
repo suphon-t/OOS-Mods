@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.KeyguardPINView android:gravity="top" android:orientation="vertical" android:id="@id/keyguard_pin_view_auto" android:layout_width="fill_parent" android:layout_height="fill_parent" androidprv:layout_maxHeight="@dimen/keyguard_security_max_height" androidprv:layout_maxWidth="@dimen/keyguard_security_width"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:androidprv="http://schemas.android.com/apk/res-auto">
+    <include android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/keyguard_selector_fade_container" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/keyguard_eca" />
+    <FrameLayout android:id="@id/fingerprint_icon" android:paddingTop="@dimen/fingerprint_icon_padding" android:paddingBottom="@dimen/fingerprint_icon_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="656.0px">
+        <ImageView android:layout_gravity="bottom|center" android:id="@id/security_image" android:background="@drawable/facelock_bouncer_ripple_drawable" android:layout_width="120.0px" android:layout_height="120.0px" android:src="@drawable/ic_fingerprint_lockscreen_blow" android:scaleType="fitXY" android:tint="?wallpaperTextColor" />
+    </FrameLayout>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/keyguard_message_area" />
+    <LinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr">
+        <com.android.keyguard.AlphaOptimizedRelativeLayout android:id="@id/row0" android:layout_width="fill_parent" android:layout_height="160.0px">
+            <com.android.keyguard.PasswordTextViewForPin android:textColor="?wallpaperTextColor" android:gravity="center" android:id="@id/pinEntry" android:layout_width="@dimen/keyguard_security_width" android:layout_height="fill_parent" android:layout_marginRight="189.0px" android:layout_centerHorizontal="true" android:contentDescription="@string/keyguard_accessibility_pin_area" androidprv:scaledTextSize="@integer/scaled_password_text_size" />
+        </com.android.keyguard.AlphaOptimizedRelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/row1" android:layout_width="fill_parent" android:layout_height="@dimen/keyguard_num_pad_key_height">
+            <com.android.keyguard.NumPadKey android:id="@id/key1" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" androidprv:digit="1" androidprv:textView="@id/pinEntry" />
+            <com.android.keyguard.NumPadKey android:id="@id/key2" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" androidprv:digit="2" androidprv:textView="@id/pinEntry" />
+            <com.android.keyguard.NumPadKey android:id="@id/key3" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" androidprv:digit="3" androidprv:textView="@id/pinEntry" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/row2" android:layout_width="fill_parent" android:layout_height="@dimen/keyguard_num_pad_key_height">
+            <com.android.keyguard.NumPadKey android:id="@id/key4" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" androidprv:digit="4" androidprv:textView="@id/pinEntry" />
+            <com.android.keyguard.NumPadKey android:id="@id/key5" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" androidprv:digit="5" androidprv:textView="@id/pinEntry" />
+            <com.android.keyguard.NumPadKey android:id="@id/key6" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" androidprv:digit="6" androidprv:textView="@id/pinEntry" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/row3" android:layout_width="fill_parent" android:layout_height="@dimen/keyguard_num_pad_key_height">
+            <com.android.keyguard.NumPadKey android:id="@id/key7" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" androidprv:digit="7" androidprv:textView="@id/pinEntry" />
+            <com.android.keyguard.NumPadKey android:id="@id/key8" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" androidprv:digit="8" androidprv:textView="@id/pinEntry" />
+            <com.android.keyguard.NumPadKey android:id="@id/key9" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" androidprv:digit="9" androidprv:textView="@id/pinEntry" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/row4" android:layout_width="fill_parent" android:layout_height="@dimen/keyguard_num_pad_key_height">
+            <Space android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <com.android.keyguard.NumPadKey android:id="@id/key0" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" androidprv:digit="0" androidprv:textView="@id/pinEntry" />
+            <TextView android:textSize="44.599976px" android:textColor="?wallpaperTextColor" android:gravity="center" android:id="@id/deleteOrCancel" android:background="@drawable/ripple_drawable" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" android:textAllCaps="true" android:fontFamily="sans-serif-book" />
+        </LinearLayout>
+    </LinearLayout>
+</com.android.keyguard.KeyguardPINView>

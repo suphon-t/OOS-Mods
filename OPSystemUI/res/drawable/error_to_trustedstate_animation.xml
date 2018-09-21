@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/error_to_trustedstate"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="ellipse_path_1" android:animation="@anim/error_to_trustedstate_ellipse_path_1_animation" />
+    <target android:name="path_1" android:animation="@anim/error_to_trustedstate_path_1_animation" />
+    <target android:name="path_2" android:animation="@anim/error_to_trustedstate_path_2_animation" />
+    <target android:name="lock_top" android:animation="@anim/error_to_trustedstate_lock_top_animation" />
+    <target android:name="path_3" android:animation="@anim/error_to_trustedstate_path_3_animation" />
+    <target android:name="errorexclamationdot" android:animation="@anim/error_to_trustedstate_errorexclamationdot_animation" />
+    <target android:name="bottompath" android:animation="@anim/error_to_trustedstate_bottompath_animation" />
+    <target android:name="exclamationtop" android:animation="@anim/error_to_trustedstate_exclamationtop_animation" />
+    <target android:name="toppath" android:animation="@anim/error_to_trustedstate_toppath_animation" />
+    <target android:name="errorcircle" android:animation="@anim/error_to_trustedstate_errorcircle_animation" />
+    <target android:name="circlepath" android:animation="@anim/error_to_trustedstate_circlepath_animation" />
+</animated-vector>

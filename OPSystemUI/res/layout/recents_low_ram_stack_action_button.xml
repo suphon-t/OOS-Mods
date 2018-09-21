@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/button" android:background="@drawable/recents_low_ram_stack_button_background" android:paddingTop="17.0dip" android:paddingBottom="17.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recents_stack_action_button_label" android:textAllCaps="true" android:fontFamily="sans-serif-medium" android:paddingStart="26.0dip" android:paddingEnd="26.0dip" android:forceHasOverlappingRendering="false" style="?clearAllStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

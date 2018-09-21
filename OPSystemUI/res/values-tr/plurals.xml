@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="abc_slice_duration_days">
+        <item quantity="other">%d gün önce</item>
+        <item quantity="one">%d gün önce</item>
+    </plurals>
+    <plurals name="abc_slice_duration_min">
+        <item quantity="other">%d dk. önce</item>
+        <item quantity="one">%d dk. önce</item>
+    </plurals>
+    <plurals name="abc_slice_duration_years">
+        <item quantity="other">%d yıl önce</item>
+        <item quantity="one">%d yıl önce</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">Lütfen SIM Kart PIN kodunuzu girin. Giriş için %d deneme hakkınız bulunuyor.</item>
+        <item quantity="one">Lütfen SIM Kart PIN kodunuzu girin. Cihazınızın kilidini açmak için mobil operatörünüz ile iletişime geçemeden önce %d deneme hakkınız bulunuyor.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">"SIM%1$d PIN'i girin, cihazınızı açmak için taşıyıcınız ile iletişime geçmeden önce elinizde %2$d deneme olmalıdır."</item>
+        <item quantity="one">"SIM%1$d PIN'i girin, cihazınızı açmak için taşıyıcınız ile iletişime geçmeden önce elinizde %2$d deneme hakkınız olmalıdır."</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">SIM kart devre dışı bırakıldı. Devam etmek için PUK kodunuzu girin. %d deneme hakkınızında hatalı olması durumunda SIM kartınız kalıcı olarak kullanılamayacaktır. Daha fazla bilgi için mobil operatörünüz ile iletişime geçin.</item>
+        <item quantity="one">SIM kart devre dışı bırakıldı. Devam etmek için PUK kodunuzu girin. %d deneme hakkınızında hatalı olması durumunda SIM kartınız kalıcı olarak kullanılamayacaktır. Daha fazla bilgi için mobil operatörünüz ile iletişime geçin.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">Yanlış SIM PIN kodu, %d deneme hakkınız kaldı.</item>
+        <item quantity="one">Yanlış SIM PIN kodu. Cihazının kilidini açmak için operatörünüzle bağlantı kurmak zorunda kalmadan önce %d deneme hakkınız kaldı.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">Hatalı SIM%1$d PIN kodu, cihazınızı açmak için taşıyıcınız ile iletişime geçmeden önce elinizde %2$d deneme olmalıdır.</item>
+        <item quantity="one">Hatalı SIM%1$d PIN kodu, cihazınızı açmak için taşıyıcınız ile iletişime geçmeden önce elinizde %2$d deneme hakkınız olmalıdır.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">Yanlış SIM PUK kodu, SIM kalıcı olarak kullanılmaz hale gelmeden önce %d deneme hakkınız kaldı.</item>
+        <item quantity="one">Yanlış SIM PUK kodu. SIM kalıcı olarak kullanılmaz hale gelmeden önce %d deneme hakkınız kaldı.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="other">Cihazın kilidi son %d saattir açılmadı. Şifreyi doğrulayın.</item>
+        <item quantity="one">Cihazın kilidi son %d saattir açılmadı. Şifreyi doğrulayın.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="other">Cihazın kilidi son %d saattir açılmadı. Deseni doğrulayın.</item>
+        <item quantity="one">Cihazın kilidi son %d saattir açılmadı. Deseni doğrulayın.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="other">"Cihazın kilidi son %d saattir açılmadı. PIN'i doğrulayın."</item>
+        <item quantity="one">"Cihazın kilidi son %d saattir açılmadı. PIN'i doğrulayın."</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="other">%d saniye içinde tekrar deneyin.</item>
+        <item quantity="one">1 saniye içinde tekrar deneyin.</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="other">Grup içinde %s bildirim daha var.</item>
+        <item quantity="one">Grup içinde %s bildirim daha var.</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="other">%d cihaz</item>
+        <item quantity="one">%d cihaz</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="other">%d saat</item>
+        <item quantity="one">%d saat</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="other">%d dakika</item>
+        <item quantity="one">%d dakika</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">"Genel Bakış'ta %d ekran"</item>
+        <item quantity="one">"Genel Bakış'ta 1 ekran"</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="other">%1$d cihaz bağlı</item>
+        <item quantity="one">%1$d cihaz bağlı</item>
+    </plurals>
+</resources>

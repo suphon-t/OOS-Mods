@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">Saisissez le PIN de la SIM. Il vous reste %d tentatives avant de devoir contacter votre opérateur pour débloquer votre appareil.</item>
+        <item quantity="one">Saisissez le PIN de la SIM. Il vous reste %d tentative avant de devoir contacter votre opérateur pour débloquer votre appareil.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">Saisissez le code PIN de la carte SIM %1$d , il vous reste %2$d tentative(s) restante(s) avant de devoir contacter votre opérateur pour déverrouiller votre appareil.</item>
+        <item quantity="one">Saisissez le code PIN de la carte SIM %1$d , il vous reste %2$d tentative(s) restante(s) avant de devoir contacter votre opérateur pour déverrouiller votre appareil.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">"La SIM est maintenant désactivée. Saisissez le code PUK pour continuer. Il vous reste %d tentatives avant que la SIM soit définitivement inutilisable. Contactez votre opérateur pour plus d'informations."</item>
+        <item quantity="one">"La SIM est maintenant désactivée. Saisissez le code PUK pour continuer. Il vous reste %d tentative avant que la SIM soit définitivement inutilisable. Contactez votre opérateur pour plus d'informations."</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">Code PIN de la carte SIM incorrect. Il vous reste %d tentatives.</item>
+        <item quantity="one">Code PIN de la carte SIM incorrect. Il vous reste %d tentative.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">Code SIM %1$d incorrect, il vous reste %2$d tentative(s) restante(s) avant de devoir contacter votre opérateur afin de déverrouiller votre appareil.</item>
+        <item quantity="one">Code PIN de la carte SIM %1$d incorrect, il vous reste %2$d tentative(s) restante(s) avant de devoir contacter votre opérateur afin de déverrouiller votre appareil.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">Clé PUK de la carte SIM incorrecte. Il vous reste %d tentatives avant que votre carte SIM ne devienne définitivement inutilisable.</item>
+        <item quantity="one">Clé PUK de la carte SIM incorrecte. Il vous reste %d tentative avant que votre carte SIM ne devienne définitivement inutilisable.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="other">"L'appareil n'a pas été déverrouillé depuis %d heures. Confirmez le mot de passe."</item>
+        <item quantity="one">"L'appareil n'a pas été déverrouillé depuis %d heure. Confirmez le mot de passe."</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="other">"L'appareil n'a pas été déverrouillé depuis %d heures. Confirmez le schéma."</item>
+        <item quantity="one">"L'appareil n'a pas été déverrouillé depuis %d heure. Confirmez le schéma."</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="other">"L'appareil n'a pas été déverrouillé depuis %d heures. Confirmez le code."</item>
+        <item quantity="one">"L'appareil n'a pas été déverrouillé depuis %d heure. Confirmez le code."</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="other">Réessayez dans %d secondes.</item>
+        <item quantity="one">Réessayez dans %d seconde.</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="other">"%s autres notifications à l'intérieur."</item>
+        <item quantity="one">"%s autre notification à l'intérieur."</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="other">%d appareils</item>
+        <item quantity="one">%d appareil</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="other">%d heures</item>
+        <item quantity="one">%d heure</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="other">%d minutes</item>
+        <item quantity="one">%d minute</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">%d écrans dans Aperçu</item>
+        <item quantity="one">%d écran dans Aperçu</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="other">%1$d appareils connectés</item>
+        <item quantity="one">%1$d appareil connecté</item>
+    </plurals>
+</resources>

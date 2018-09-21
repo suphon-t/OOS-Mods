@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/car_facet_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:animateLayoutChanges="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.android.keyguard.AlphaOptimizedImageButton android:id="@id/car_nav_button_icon" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:animateLayoutChanges="true" />
+        <com.android.keyguard.AlphaOptimizedImageButton android:id="@id/car_nav_button_more_icon" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/car_ic_arrow" android:scaleType="fitCenter" android:animateLayoutChanges="true" />
+    </LinearLayout>
+</merge>

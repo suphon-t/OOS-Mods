@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="abc_slice_duration_days">
+        <item quantity="other">Há %d dias.</item>
+        <item quantity="one">Há %d dia.</item>
+    </plurals>
+    <plurals name="abc_slice_duration_min">
+        <item quantity="other">Há %d minutos.</item>
+        <item quantity="one">Há %d minuto.</item>
+    </plurals>
+    <plurals name="abc_slice_duration_years">
+        <item quantity="other">Há %d anos.</item>
+        <item quantity="one">Há %d ano.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">Introduza o PIN do cartão SIM. Tem mais %d tentativas.</item>
+        <item quantity="one">Introduza o PIN do cartão SIM. Tem mais %d tentativa antes de ser necessário contactar o operador para desbloquear o dispositivo.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">O SIM encontra-se desativado. Introduza o código PUK para continuar. Tem mais %d tentativas antes de o cartão SIM ficar permanentemente inutilizável. Contacte o operador para obter mais detalhes.</item>
+        <item quantity="one">O SIM encontra-se desativado. Introduza o código PUK para continuar. Tem mais %d tentativa antes de o cartão SIM ficar permanentemente inutilizável. Contacte o operador para obter mais detalhes.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">Código PIN do cartão SIM incorreto. Tem mais %d tentativas.</item>
+        <item quantity="one">Código PIN do cartão SIM incorreto. Tem mais %d tentativa antes de precisar de contactar o seu operador para desbloquear o dispositivo.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">Código PUK do cartão SIM incorreto. Tem mais %d tentativas antes de o cartão SIM ficar permanentemente inutilizável.</item>
+        <item quantity="one">Código PUK do cartão SIM incorreto. Tem mais %d tentativa antes de o cartão SIM ficar permanentemente inutilizável.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="other">O dispositivo não é desbloqueado há %d horas. Confirme a palavra-passe.</item>
+        <item quantity="one">O dispositivo não é desbloqueado há %d hora. Confirme a palavra-passe.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="other">O dispositivo não é desbloqueado há %d horas. Confirme o padrão.</item>
+        <item quantity="one">O dispositivo não é desbloqueado há %d hora. Confirme o padrão.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="other">O dispositivo não é desbloqueado há %d horas. Confirme o PIN.</item>
+        <item quantity="one">O dispositivo não é desbloqueado há %d hora. Confirme o PIN.</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="other">Tente novamente dentro de %d segundos.</item>
+        <item quantity="one">Tente novamente dentro de 1 segundo.</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="other">Mais %s notificações no grupo.</item>
+        <item quantity="one">Mais %s notificação no grupo.</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="other">%d dispositivos</item>
+        <item quantity="one">%d dispositivo</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="other">%d horas</item>
+        <item quantity="one">%d hora</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="other">%d minutos</item>
+        <item quantity="one">%d minuto</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">%d ecrãs na Vista geral</item>
+        <item quantity="one">1 ecrã na Vista geral</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="other">%1$d dispositivos ligados</item>
+        <item quantity="one">%1$d dispositivo ligado</item>
+    </plurals>
+</resources>

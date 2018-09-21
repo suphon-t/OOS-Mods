@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="abc_slice_duration_days">
+        <item quantity="other">%d ημ. πριν</item>
+        <item quantity="one">%d ημ. πριν</item>
+    </plurals>
+    <plurals name="abc_slice_duration_min">
+        <item quantity="other">%d λεπ. πριν</item>
+        <item quantity="one">%d λεπ. πριν</item>
+    </plurals>
+    <plurals name="abc_slice_duration_years">
+        <item quantity="other">%d χρ. πριν</item>
+        <item quantity="one">%d χρ. πριν</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">Πληκτρολογήστε το ΡΙΝ της κάρτας SIM, απομένουν %d προσπάθειες πριν χρειαστεί να επικοινωνήσετε με τον πάροχό σας για να ξεκλειδώσει τη συσκευή σας.</item>
+        <item quantity="one">Πληκτρολογήστε το ΡΙΝ της κάρτας SIM, απομένει %d προσπάθεια πριν χρειαστεί να επικοινωνήσετε με τον πάροχό σας για να ξεκλειδώσει τη συσκευή σας.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">Πληκτρολογήστε τον κωδικό PIN για τη SIM%1$d. Έχετε άλλες %2$d προσπάθειες.</item>
+        <item quantity="one">Πληκτρολογήστε τον κωδικό PIN για τη SIM%1$d. Έχετε άλλη %2$d προσπάθεια προτού χρειαστεί να επικοινωνήσετε με τον πάροχό σας για να ξεκλειδώσει τη συσκευή σας.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">Η κάρτα SIM είναι πλέον απενεργοποιημένη. Έχετε ακόμα %d προσπάθειες πριν καταστεί τελείως άχρηστη η κάρτα SIM. Επικοινωνήστε με τον πάροχο σας για πληροφορίες.</item>
+        <item quantity="one">Η κάρτα SIM είναι πλέον απενεργοποιημένη. Έχετε ακόμα %d προσπάθεια πριν καταστεί τελείως άχρηστη η κάρτα SIM. Επικοινωνήστε με τον πάροχο σας για πληροφορίες.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">Λανθασμένος κωδικός PIN κάρτας SIM. Απομένουν άλλες %d προσπάθειες.</item>
+        <item quantity="one">Λανθασμένος κωδικός PIN κάρτας SIM. Απομένει άλλη %d προσπάθεια. Στη συνέχεια, θα πρέπει να επικοινωνήσετε με την εταιρεία κινητής τηλεφωνίας σας για να ξεκλειδώσετε τη συσκευή σας.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">Λανθασμένος κωδικός PIN για τη SIM%1$d. Έχετε άλλες %2$d προσπάθειες.</item>
+        <item quantity="one">Λανθασμένος κωδικός PIN για τη SIM%1$d. Έχετε άλλη %2$d προσπάθεια προτού χρειαστεί να επικοινωνήσετε με τον πάροχό σας για να ξεκλειδώσει τη συσκευή σας.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">Λανθασμένος κωδικός PUK κάρτας SIM. Απομένουν άλλες %d προσπάθειες προτού να μην είναι πλέον δυνατή η χρήση της κάρτας SIM.</item>
+        <item quantity="one">Λανθασμένος κωδικός PUK κάρτας SIM. Απομένει άλλη %d προσπάθεια προτού να μην είναι πλέον δυνατή η χρήση της κάρτας SIM.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="other">Η συσκευή δεν έχει ξεκλειδωθεί εδώ και %d ώρες. Επιβεβαιώστε τον κωδικό πρόσβασης.</item>
+        <item quantity="one">Η συσκευή δεν έχει ξεκλειδωθεί εδώ και %d ώρα. Επιβεβαιώστε τον κωδικό πρόσβασης.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="other">Η συσκευή δεν έχει ξεκλειδωθεί εδώ και %d ώρες. Επιβεβαιώστε το μοτίβο.</item>
+        <item quantity="one">Η συσκευή δεν έχει ξεκλειδωθεί εδώ και %d ώρα. Επιβεβαιώστε το μοτίβο.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="other">Η συσκευή δεν έχει ξεκλειδωθεί εδώ και %d ώρες. Επιβεβαιώστε τον αριθμό PIN.</item>
+        <item quantity="one">Η συσκευή δεν έχει ξεκλειδωθεί εδώ και %d ώρα. Επιβεβαιώστε τον αριθμό PIN.</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="other">Δοκιμάστε ξανά σε %d δευτερόλεπτα.</item>
+        <item quantity="one">Δοκιμάστε ξανά σε 1 δευτερόλεπτο.</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="other">%s επιπλέον ειδοποιήσεις εντός της ομάδας.</item>
+        <item quantity="one">%s επιπλέον ειδοποίηση εντός της ομάδας.</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="other">%d συσκευές</item>
+        <item quantity="one">%d συσκευή</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="other">%d ώρες</item>
+        <item quantity="one">%d ώρα</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="other">%d λεπτά</item>
+        <item quantity="one">%d λεπτό</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">%d οθόνες στην Επισκόπηση</item>
+        <item quantity="one">1 οθόνη στην Επισκόπηση</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="other">%1$d συσκευές συνδέθηκαν</item>
+        <item quantity="one">%1$d συσκευή συνδέθηκε</item>
+    </plurals>
+</resources>

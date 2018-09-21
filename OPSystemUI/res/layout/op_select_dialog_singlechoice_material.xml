@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?android:textColorAlertDialogListItem" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/oneplus_contorl_list_item_height_one_line1" android:drawablePadding="@dimen/oneplus_contorl_margin_text_right4" android:drawableEnd="@drawable/op_btn_image_single_choice_selector" android:paddingStart="@dimen/oneplus_contorl_layout_margin_left3" android:paddingEnd="@dimen/oneplus_contorl_layout_margin_right3"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

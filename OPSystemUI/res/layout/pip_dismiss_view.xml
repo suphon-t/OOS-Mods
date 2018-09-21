@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/pip_dismiss_gradient_height" android:alpha="0.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="bottom|center" android:id="@id/pip_dismiss_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pip_phone_dismiss_hint" android:shadowColor="@android:color/black" android:shadowDx="-2.0" android:shadowDy="2.0" android:shadowRadius="0.01" />
+</FrameLayout>

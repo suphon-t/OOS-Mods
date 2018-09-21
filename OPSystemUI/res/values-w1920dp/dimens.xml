@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="car_gutter_size">32.0dip</dimen>
+    <dimen name="car_keyline_1">48.0dip</dimen>
+    <dimen name="car_keyline_1_keyline_3_diff">104.0dip</dimen>
+    <dimen name="car_keyline_1_neg">-48.0dip</dimen>
+    <dimen name="car_keyline_3">152.0dip</dimen>
+    <dimen name="car_keyline_3_neg">-152.0dip</dimen>
+    <dimen name="car_margin">192.0dip</dimen>
+</resources>

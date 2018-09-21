@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/datepicker_timepicker_header_selected_activated_text_color_dark" android:state_activated="true" />
+    <item android:color="@color/datepicker_timepicker_header_selected_text_color_dark" />
+</selector>

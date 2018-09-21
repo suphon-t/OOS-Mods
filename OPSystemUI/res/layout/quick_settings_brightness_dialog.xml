@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginTop="@dimen/qs_brightness_view_margin_top" android:layout_marginBottom="@dimen/qs_brightness_view_margin_bottom" android:paddingStart="26.5dip" android:paddingEnd="26.5dip" style="@style/BrightnessDialogContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/brightness_level" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_qs_brightness_high" android:scaleType="centerInside" android:contentDescription="@null" />
+    <com.android.systemui.settings.ToggleSliderView android:layout_gravity="center_vertical" android:id="@id/brightness_slider" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:contentDescription="@string/accessibility_brightness" android:importantForAccessibility="no" systemui:text="@string/status_bar_settings_auto_brightness_label" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/brightness_icon" android:background="@drawable/ripple_drawable_dark" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_qs_brightness_auto_off" android:scaleType="centerInside" android:contentDescription="@null" />
+</LinearLayout>
