@@ -1,757 +1,107 @@
 .class public Lcom/android/systemui/keyguard/KeyguardSliceProvider;
-.super Landroidx/slice/SliceProvider;
-.source "KeyguardSliceProvider.java"
+.super Lcom/android/systemui/keyguard/KeyguardSliceProviderBase;
+.source "KeyguardSliceProviderGoogle.java"
 
 # interfaces
-.implements Lcom/android/systemui/statusbar/policy/NextAlarmController$NextAlarmChangeCallback;
-.implements Lcom/android/systemui/statusbar/policy/ZenModeController$Callback;
+.implements Lcom/google/android/systemui/smartspace/SmartSpaceUpdateListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/android/systemui/keyguard/KeyguardSliceProvider$AddShadowTask;
+    }
+.end annotation
 
 
 # static fields
-.field static final ALARM_VISIBILITY_HOURS:I = 0xc
-    .annotation build Lcom/android/internal/annotations/VisibleForTesting;
-    .end annotation
-.end field
+.field private static final DEBUG:Z
 
 
 # instance fields
-.field protected mAlarmManager:Landroid/app/AlarmManager;
+.field private mHideSensitiveContent:Z
 
-.field protected final mAlarmUri:Landroid/net/Uri;
+.field private final mLock:Ljava/lang/Object;
 
-.field protected mContentResolver:Landroid/content/ContentResolver;
+.field private mSmartSpaceData:Lcom/google/android/systemui/smartspace/SmartSpaceData;
 
-.field private final mCurrentTime:Ljava/util/Date;
+.field private final mSmartSpaceMainUri:Landroid/net/Uri;
 
-.field private mDateFormat:Landroid/icu/text/DateFormat;
+.field private final mSmartSpaceSecondaryUri:Landroid/net/Uri;
 
-.field private mDatePattern:Ljava/lang/String;
-
-.field protected final mDateUri:Landroid/net/Uri;
-
-.field protected final mDndUri:Landroid/net/Uri;
-
-.field private final mHandler:Landroid/os/Handler;
-
-.field final mIntentReceiver:Landroid/content/BroadcastReceiver;
-    .annotation build Lcom/android/internal/annotations/VisibleForTesting;
-    .end annotation
-.end field
-
-.field private mLastText:Ljava/lang/String;
-
-.field private mNextAlarm:Ljava/lang/String;
-
-.field private mNextAlarmController:Lcom/android/systemui/statusbar/policy/NextAlarmController;
-
-.field private mNextAlarmInfo:Landroid/app/AlarmManager$AlarmClockInfo;
-
-.field private mRegistered:Z
-
-.field protected final mSliceUri:Landroid/net/Uri;
-
-.field private final mUpdateNextAlarm:Landroid/app/AlarmManager$OnAlarmListener;
-
-.field private mZenModeController:Lcom/android/systemui/statusbar/policy/ZenModeController;
+.field private final mWeatherUri:Landroid/net/Uri;
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 54
+    const-string v0, "KeyguardSliceProvider"
+
+    const/4 v1, 0x3
+
+    invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+
+    move-result v0
+
+    const v0, 0x1
+
+    sput-boolean v0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->DEBUG:Z
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 1
 
-    .line 116
-    new-instance v0, Landroid/os/Handler;
+    .line 71
+    invoke-direct {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProviderBase;-><init>()V
 
-    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
+    .line 65
+    new-instance v0, Ljava/lang/Object;
 
-    invoke-direct {p0, v0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;-><init>(Landroid/os/Handler;)V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    .line 117
-    return-void
-.end method
+    iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mLock:Ljava/lang/Object;
 
-.method constructor <init>(Landroid/os/Handler;)V
-    .locals 1
-    .param p1, "handler"    # Landroid/os/Handler;
-    .annotation build Lcom/android/internal/annotations/VisibleForTesting;
-    .end annotation
-
-    .line 120
-    invoke-direct {p0}, Landroidx/slice/SliceProvider;-><init>()V
-
-    .line 78
-    new-instance v0, Ljava/util/Date;
-
-    invoke-direct {v0}, Ljava/util/Date;-><init>()V
-
-    iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mCurrentTime:Ljava/util/Date;
-
-    .line 80
-    new-instance v0, Lcom/android/systemui/keyguard/-$$Lambda$KeyguardSliceProvider$IhzByd8TsqFuOrSyuGurVskyPLo;
-
-    invoke-direct {v0, p0}, Lcom/android/systemui/keyguard/-$$Lambda$KeyguardSliceProvider$IhzByd8TsqFuOrSyuGurVskyPLo;-><init>(Lcom/android/systemui/keyguard/KeyguardSliceProvider;)V
-
-    iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mUpdateNextAlarm:Landroid/app/AlarmManager$OnAlarmListener;
-
-    .line 95
-    new-instance v0, Lcom/android/systemui/keyguard/KeyguardSliceProvider$1;
-
-    invoke-direct {v0, p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider$1;-><init>(Lcom/android/systemui/keyguard/KeyguardSliceProvider;)V
-
-    iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mIntentReceiver:Landroid/content/BroadcastReceiver;
-
-    .line 121
-    iput-object p1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mHandler:Landroid/os/Handler;
-
-    .line 122
-    const-string v0, "content://com.android.systemui.keyguard/main"
+    .line 72
+    const-string v0, "content://com.android.systemui.keyguard/smartSpace/main"
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mSliceUri:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mSmartSpaceMainUri:Landroid/net/Uri;
 
-    .line 123
-    const-string v0, "content://com.android.systemui.keyguard/date"
-
-    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mDateUri:Landroid/net/Uri;
-
-    .line 124
-    const-string v0, "content://com.android.systemui.keyguard/alarm"
+    .line 73
+    const-string v0, "content://com.android.systemui.keyguard/smartSpace/secondary"
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mAlarmUri:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mSmartSpaceSecondaryUri:Landroid/net/Uri;
 
-    .line 125
-    const-string v0, "content://com.android.systemui.keyguard/dnd"
+    .line 74
+    const-string v0, "content://com.android.systemui.keyguard/smartSpace/weather"
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mDndUri:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mWeatherUri:Landroid/net/Uri;
 
-    .line 126
+    .line 75
     return-void
-.end method
-
-.method static synthetic access$000(Lcom/android/systemui/keyguard/KeyguardSliceProvider;)Landroid/os/Handler;
-    .locals 1
-    .param p0, "x0"    # Lcom/android/systemui/keyguard/KeyguardSliceProvider;
-
-    .line 57
-    iget-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mHandler:Landroid/os/Handler;
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$IhzByd8TsqFuOrSyuGurVskyPLo(Lcom/android/systemui/keyguard/KeyguardSliceProvider;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->updateNextAlarm()V
-
-    return-void
-.end method
-
-.method private registerClockUpdate()V
-    .locals 4
-
-    .line 237
-    iget-boolean v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mRegistered:Z
-
-    if-eqz v0, :cond_0
-
-    .line 238
-    return-void
-
-    .line 241
-    :cond_0
-    new-instance v0, Landroid/content/IntentFilter;
-
-    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
-
-    .line 242
-    .local v0, "filter":Landroid/content/IntentFilter;
-    const-string v1, "android.intent.action.DATE_CHANGED"
-
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    .line 243
-    const-string v1, "android.intent.action.TIME_SET"
-
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    .line 244
-    const-string v1, "android.intent.action.TIMEZONE_CHANGED"
-
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    .line 245
-    const-string v1, "android.intent.action.LOCALE_CHANGED"
-
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    .line 246
-    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mIntentReceiver:Landroid/content/BroadcastReceiver;
-
-    const/4 v3, 0x0
-
-    invoke-virtual {v1, v2, v0, v3, v3}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
-
-    .line 248
-    const/4 v1, 0x1
-
-    iput-boolean v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mRegistered:Z
-
-    .line 249
-    return-void
-.end method
-
-.method private updateNextAlarm()V
-    .locals 3
-
-    .line 212
-    iget-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mNextAlarmInfo:Landroid/app/AlarmManager$AlarmClockInfo;
-
-    const/16 v1, 0xc
-
-    invoke-direct {p0, v0, v1}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->withinNHours(Landroid/app/AlarmManager$AlarmClockInfo;I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 213
-    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    .line 214
-    invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
-
-    move-result v1
-
-    .line 213
-    invoke-static {v0, v1}, Landroid/text/format/DateFormat;->is24HourFormat(Landroid/content/Context;I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 214
-    const-string v0, "H:mm"
-
-    goto :goto_0
-
-    :cond_0
-    const-string v0, "h:mm"
-
-    .line 215
-    .local v0, "pattern":Ljava/lang/String;
-    :goto_0
-    iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mNextAlarmInfo:Landroid/app/AlarmManager$AlarmClockInfo;
-
-    .line 216
-    invoke-virtual {v1}, Landroid/app/AlarmManager$AlarmClockInfo;->getTriggerTime()J
-
-    move-result-wide v1
-
-    .line 215
-    invoke-static {v0, v1, v2}, Landroid/text/format/DateFormat;->format(Ljava/lang/CharSequence;J)Ljava/lang/CharSequence;
-
-    move-result-object v1
-
-    .line 216
-    invoke-interface {v1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mNextAlarm:Ljava/lang/String;
-
-    .line 217
-    .end local v0    # "pattern":Ljava/lang/String;
-    goto :goto_1
-
-    .line 218
-    :cond_1
-    const-string v0, ""
-
-    iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mNextAlarm:Ljava/lang/String;
-
-    .line 220
-    :goto_1
-    iget-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mContentResolver:Landroid/content/ContentResolver;
-
-    iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mSliceUri:Landroid/net/Uri;
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v1, v2}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
-
-    .line 221
-    return-void
-.end method
-
-.method private withinNHours(Landroid/app/AlarmManager$AlarmClockInfo;I)Z
-    .locals 6
-    .param p1, "alarmClockInfo"    # Landroid/app/AlarmManager$AlarmClockInfo;
-    .param p2, "hours"    # I
-
-    .line 224
-    const/4 v0, 0x0
-
-    if-nez p1, :cond_0
-
-    .line 225
-    return v0
-
-    .line 228
-    :cond_0
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v1
-
-    sget-object v3, Ljava/util/concurrent/TimeUnit;->HOURS:Ljava/util/concurrent/TimeUnit;
-
-    int-to-long v4, p2
-
-    invoke-virtual {v3, v4, v5}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
-
-    move-result-wide v3
-
-    add-long/2addr v1, v3
-
-    .line 229
-    .local v1, "limit":J
-    iget-object v3, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mNextAlarmInfo:Landroid/app/AlarmManager$AlarmClockInfo;
-
-    invoke-virtual {v3}, Landroid/app/AlarmManager$AlarmClockInfo;->getTriggerTime()J
-
-    move-result-wide v3
-
-    cmp-long v3, v3, v1
-
-    if-gtz v3, :cond_1
-
-    const/4 v0, 0x1
-
-    nop
-
-    :cond_1
-    return v0
 .end method
 
 
 # virtual methods
-.method protected addNextAlarm(Landroidx/slice/builders/ListBuilder;)V
-    .locals 3
-    .param p1, "builder"    # Landroidx/slice/builders/ListBuilder;
-
-    .line 151
-    iget-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mNextAlarm:Ljava/lang/String;
-
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 152
-    return-void
-
-    .line 155
-    :cond_0
-    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    const v1, 0x7f080200
-
-    invoke-static {v0, v1}, Landroid/graphics/drawable/Icon;->createWithResource(Landroid/content/Context;I)Landroid/graphics/drawable/Icon;
-
-    move-result-object v0
-
-    .line 156
-    .local v0, "alarmIcon":Landroid/graphics/drawable/Icon;
-    new-instance v1, Landroidx/slice/builders/ListBuilder$RowBuilder;
-
-    iget-object v2, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mAlarmUri:Landroid/net/Uri;
-
-    invoke-direct {v1, p1, v2}, Landroidx/slice/builders/ListBuilder$RowBuilder;-><init>(Landroidx/slice/builders/ListBuilder;Landroid/net/Uri;)V
-
-    iget-object v2, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mNextAlarm:Ljava/lang/String;
-
-    .line 157
-    invoke-virtual {v1, v2}, Landroidx/slice/builders/ListBuilder$RowBuilder;->setTitle(Ljava/lang/CharSequence;)Landroidx/slice/builders/ListBuilder$RowBuilder;
-
-    move-result-object v1
-
-    .line 158
-    invoke-virtual {v1, v0}, Landroidx/slice/builders/ListBuilder$RowBuilder;->addEndItem(Landroid/graphics/drawable/Icon;)Landroidx/slice/builders/ListBuilder$RowBuilder;
-
-    move-result-object v1
-
-    .line 159
-    .local v1, "alarmRowBuilder":Landroidx/slice/builders/ListBuilder$RowBuilder;
-    invoke-virtual {p1, v1}, Landroidx/slice/builders/ListBuilder;->addRow(Landroidx/slice/builders/ListBuilder$RowBuilder;)Landroidx/slice/builders/ListBuilder;
-
-    .line 160
-    return-void
-.end method
-
-.method protected addPrimaryAction(Landroidx/slice/builders/ListBuilder;)V
-    .locals 5
-    .param p1, "builder"    # Landroidx/slice/builders/ListBuilder;
-
-    .line 141
-    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    new-instance v1, Landroid/content/Intent;
-
-    invoke-direct {v1}, Landroid/content/Intent;-><init>()V
-
-    const/4 v2, 0x0
-
-    invoke-static {v0, v2, v1, v2}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
-
-    move-result-object v0
-
-    .line 142
-    .local v0, "pi":Landroid/app/PendingIntent;
-    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    const v2, 0x7f080200
-
-    invoke-static {v1, v2}, Landroid/graphics/drawable/Icon;->createWithResource(Landroid/content/Context;I)Landroid/graphics/drawable/Icon;
-
-    move-result-object v1
-
-    .line 143
-    .local v1, "icon":Landroid/graphics/drawable/Icon;
-    new-instance v2, Landroidx/slice/builders/SliceAction;
-
-    iget-object v3, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mLastText:Ljava/lang/String;
-
-    invoke-direct {v2, v0, v1, v3}, Landroidx/slice/builders/SliceAction;-><init>(Landroid/app/PendingIntent;Landroid/graphics/drawable/Icon;Ljava/lang/CharSequence;)V
-
-    .line 145
-    .local v2, "action":Landroidx/slice/builders/SliceAction;
-    new-instance v3, Landroidx/slice/builders/ListBuilder$RowBuilder;
-
-    const-string v4, "content://com.android.systemui.keyguard/action"
-
-    invoke-static {v4}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v4
-
-    invoke-direct {v3, p1, v4}, Landroidx/slice/builders/ListBuilder$RowBuilder;-><init>(Landroidx/slice/builders/ListBuilder;Landroid/net/Uri;)V
-
-    .line 146
-    invoke-virtual {v3, v2}, Landroidx/slice/builders/ListBuilder$RowBuilder;->setPrimaryAction(Landroidx/slice/builders/SliceAction;)Landroidx/slice/builders/ListBuilder$RowBuilder;
-
-    move-result-object v3
-
-    .line 147
-    .local v3, "primaryActionRow":Landroidx/slice/builders/ListBuilder$RowBuilder;
-    invoke-virtual {p1, v3}, Landroidx/slice/builders/ListBuilder;->addRow(Landroidx/slice/builders/ListBuilder$RowBuilder;)Landroidx/slice/builders/ListBuilder;
-
-    .line 148
-    return-void
-.end method
-
-.method protected addZenMode(Landroidx/slice/builders/ListBuilder;)V
-    .locals 3
-    .param p1, "builder"    # Landroidx/slice/builders/ListBuilder;
-
-    .line 167
-    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->isDndSuppressingNotifications()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 168
-    return-void
-
-    .line 170
-    :cond_0
-    new-instance v0, Landroidx/slice/builders/ListBuilder$RowBuilder;
-
-    iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mDndUri:Landroid/net/Uri;
-
-    invoke-direct {v0, p1, v1}, Landroidx/slice/builders/ListBuilder$RowBuilder;-><init>(Landroidx/slice/builders/ListBuilder;Landroid/net/Uri;)V
-
-    .line 171
-    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
-
-    const v2, 0x7f1100c1
-
-    .line 172
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 171
-    invoke-virtual {v0, v1}, Landroidx/slice/builders/ListBuilder$RowBuilder;->setContentDescription(Ljava/lang/CharSequence;)Landroidx/slice/builders/ListBuilder$RowBuilder;
-
-    move-result-object v0
-
-    .line 173
-    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    const v2, 0x7f0805d5
-
-    invoke-static {v1, v2}, Landroid/graphics/drawable/Icon;->createWithResource(Landroid/content/Context;I)Landroid/graphics/drawable/Icon;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroidx/slice/builders/ListBuilder$RowBuilder;->addEndItem(Landroid/graphics/drawable/Icon;)Landroidx/slice/builders/ListBuilder$RowBuilder;
-
-    move-result-object v0
-
-    .line 174
-    .local v0, "dndBuilder":Landroidx/slice/builders/ListBuilder$RowBuilder;
-    invoke-virtual {p1, v0}, Landroidx/slice/builders/ListBuilder;->addRow(Landroidx/slice/builders/ListBuilder$RowBuilder;)Landroidx/slice/builders/ListBuilder;
-
-    .line 175
-    return-void
-.end method
-
-.method cleanDateFormat()V
-    .locals 1
-    .annotation build Lcom/android/internal/annotations/VisibleForTesting;
-    .end annotation
-
-    .line 277
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mDateFormat:Landroid/icu/text/DateFormat;
-
-    .line 278
-    return-void
-.end method
-
-.method protected getFormattedDate()Ljava/lang/String;
+.method notifyChange()V
     .locals 3
 
-    .line 265
-    iget-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mDateFormat:Landroid/icu/text/DateFormat;
-
-    if-nez v0, :cond_0
-
-    .line 266
-    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
-
-    move-result-object v0
-
-    .line 267
-    .local v0, "l":Ljava/util/Locale;
-    iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mDatePattern:Ljava/lang/String;
-
-    invoke-static {v1, v0}, Landroid/icu/text/DateFormat;->getInstanceForSkeleton(Ljava/lang/String;Ljava/util/Locale;)Landroid/icu/text/DateFormat;
-
-    move-result-object v1
-
-    .line 268
-    .local v1, "format":Landroid/icu/text/DateFormat;
-    sget-object v2, Landroid/icu/text/DisplayContext;->CAPITALIZATION_FOR_STANDALONE:Landroid/icu/text/DisplayContext;
-
-    invoke-virtual {v1, v2}, Landroid/icu/text/DateFormat;->setContext(Landroid/icu/text/DisplayContext;)V
-
-    .line 269
-    iput-object v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mDateFormat:Landroid/icu/text/DateFormat;
-
-    .line 271
-    .end local v0    # "l":Ljava/util/Locale;
-    .end local v1    # "format":Landroid/icu/text/DateFormat;
-    :cond_0
-    iget-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mCurrentTime:Ljava/util/Date;
-
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v1
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/Date;->setTime(J)V
-
-    .line 272
-    iget-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mDateFormat:Landroid/icu/text/DateFormat;
-
-    iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mCurrentTime:Ljava/util/Date;
-
-    invoke-virtual {v0, v1}, Landroid/icu/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method protected isDndSuppressingNotifications()Z
-    .locals 4
-
-    .line 181
-    iget-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mZenModeController:Lcom/android/systemui/statusbar/policy/ZenModeController;
-
-    invoke-interface {v0}, Lcom/android/systemui/statusbar/policy/ZenModeController;->getConfig()Landroid/service/notification/ZenModeConfig;
-
-    move-result-object v0
-
-    iget v0, v0, Landroid/service/notification/ZenModeConfig;->suppressedVisualEffects:I
-
-    and-int/lit16 v0, v0, 0x100
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
-
-    if-eqz v0, :cond_0
-
-    move v0, v2
-
-    goto :goto_0
-
-    :cond_0
-    move v0, v1
-
-    .line 183
-    .local v0, "suppressingNotifications":Z
-    :goto_0
-    iget-object v3, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mZenModeController:Lcom/android/systemui/statusbar/policy/ZenModeController;
-
-    invoke-interface {v3}, Lcom/android/systemui/statusbar/policy/ZenModeController;->getZen()I
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    if-eqz v0, :cond_1
-
-    move v1, v2
-
-    nop
-
-    :cond_1
-    return v1
-.end method
-
-.method isRegistered()Z
-    .locals 1
-    .annotation build Lcom/android/internal/annotations/VisibleForTesting;
-    .end annotation
-
-    .line 253
-    iget-boolean v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mRegistered:Z
-
-    return v0
-.end method
-
-.method public onBindSlice(Landroid/net/Uri;)Landroidx/slice/Slice;
-    .locals 3
-    .param p1, "sliceUri"    # Landroid/net/Uri;
-
-    .line 130
-    new-instance v0, Landroidx/slice/builders/ListBuilder;
-
-    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mSliceUri:Landroid/net/Uri;
-
-    invoke-direct {v0, v1, v2}, Landroidx/slice/builders/ListBuilder;-><init>(Landroid/content/Context;Landroid/net/Uri;)V
-
-    .line 131
-    .local v0, "builder":Landroidx/slice/builders/ListBuilder;
-    new-instance v1, Landroidx/slice/builders/ListBuilder$RowBuilder;
-
-    iget-object v2, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mDateUri:Landroid/net/Uri;
-
-    invoke-direct {v1, v0, v2}, Landroidx/slice/builders/ListBuilder$RowBuilder;-><init>(Landroidx/slice/builders/ListBuilder;Landroid/net/Uri;)V
-
-    iget-object v2, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mLastText:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Landroidx/slice/builders/ListBuilder$RowBuilder;->setTitle(Ljava/lang/CharSequence;)Landroidx/slice/builders/ListBuilder$RowBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroidx/slice/builders/ListBuilder;->addRow(Landroidx/slice/builders/ListBuilder$RowBuilder;)Landroidx/slice/builders/ListBuilder;
-
-    .line 132
-    invoke-virtual {p0, v0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->addNextAlarm(Landroidx/slice/builders/ListBuilder;)V
-
-    .line 133
-    invoke-virtual {p0, v0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->addZenMode(Landroidx/slice/builders/ListBuilder;)V
-
-    .line 134
-    invoke-virtual {p0, v0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->addPrimaryAction(Landroidx/slice/builders/ListBuilder;)V
-
-    .line 135
-    invoke-virtual {v0}, Landroidx/slice/builders/ListBuilder;->build()Landroidx/slice/Slice;
-
-    move-result-object v1
-
-    return-object v1
-.end method
-
-.method public onConfigChanged(Landroid/service/notification/ZenModeConfig;)V
-    .locals 3
-    .param p1, "config"    # Landroid/service/notification/ZenModeConfig;
-
-    .line 208
-    iget-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mContentResolver:Landroid/content/ContentResolver;
-
-    iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mSliceUri:Landroid/net/Uri;
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v1, v2}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
-
-    .line 209
-    return-void
-.end method
-
-.method public onCreateSliceProvider()Z
-    .locals 3
-
-    .line 189
-    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    const-class v1, Landroid/app/AlarmManager;
-
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/app/AlarmManager;
-
-    iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mAlarmManager:Landroid/app/AlarmManager;
-
-    .line 190
+    .line 194
     invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -760,190 +110,531 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mContentResolver:Landroid/content/ContentResolver;
-
-    .line 191
-    new-instance v0, Lcom/android/systemui/statusbar/policy/NextAlarmControllerImpl;
-
-    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Lcom/android/systemui/statusbar/policy/NextAlarmControllerImpl;-><init>(Landroid/content/Context;)V
-
-    iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mNextAlarmController:Lcom/android/systemui/statusbar/policy/NextAlarmController;
-
-    .line 192
-    iget-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mNextAlarmController:Lcom/android/systemui/statusbar/policy/NextAlarmController;
-
-    invoke-interface {v0, p0}, Lcom/android/systemui/statusbar/policy/NextAlarmController;->addCallback(Ljava/lang/Object;)V
-
-    .line 193
-    new-instance v0, Lcom/android/systemui/statusbar/policy/ZenModeControllerImpl;
-
-    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mHandler:Landroid/os/Handler;
-
-    invoke-direct {v0, v1, v2}, Lcom/android/systemui/statusbar/policy/ZenModeControllerImpl;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
-
-    iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mZenModeController:Lcom/android/systemui/statusbar/policy/ZenModeController;
-
-    .line 194
-    iget-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mZenModeController:Lcom/android/systemui/statusbar/policy/ZenModeController;
-
-    invoke-interface {v0, p0}, Lcom/android/systemui/statusbar/policy/ZenModeController;->addCallback(Ljava/lang/Object;)V
-
-    .line 195
-    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    const v1, 0x7f1105e6
-
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mDatePattern:Ljava/lang/String;
-
-    .line 196
-    invoke-direct {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->registerClockUpdate()V
-
-    .line 197
-    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->updateClock()V
-
-    .line 198
-    const/4 v0, 0x1
-
-    return v0
-.end method
-
-.method public onNextAlarmChanged(Landroid/app/AlarmManager$AlarmClockInfo;)V
-    .locals 9
-    .param p1, "nextAlarm"    # Landroid/app/AlarmManager$AlarmClockInfo;
-
-    .line 282
-    iput-object p1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mNextAlarmInfo:Landroid/app/AlarmManager$AlarmClockInfo;
-
-    .line 283
-    iget-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mAlarmManager:Landroid/app/AlarmManager;
-
-    iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mUpdateNextAlarm:Landroid/app/AlarmManager$OnAlarmListener;
-
-    invoke-virtual {v0, v1}, Landroid/app/AlarmManager;->cancel(Landroid/app/AlarmManager$OnAlarmListener;)V
-
-    .line 285
-    iget-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mNextAlarmInfo:Landroid/app/AlarmManager$AlarmClockInfo;
-
-    if-nez v0, :cond_0
-
-    const-wide/16 v0, -0x1
-
-    goto :goto_0
-
-    .line 286
-    :cond_0
-    iget-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mNextAlarmInfo:Landroid/app/AlarmManager$AlarmClockInfo;
-
-    .line 285
-    invoke-virtual {v0}, Landroid/app/AlarmManager$AlarmClockInfo;->getTriggerTime()J
-
-    move-result-wide v0
-
-    sget-object v2, Ljava/util/concurrent/TimeUnit;->HOURS:Ljava/util/concurrent/TimeUnit;
-
-    const-wide/16 v3, 0xc
-
-    .line 286
-    invoke-virtual {v2, v3, v4}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
-
-    move-result-wide v2
-
-    sub-long/2addr v0, v2
-
-    .line 287
-    .local v0, "triggerAt":J
-    :goto_0
-    const-wide/16 v2, 0x0
-
-    cmp-long v2, v0, v2
-
-    if-lez v2, :cond_1
-
-    .line 288
-    iget-object v2, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mAlarmManager:Landroid/app/AlarmManager;
-
-    const/4 v3, 0x1
-
-    const-string v6, "lock_screen_next_alarm"
-
-    iget-object v7, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mUpdateNextAlarm:Landroid/app/AlarmManager$OnAlarmListener;
-
-    iget-object v8, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mHandler:Landroid/os/Handler;
-
-    move-wide v4, v0
-
-    invoke-virtual/range {v2 .. v8}, Landroid/app/AlarmManager;->setExact(IJLjava/lang/String;Landroid/app/AlarmManager$OnAlarmListener;Landroid/os/Handler;)V
-
-    .line 291
-    :cond_1
-    invoke-direct {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->updateNextAlarm()V
-
-    .line 292
-    return-void
-.end method
-
-.method public onZenChanged(I)V
-    .locals 3
-    .param p1, "zen"    # I
-
-    .line 203
-    iget-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mContentResolver:Landroid/content/ContentResolver;
-
     iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mSliceUri:Landroid/net/Uri;
 
     const/4 v2, 0x0
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
 
-    .line 204
+    .line 195
     return-void
 .end method
 
-.method protected updateClock()V
-    .locals 4
+.method public onBindSlice(Landroid/net/Uri;)Landroidx/slice/Slice;
+    .locals 8
+    .param p1, "sliceUri"    # Landroid/net/Uri;
 
-    .line 257
-    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->getFormattedDate()Ljava/lang/String;
+    .line 87
+    iget-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mSmartSpaceData:Lcom/google/android/systemui/smartspace/SmartSpaceData;
+
+    invoke-virtual {v0}, Lcom/google/android/systemui/smartspace/SmartSpaceData;->getCurrentCard()Lcom/google/android/systemui/smartspace/SmartSpaceCard;
 
     move-result-object v0
 
-    .line 258
-    .local v0, "text":Ljava/lang/String;
-    iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mLastText:Ljava/lang/String;
+    .line 88
+    .local v0, "currentCard":Lcom/google/android/systemui/smartspace/SmartSpaceCard;
+    iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mSmartSpaceData:Lcom/google/android/systemui/smartspace/SmartSpaceData;
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1}, Lcom/google/android/systemui/smartspace/SmartSpaceData;->getWeatherCard()Lcom/google/android/systemui/smartspace/SmartSpaceCard;
+
+    move-result-object v1
+
+    .line 90
+    .local v1, "weatherCard":Lcom/google/android/systemui/smartspace/SmartSpaceCard;
+    iget-object v2, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mLock:Ljava/lang/Object;
+
+    monitor-enter v2
+
+    .line 91
+    :try_start_0
+    iget-boolean v3, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mHideSensitiveContent:Z
+
+    .line 92
+    .local v3, "hideSensitiveData":Z
+    monitor-exit v2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 94
+    new-instance v2, Landroidx/slice/builders/ListBuilder;
+
+    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->getContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    iget-object v5, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mSliceUri:Landroid/net/Uri;
+
+    invoke-direct {v2, v4, v5}, Landroidx/slice/builders/ListBuilder;-><init>(Landroid/content/Context;Landroid/net/Uri;)V
+
+    .line 95
+    .local v2, "sliceBuilder":Landroidx/slice/builders/ListBuilder;
+    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->isDndSuppressingNotifications()Z
+
+    move-result v4
+
+    if-nez v4, :cond_3
+
+    if-eqz v0, :cond_3
+
+    invoke-virtual {v0}, Lcom/google/android/systemui/smartspace/SmartSpaceCard;->isExpired()Z
+
+    move-result v4
+
+    if-nez v4, :cond_3
+
+    .line 96
+    invoke-virtual {v0}, Lcom/google/android/systemui/smartspace/SmartSpaceCard;->getTitle()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_3
+
+    .line 97
+    if-eqz v3, :cond_1
+
+    .line 98
+    sget-boolean v4, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->DEBUG:Z
+
+    if-eqz v4, :cond_0
+
+    .line 99
+    const-string v4, "KeyguardSliceProvider"
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "Not showing current card. SmartSpaceCard: "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v6, " hide sensitive data: true"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 102
+    :cond_0
+    new-instance v4, Landroidx/slice/builders/ListBuilder$RowBuilder;
+
+    iget-object v5, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mDateUri:Landroid/net/Uri;
+
+    invoke-direct {v4, v2, v5}, Landroidx/slice/builders/ListBuilder$RowBuilder;-><init>(Landroidx/slice/builders/ListBuilder;Landroid/net/Uri;)V
+
+    .line 103
+    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->getFormattedDate()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Landroidx/slice/builders/ListBuilder$RowBuilder;->setTitle(Ljava/lang/CharSequence;)Landroidx/slice/builders/ListBuilder$RowBuilder;
+
+    move-result-object v4
+
+    .line 102
+    invoke-virtual {v2, v4}, Landroidx/slice/builders/ListBuilder;->addRow(Landroidx/slice/builders/ListBuilder$RowBuilder;)Landroidx/slice/builders/ListBuilder;
+
+    goto :goto_0
+
+    .line 105
+    :cond_1
+    new-instance v4, Landroidx/slice/builders/ListBuilder$HeaderBuilder;
+
+    iget-object v5, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mSmartSpaceMainUri:Landroid/net/Uri;
+
+    invoke-direct {v4, v2, v5}, Landroidx/slice/builders/ListBuilder$HeaderBuilder;-><init>(Landroidx/slice/builders/ListBuilder;Landroid/net/Uri;)V
+
+    .line 107
+    invoke-virtual {v0}, Lcom/google/android/systemui/smartspace/SmartSpaceCard;->getTitle()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Landroidx/slice/builders/ListBuilder$HeaderBuilder;->setTitle(Ljava/lang/CharSequence;)Landroidx/slice/builders/ListBuilder$HeaderBuilder;
+
+    move-result-object v4
+
+    .line 108
+    .local v4, "headerBuilder":Landroidx/slice/builders/ListBuilder$HeaderBuilder;
+    new-instance v5, Landroidx/slice/builders/ListBuilder$RowBuilder;
+
+    iget-object v6, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mSmartSpaceSecondaryUri:Landroid/net/Uri;
+
+    invoke-direct {v5, v2, v6}, Landroidx/slice/builders/ListBuilder$RowBuilder;-><init>(Landroidx/slice/builders/ListBuilder;Landroid/net/Uri;)V
+
+    .line 110
+    invoke-virtual {v0}, Lcom/google/android/systemui/smartspace/SmartSpaceCard;->getSubtitle()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Landroidx/slice/builders/ListBuilder$RowBuilder;->setTitle(Ljava/lang/CharSequence;)Landroidx/slice/builders/ListBuilder$RowBuilder;
+
+    move-result-object v5
+
+    .line 111
+    .local v5, "contentBuilder":Landroidx/slice/builders/ListBuilder$RowBuilder;
+    invoke-virtual {v0}, Lcom/google/android/systemui/smartspace/SmartSpaceCard;->getIcon()Landroid/graphics/Bitmap;
+
+    move-result-object v6
+
+    .line 112
+    .local v6, "icon":Landroid/graphics/Bitmap;
+    if-eqz v6, :cond_2
+
+    .line 113
+    invoke-static {v6}, Landroid/graphics/drawable/Icon;->createWithBitmap(Landroid/graphics/Bitmap;)Landroid/graphics/drawable/Icon;
+
+    move-result-object v7
+
+    invoke-virtual {v5, v7}, Landroidx/slice/builders/ListBuilder$RowBuilder;->addEndItem(Landroid/graphics/drawable/Icon;)Landroidx/slice/builders/ListBuilder$RowBuilder;
+
+    .line 115
+    :cond_2
+    invoke-virtual {v2, v4}, Landroidx/slice/builders/ListBuilder;->setHeader(Landroidx/slice/builders/ListBuilder$HeaderBuilder;)Landroidx/slice/builders/ListBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v5}, Landroidx/slice/builders/ListBuilder;->addRow(Landroidx/slice/builders/ListBuilder$RowBuilder;)Landroidx/slice/builders/ListBuilder;
+
+    .line 116
+    .end local v4    # "headerBuilder":Landroidx/slice/builders/ListBuilder$HeaderBuilder;
+    .end local v5    # "contentBuilder":Landroidx/slice/builders/ListBuilder$RowBuilder;
+    .end local v6    # "icon":Landroid/graphics/Bitmap;
+    goto :goto_0
+
+    .line 119
+    :cond_3
+    new-instance v4, Landroidx/slice/builders/ListBuilder$RowBuilder;
+
+    iget-object v5, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mDateUri:Landroid/net/Uri;
+
+    invoke-direct {v4, v2, v5}, Landroidx/slice/builders/ListBuilder$RowBuilder;-><init>(Landroidx/slice/builders/ListBuilder;Landroid/net/Uri;)V
+
+    .line 120
+    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->getFormattedDate()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Landroidx/slice/builders/ListBuilder$RowBuilder;->setTitle(Ljava/lang/CharSequence;)Landroidx/slice/builders/ListBuilder$RowBuilder;
+
+    move-result-object v4
+
+    .line 119
+    invoke-virtual {v2, v4}, Landroidx/slice/builders/ListBuilder;->addRow(Landroidx/slice/builders/ListBuilder$RowBuilder;)Landroidx/slice/builders/ListBuilder;
+
+    .line 123
+    :goto_0
+    if-eqz v1, :cond_5
+
+    invoke-virtual {v1}, Lcom/google/android/systemui/smartspace/SmartSpaceCard;->isExpired()Z
+
+    move-result v4
+
+    if-nez v4, :cond_5
+
+    .line 124
+    new-instance v4, Landroidx/slice/builders/ListBuilder$RowBuilder;
+
+    iget-object v5, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mWeatherUri:Landroid/net/Uri;
+
+    invoke-direct {v4, v2, v5}, Landroidx/slice/builders/ListBuilder$RowBuilder;-><init>(Landroidx/slice/builders/ListBuilder;Landroid/net/Uri;)V
+
+    .line 125
+    invoke-virtual {v1}, Lcom/google/android/systemui/smartspace/SmartSpaceCard;->getTitle()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Landroidx/slice/builders/ListBuilder$RowBuilder;->setTitle(Ljava/lang/CharSequence;)Landroidx/slice/builders/ListBuilder$RowBuilder;
+
+    move-result-object v4
+
+    .line 126
+    .local v4, "weatherBuilder":Landroidx/slice/builders/ListBuilder$RowBuilder;
+    invoke-virtual {v1}, Lcom/google/android/systemui/smartspace/SmartSpaceCard;->getIcon()Landroid/graphics/Bitmap;
+
+    move-result-object v5
+
+    .line 127
+    .local v5, "icon":Landroid/graphics/Bitmap;
+    if-eqz v5, :cond_4
+
+    .line 130
+    invoke-static {v5}, Landroid/graphics/drawable/Icon;->createWithBitmap(Landroid/graphics/Bitmap;)Landroid/graphics/drawable/Icon;
+
+    move-result-object v6
+
+    .line 131
+    .local v6, "weatherIcon":Landroid/graphics/drawable/Icon;
+    sget-object v7, Landroid/graphics/PorterDuff$Mode;->DST:Landroid/graphics/PorterDuff$Mode;
+
+    invoke-virtual {v6, v7}, Landroid/graphics/drawable/Icon;->setTintMode(Landroid/graphics/PorterDuff$Mode;)Landroid/graphics/drawable/Icon;
+
+    .line 132
+    invoke-virtual {v4, v6}, Landroidx/slice/builders/ListBuilder$RowBuilder;->addEndItem(Landroid/graphics/drawable/Icon;)Landroidx/slice/builders/ListBuilder$RowBuilder;
+
+    .line 134
+    .end local v6    # "weatherIcon":Landroid/graphics/drawable/Icon;
+    :cond_4
+    invoke-virtual {v2, v4}, Landroidx/slice/builders/ListBuilder;->addRow(Landroidx/slice/builders/ListBuilder$RowBuilder;)Landroidx/slice/builders/ListBuilder;
+
+    .line 137
+    .end local v4    # "weatherBuilder":Landroidx/slice/builders/ListBuilder$RowBuilder;
+    .end local v5    # "icon":Landroid/graphics/Bitmap;
+    :cond_5
+    invoke-virtual {p0, v2}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->addNextAlarm(Landroidx/slice/builders/ListBuilder;)V
+
+    .line 138
+    invoke-virtual {p0, v2}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->addZenMode(Landroidx/slice/builders/ListBuilder;)V
+
+    .line 139
+    invoke-virtual {p0, v2}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->addPrimaryAction(Landroidx/slice/builders/ListBuilder;)V
+
+    .line 141
+    invoke-virtual {v2}, Landroidx/slice/builders/ListBuilder;->build()Landroidx/slice/Slice;
+
+    move-result-object v4
+
+    .line 142
+    .local v4, "slice":Landroidx/slice/Slice;
+    sget-boolean v5, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->DEBUG:Z
+
+    if-eqz v5, :cond_6
+
+    .line 143
+    const-string v5, "KeyguardSliceProvider"
+
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v7, "Binding slice: "
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 145
+    :cond_6
+    return-object v4
+
+    .line 92
+    .end local v2    # "sliceBuilder":Landroidx/slice/builders/ListBuilder;
+    .end local v3    # "hideSensitiveData":Z
+    .end local v4    # "slice":Landroidx/slice/Slice;
+    :catchall_0
+    move-exception v3
+
+    :try_start_1
+    monitor-exit v2
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v3
+.end method
+
+.method public onCreateSliceProvider()Z
+    .locals 2
+
+    .line 79
+    invoke-super {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProviderBase;->onCreateSliceProvider()Z
+
+    move-result v0
+
+    .line 80
+    .local v0, "created":Z
+    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/google/android/systemui/smartspace/SmartSpaceController;->get(Landroid/content/Context;)Lcom/google/android/systemui/smartspace/SmartSpaceController;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p0}, Lcom/google/android/systemui/smartspace/SmartSpaceController;->setListener(Lcom/google/android/systemui/smartspace/SmartSpaceUpdateListener;)V
+
+    .line 81
+    new-instance v1, Lcom/google/android/systemui/smartspace/SmartSpaceData;
+
+    invoke-direct {v1}, Lcom/google/android/systemui/smartspace/SmartSpaceData;-><init>()V
+
+    iput-object v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mSmartSpaceData:Lcom/google/android/systemui/smartspace/SmartSpaceData;
+
+    .line 82
+    return v0
+.end method
+
+.method public onGsaChanged()V
+    .locals 0
+
+    .line 165
+    return-void
+.end method
+
+.method public onSensitiveModeChanged(Z)V
+    .locals 5
+    .param p1, "hidePrivateData"    # Z
+
+    .line 169
+    const/4 v0, 0x0
+
+    .line 170
+    .local v0, "changed":Z
+    iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mLock:Ljava/lang/Object;
+
+    monitor-enter v1
+
+    .line 171
+    :try_start_0
+    iget-boolean v2, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mHideSensitiveContent:Z
+
+    if-eq v2, p1, :cond_0
+
+    .line 172
+    iput-boolean p1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mHideSensitiveContent:Z
+
+    .line 173
+    const/4 v0, 0x1
+
+    .line 174
+    sget-boolean v2, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->DEBUG:Z
+
+    if-eqz v2, :cond_0
+
+    .line 175
+    const-string v2, "KeyguardSliceProvider"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Public mode changed, hide data: "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 178
+    :cond_0
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 179
+    if-eqz v0, :cond_1
+
+    .line 180
+    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->notifyChange()V
+
+    .line 182
+    :cond_1
+    return-void
+
+    .line 178
+    :catchall_0
+    move-exception v2
+
+    :try_start_1
+    monitor-exit v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v2
+.end method
+
+.method public onSmartSpaceUpdated(Lcom/google/android/systemui/smartspace/SmartSpaceData;)V
+    .locals 5
+    .param p1, "smartspaceData"    # Lcom/google/android/systemui/smartspace/SmartSpaceData;
+
+    .line 150
+    invoke-static {}, Lcom/android/systemui/util/Assert;->isMainThread()V
+
+    .line 151
+    iput-object p1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mSmartSpaceData:Lcom/google/android/systemui/smartspace/SmartSpaceData;
+
+    .line 153
+    iget-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mSmartSpaceData:Lcom/google/android/systemui/smartspace/SmartSpaceData;
+
+    invoke-virtual {v0}, Lcom/google/android/systemui/smartspace/SmartSpaceData;->getWeatherCard()Lcom/google/android/systemui/smartspace/SmartSpaceCard;
+
+    move-result-object v0
+
+    .line 154
+    .local v0, "weatherCard":Lcom/google/android/systemui/smartspace/SmartSpaceCard;
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lcom/google/android/systemui/smartspace/SmartSpaceCard;->getIcon()Landroid/graphics/Bitmap;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    .line 155
+    invoke-virtual {v0}, Lcom/google/android/systemui/smartspace/SmartSpaceCard;->isIconProcessed()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 259
-    iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mLastText:Ljava/lang/String;
+    .line 156
+    const/4 v1, 0x1
 
-    .line 260
-    iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mContentResolver:Landroid/content/ContentResolver;
+    invoke-virtual {v0, v1}, Lcom/google/android/systemui/smartspace/SmartSpaceCard;->setIconProcessed(Z)V
 
-    iget-object v2, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->mSliceUri:Landroid/net/Uri;
+    .line 157
+    new-instance v2, Lcom/android/systemui/keyguard/KeyguardSliceProvider$AddShadowTask;
+
+    invoke-direct {v2, p0, v0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider$AddShadowTask;-><init>(Lcom/android/systemui/keyguard/KeyguardSliceProvider;Lcom/google/android/systemui/smartspace/SmartSpaceCard;)V
+
+    new-array v1, v1, [Landroid/graphics/Bitmap;
 
     const/4 v3, 0x0
 
-    invoke-virtual {v1, v2, v3}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
+    invoke-virtual {v0}, Lcom/google/android/systemui/smartspace/SmartSpaceCard;->getIcon()Landroid/graphics/Bitmap;
 
-    .line 262
+    move-result-object v4
+
+    aput-object v4, v1, v3
+
+    invoke-virtual {v2, v1}, Lcom/android/systemui/keyguard/KeyguardSliceProvider$AddShadowTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+
+    goto :goto_0
+
+    .line 159
     :cond_0
+    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->notifyChange()V
+
+    .line 161
+    :goto_0
+    return-void
+.end method
+
+.method protected updateClock()V
+    .locals 0
+
+    .line 190
+    invoke-virtual {p0}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->notifyChange()V
+
+    .line 191
     return-void
 .end method
