@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.FooterView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:paddingStart="13.0px"
+    android:paddingEnd="13.0px"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.android.systemui.statusbar.AlphaOptimizedFrameLayout
+        android:id="@*com.android.systemui:id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.android.systemui.statusbar.FooterViewButton
+            android:textAppearance="@*com.android.systemui:style/oneplus_contorl_text_style_button"
+            android:textSize="@*com.android.systemui:dimen/manage_notifications_text_size"
+            android:textColor="@*android:color/primary_text_material_dark"
+            android:layout_gravity="start"
+            android:id="@*com.android.systemui:id/manage_text"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="126.0px"
+            android:text="@*com.android.systemui:string/manage_notifications_text"
+            android:textAllCaps="false"
+            android:fontFamily="Slate-medium"
+            style="@android:style/Widget.Material.Button.Borderless" />
+
+        <com.android.systemui.statusbar.FooterViewButton
+            android:textColor="@*android:color/primary_text_material_dark"
+            android:layout_gravity="end"
+            android:id="@*com.android.systemui:id/dismiss_text"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@*com.android.systemui:string/clear_all_notifications_text"
+            android:textAllCaps="false"
+            android:contentDescription="@*com.android.systemui:string/accessibility_clear_all"
+            style="@android:style/Widget.Material.Button.Borderless" />
+    </com.android.systemui.statusbar.AlphaOptimizedFrameLayout>
+</com.android.systemui.statusbar.FooterView>

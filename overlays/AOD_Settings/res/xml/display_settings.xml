@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@*com.android.settings:string/display_settings"
+    keyworkds="@*com.android.settings:string/keywords_display"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto">
+    <com.oneplus.settings.ui.OPPreferenceHeaderMargin android:key="preference_divider_line" />
+    <PreferenceCategory
+        android:title="@*com.android.settings:string/display_label"
+        android:key="screen_brightness">
+        <com.android.settingslib.RestrictedSwitchPreference
+            android:icon="@*com.android.settings:drawable/op_ic_settings_adaptive_brightness"
+            android:persistent="false"
+            android:title="@*com.android.settings:string/auto_brightness_title"
+            android:key="auto_brightness"
+            android:summary="@*com.android.settings:string/auto_brightness_summary"
+            userRestriction="no_config_brightness" />
+        <com.oneplus.settings.ui.OPBrightnessSeekbarPreferenceCategory
+            android:key="manual_brightness_displays"
+            userRestriction="no_config_brightness" />
+        <com.android.settings.TimeoutListPreference
+            android:icon="@*com.android.settings:drawable/op_ic_settings_sleep"
+            android:entries="@*com.android.settings:array/screen_timeout_entries"
+            android:title="@*com.android.settings:string/screen_timeout"
+            android:key="screen_timeout"
+            android:entryValues="@*com.android.settings:array/screen_timeout_values" />
+        <PreferenceScreen
+            android:icon="@*com.android.settings:drawable/op_ic_settings_night_mode"
+            android:title="@*com.android.settings:string/oneplus_night_mode_enabled_op"
+            android:key="oneplus_night_mode"
+            android:fragment="com.oneplus.settings.better.OPNightMode"
+            keyworkds="@*com.android.settings:string/oneplus_search_keyword_night_mode" />
+        <PreferenceScreen
+            android:icon="@*com.android.settings:drawable/op_ic_settings_reading_mode"
+            android:title="@*com.android.settings:string/oneplus_reading_mode"
+            android:key="oneplus_reading_mode"
+            android:fragment="com.oneplus.settings.better.OPReadingMode"
+            keyworkds="@*com.android.settings:string/oneplus_search_keyword_read_mode" />
+        <PreferenceScreen
+            android:icon="@*com.android.settings:drawable/op_ic_settings_screen_color_mode"
+            android:title="@*com.android.settings:string/oneplus_screen_color_mode_title"
+            android:key="screen_color_mode"
+            android:fragment="com.oneplus.settings.better.OPScreenColorMode"
+            keyworkds="@*com.android.settings:string/oneplus_search_keyword_screen_color_mode" />
+        <SwitchPreference
+            android:title="@*com.android.settings:string/oneplus_video_enhancer"
+            android:key="video_enhancer"
+            android:summary="@*com.android.settings:string/oneplus_video_enhancer_summary" />
+        <PreferenceScreen
+            android:icon="@*com.android.settings:drawable/op_ic_settings_notch_display_guide"
+            android:title="@*com.android.settings:string/oneplus_notch_display_title"
+            android:key="oneplus_notch_display_guide"
+            keyworkds="@*com.android.settings:string/oneplus_search_keyword_notch_display">
+            <intent android:action="com.oneplus.settings.action.NOTCHDISPLAYGUIDE" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:icon="@*com.android.settings:drawable/op_ic_settings_app_display_in_fullscreen"
+            android:persistent="false"
+            android:title="@*com.android.settings:string/oneplus_app_display_fullscreen_title"
+            android:key="oneplus_notch_fullscreen_app"
+            android:summary="@*com.android.settings:string/oneplus_app_display_fullscreen_summary"
+            keyworkds="@*com.android.settings:string/oneplus_search_keyword_fullscreen_app" />
+        <com.android.settingslib.RestrictedPreference
+            android:icon="@*com.android.settings:drawable/op_ic_settings_ambient_display"
+            android:persistent="false"
+            android:title="@*com.android.settings:string/oneplus_doze_title"
+            android:key="doze"
+            keyworkds="@*com.android.settings:string/oneplus_search_keyword_doze"
+            userRestriction="no_ambient_display" />
+        <com.android.settingslib.RestrictedPreference
+            android:key="ambient_display"
+            android:title="@*com.android.settings:string/ambient_display_screen_title"
+            android:fragment="com.android.settings.display.AmbientDisplaySettings"
+            userRestriction="no_ambient_display" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@*com.android.settings:string/header_category_custom"
+        android:key="header_category_custom">
+        <PreferenceScreen
+            android:persistent="false"
+            android:title="@*com.android.settings:string/oneplus_app_display_fullscreen_title"
+            android:key="display_size_adaption"
+            android:summary="@*com.android.settings:string/oneplus_display_size_adaption_summary"
+            keyworkds="@*com.android.settings:string/oneplus_search_keyword_fullscreen_app" />
+        <PreferenceScreen
+            android:title="@*com.android.settings:string/wallpaper_attributions"
+            android:key="lockguard_wallpaper_settings"
+            keyworkds="@*com.android.settings:string/oneplus_search_keyword_wallpaper_settings" />
+        <SwitchPreference
+            android:title="@*com.android.settings:string/oneplus_dark_mode"
+            android:key="dark_mode"
+            android:summary="@*com.android.settings:string/oneplus_dark_mode_summary" />
+        <ListPreference
+            android:persistent="true"
+            android:entries="@*com.android.settings:array/oneplus_theme_mode_entries"
+            android:title="@*com.android.settings:string/op_theme_mode_title"
+            android:key="op_theme_mode"
+            android:summary="@*com.android.settings:string/op_light_mode_title"
+            android:entryValues="@*com.android.settings:array/oneplus_theme_mode_values"
+            keyworkds="@*com.android.settings:string/oneplus_search_keyword_theme_mode" />
+        <com.oneplus.settings.ui.ColorPickerPreference
+            android:title="@*com.android.settings:string/theme_accent_color_title"
+            android:key="theme_accent_color"
+            keyworkds="@*com.android.settings:string/oneplus_search_keyword_accent_color" />
+        <SwitchPreference
+            android:title="@*com.android.settings:string/notify_light_enable_title"
+            android:key="notify_light_enable"
+            keyworkds="@*com.android.settings:string/oneplus_search_keyword_notify_light" />
+        <PreferenceScreen
+            android:title="@*com.android.settings:string/led_settings_title"
+            android:key="led_settings"
+            android:summary="@*com.android.settings:string/led_settings_summary"
+            android:fragment="com.oneplus.settings.notification.OPLEDSettings"
+            keyworkds="@*com.android.settings:string/oneplus_search_keyword_led_settings" />
+        <SwitchPreference
+            android:title="@*com.android.settings:string/oneplus_back_topic_theme_title"
+            android:key="back_topic_theme"
+            android:summary="@*com.android.settings:string/oneplus_back_topic_theme_summary" />
+        <PreferenceScreen
+            android:title="@*com.android.settings:string/oneplus_font_style"
+            android:key="font_style_settings"
+            android:fragment="com.oneplus.settings.OPFontStyleSettings" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@*com.android.settings:string/screen_zoom_title"
+        android:key="display_size">
+        <PreferenceScreen
+            android:title="@*com.android.settings:string/title_font_size"
+            android:key="font_size"
+            android:fragment="com.android.settings.accessibility.ToggleFontSizePreferenceFragment"
+            keyworkds="@*com.android.settings:string/keywords_display_font_size" />
+        <com.android.settings.display.ScreenZoomPreference
+            android:title="@*com.android.settings:string/screen_zoom_title"
+            android:key="screen_zoom"
+            android:fragment="com.android.settings.display.ScreenZoomSettings"
+            keyworkds="@*com.android.settings:string/screen_zoom_keywords" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@*com.android.settings:string/header_category_system"
+        android:key="display_system">
+        <Preference
+            android:title="@*com.android.settings:string/status_bar_title"
+            android:key="status_bar_custom"
+            android:fragment="com.oneplus.settings.OPStatusBarCustomizeSettings" />
+        <SwitchPreference
+            android:persistent="false"
+            android:title="@*com.android.settings:string/accelerometer_title"
+            android:key="toggle_lock_screen_rotation_preference" />
+        <DropDownPreference
+            android:title="@*com.android.settings:string/display_vr_pref_title"
+            android:key="vr_display_pref"
+            android:summary="%s" />
+        <PreferenceScreen
+            android:title="@*com.android.settings:string/screensaver_settings_title"
+            android:key="screensaver"
+            android:fragment="com.android.settings.dream.DreamSettings" />
+    </PreferenceCategory>
+</PreferenceScreen>
