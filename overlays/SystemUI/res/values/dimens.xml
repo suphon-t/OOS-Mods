@@ -2,4 +2,5 @@
 <resources>
   <dimen name="op_keyguard_clock_YRegular">2280px</dimen>
   <dimen name="op_keyguard_clock_y">2280px</dimen>
+  <dimen name="notification_footer_button_text_size">@*android:dimen/text_size_button_material</dimen>
 </resources>

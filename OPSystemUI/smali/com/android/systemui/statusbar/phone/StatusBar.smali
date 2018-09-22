@@ -13609,65 +13609,7 @@
     .locals 2
     .param p1, "animate"    # Z
 
-    .line 1873
-    const/4 v0, 0x0
-
-    if-nez p1, :cond_0
-
-    .line 1874
-    iput-boolean v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mDismissShow:Z
-
-    .line 1875
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mDismissAllButton:Landroid/view/View;
-
-    invoke-virtual {v0}, Landroid/view/View;->clearAnimation()V
-
-    .line 1876
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mDismissAllButton:Landroid/view/View;
-
-    const/16 v1, 0x8
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
-
-    .line 1877
-    return-void
-
-    .line 1880
-    :cond_0
-    iget-boolean v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mDismissShow:Z
-
-    if-nez v1, :cond_1
-
-    .line 1881
-    return-void
-
-    .line 1884
-    :cond_1
-    iput-boolean v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mDismissShow:Z
-
-    .line 1885
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
-
-    const v1, 0x7f01001e
-
-    invoke-static {v0, v1}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
-
-    move-result-object v0
-
-    .line 1886
-    .local v0, "a":Landroid/view/animation/Animation;
-    new-instance v1, Lcom/android/systemui/statusbar/phone/StatusBar$6;
-
-    invoke-direct {v1, p0}, Lcom/android/systemui/statusbar/phone/StatusBar$6;-><init>(Lcom/android/systemui/statusbar/phone/StatusBar;)V
-
-    invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
-
-    .line 1897
-    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mDismissAllButton:Landroid/view/View;
-
-    invoke-virtual {v1, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
-
-    .line 1898
+    .line 1826
     return-void
 .end method
 
@@ -21098,116 +21040,6 @@
     .locals 3
     .param p1, "animate"    # Z
 
-    .line 1846
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/StatusBar;->getBarState()I
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    if-eq v0, v1, :cond_3
-
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mNotificationPanel:Lcom/android/systemui/statusbar/phone/NotificationPanelView;
-
-    .line 1847
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->isQsExpanded()Z
-
-    move-result v0
-
-    if-nez v0, :cond_3
-
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mNotificationPanel:Lcom/android/systemui/statusbar/phone/NotificationPanelView;
-
-    .line 1848
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->isClosingWithAlphaFadeOut()Z
-
-    move-result v0
-
-    if-nez v0, :cond_3
-
-    .line 1849
-    invoke-static {}, Lcom/android/systemui/util/OPUtils;->isCustomFingerprint()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
-
-    invoke-static {v0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->getInstance(Landroid/content/Context;)Lcom/android/keyguard/KeyguardUpdateMonitor;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->shouldHideDismissButton()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    .line 1854
-    :cond_0
-    const/4 v0, 0x0
-
-    if-nez p1, :cond_1
-
-    .line 1855
-    iput-boolean v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mDismissShow:Z
-
-    .line 1856
-    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mDismissAllButton:Landroid/view/View;
-
-    invoke-virtual {v1}, Landroid/view/View;->clearAnimation()V
-
-    .line 1857
-    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mDismissAllButton:Landroid/view/View;
-
-    invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
-
-    .line 1858
-    return-void
-
-    .line 1861
-    :cond_1
-    iget-boolean v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mDismissShow:Z
-
-    if-eqz v2, :cond_2
-
-    .line 1862
-    return-void
-
-    .line 1865
-    :cond_2
-    iput-boolean v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mDismissShow:Z
-
-    .line 1866
-    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
-
-    const v2, 0x7f010025
-
-    invoke-static {v1, v2}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
-
-    move-result-object v1
-
-    .line 1868
-    .local v1, "a":Landroid/view/animation/Animation;
-    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mDismissAllButton:Landroid/view/View;
-
-    invoke-virtual {v2, v0}, Landroid/view/View;->setVisibility(I)V
-
-    .line 1869
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mDismissAllButton:Landroid/view/View;
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
-
-    .line 1870
-    return-void
-
-    .line 1850
-    .end local v1    # "a":Landroid/view/animation/Animation;
-    :cond_3
-    :goto_0
     return-void
 .end method
 
@@ -23708,7 +23540,7 @@
 .end method
 
 .method protected updateFooter()V
-    .locals 6
+    .locals 4
     .annotation build Lcom/android/internal/annotations/VisibleForTesting;
     .end annotation
 
@@ -23722,15 +23554,6 @@
     if-eqz v0, :cond_0
 
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/StatusBar;->hasActiveClearableNotifications()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mNotificationPanel:Lcom/android/systemui/statusbar/phone/NotificationPanelView;
-
-    .line 1819
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->isFullyExpanded()Z
 
     move-result v0
 
@@ -23783,86 +23606,18 @@
 
     if-nez v3, :cond_2
 
-    move v3, v2
+    move v1, v2
 
-    goto :goto_1
+    nop
 
+    .line 1475
+    .local v1, "showFooterView":Z
     :cond_2
-    move v3, v1
+    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStackScroller:Lcom/android/systemui/statusbar/stack/NotificationStackScrollLayout;
 
-    .line 1825
-    .local v3, "showFooterView":Z
-    :goto_1
-    iget-object v4, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStackScroller:Lcom/android/systemui/statusbar/stack/NotificationStackScrollLayout;
+    invoke-virtual {v2, v1, v0}, Lcom/android/systemui/statusbar/stack/NotificationStackScrollLayout;->updateFooterView(ZZ)V
 
-    invoke-virtual {v4, v3, v1}, Lcom/android/systemui/statusbar/stack/NotificationStackScrollLayout;->updateFooterView(ZZ)V
-
-    .line 1828
-    if-eqz v0, :cond_3
-
-    .line 1829
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/phone/StatusBar;->showDismissAnimate(Z)V
-
-    goto :goto_2
-
-    .line 1832
-    :cond_3
-    sget-boolean v1, Lcom/android/systemui/statusbar/phone/StatusBar;->DEBUG_ONEPLUS:Z
-
-    if-eqz v1, :cond_4
-
-    .line 1833
-    const-string v1, "StatusBar"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v5, "updateClearAll hideDismissAnimate mState="
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v5, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mState:I
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v5, " hasActiveClearableNotifications="
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 1834
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/StatusBar;->hasActiveClearableNotifications()Z
-
-    move-result v5
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v5, " isFullyExpanded="
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v5, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mNotificationPanel:Lcom/android/systemui/statusbar/phone/NotificationPanelView;
-
-    .line 1835
-    invoke-virtual {v5}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->isFullyExpanded()Z
-
-    move-result v5
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    .line 1833
-    invoke-static {v1, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1837
-    :cond_4
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/phone/StatusBar;->hideDismissAnimate(Z)V
-
-    .line 1840
-    :goto_2
+    .line 1476
     return-void
 .end method
 

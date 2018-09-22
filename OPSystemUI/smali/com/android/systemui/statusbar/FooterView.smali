@@ -221,7 +221,7 @@
 .end method
 
 .method protected onFinishInflate()V
-    .locals 1
+    .locals 2
 
     .line 51
     invoke-super {p0}, Lcom/android/systemui/statusbar/StackScrollerDecorView;->onFinishInflate()V
@@ -245,6 +245,32 @@
     check-cast v0, Lcom/android/systemui/statusbar/FooterViewButton;
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/FooterView;->mManageButton:Lcom/android/systemui/statusbar/FooterViewButton;
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/FooterView;->mDismissButton:Lcom/android/systemui/statusbar/FooterViewButton;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setAllCaps(Z)V
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/FooterView;->mManageButton:Lcom/android/systemui/statusbar/FooterViewButton;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setAllCaps(Z)V
+
+    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/FrameLayout$LayoutParams;
+
+    const v1, 0x800003
+
+    iput v1, v0, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
 
     .line 54
     return-void
