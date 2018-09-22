@@ -186,7 +186,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mState:Lcom/android/systemui/statusbar/phone/ScrimState;
 
     .line 128
-    const v0, 0x3ee66666    # 0.45f
+    const v0, 0x3e800000    # 0.25f
 
     iput v0, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mScrimBehindAlphaKeyguard:F
 
