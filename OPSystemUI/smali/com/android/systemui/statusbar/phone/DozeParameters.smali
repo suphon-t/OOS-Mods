@@ -276,9 +276,7 @@
     .locals 1
 
     .line 187
-    sget-boolean v0, Lcom/android/systemui/statusbar/phone/DozeParameters;->FORCE_NO_BLANKING:Z
-
-    xor-int/lit8 v0, v0, 0x1
+    const v0, 0x0
 
     return v0
 .end method
