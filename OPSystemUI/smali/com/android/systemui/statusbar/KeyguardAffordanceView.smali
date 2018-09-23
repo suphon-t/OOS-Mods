@@ -193,7 +193,8 @@
     iput v0, p0, Lcom/android/systemui/statusbar/KeyguardAffordanceView;->mImageScale:F
 
     .line 84
-    const/high16 v0, 0x3f000000    # 0.5f
+    # const/high16 v0, 0x3f000000    # 0.5f
+    const/high16 v0, 0x00000000    # 0f
 
     iput v0, p0, Lcom/android/systemui/statusbar/KeyguardAffordanceView;->mRestingAlpha:F
 

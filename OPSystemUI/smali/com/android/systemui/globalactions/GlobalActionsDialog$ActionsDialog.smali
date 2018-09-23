@@ -202,13 +202,21 @@
     return-object v0
 .end method
 
-.method private getAnimTranslation()F
-    .locals 2
+.method private getAnimTranslationX()F
+    .locals 3
 
     .line 1523
     invoke-virtual {p0}, Lcom/android/systemui/globalactions/GlobalActionsDialog$ActionsDialog;->getContext()Landroid/content/Context;
 
     move-result-object v0
+
+    invoke-static {v0}, Lcom/android/systemui/util/leak/RotationUtils;->getExactRotation(Landroid/content/Context;)I
+
+    move-result v2
+
+    const v1, 0x0
+
+    if-ne v1, v2, :return_0
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -223,6 +231,62 @@
     const/high16 v1, 0x40000000    # 2.0f
 
     div-float/2addr v0, v1
+
+    return v0
+
+    :return_0
+    const v0, 0x0
+
+    return v0
+.end method
+
+.method private getAnimTranslationY()F
+    .locals 3
+
+    .line 1523
+    invoke-virtual {p0}, Lcom/android/systemui/globalactions/GlobalActionsDialog$ActionsDialog;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/android/systemui/util/leak/RotationUtils;->getExactRotation(Landroid/content/Context;)I
+
+    move-result v2
+
+    const v1, 0x0
+
+    if-eq v1, v2, :return_0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v1, 0x7f0701d3
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v0
+
+    const/high16 v1, 0x40000000    # 2.0f
+
+    div-float/2addr v0, v1
+
+    const v1, 0x2
+
+    if-ne v1, v2, :negative
+
+    return v0
+
+    :negative
+
+    const/high16 v1, 0x00000000    # 0.0f
+
+    sub-float/2addr v1, v0
+
+    return v1
+
+    :return_0
+
+    const v0, 0x0
 
     return v0
 .end method
@@ -534,11 +598,19 @@
     move-result-object v0
 
     .line 1503
-    invoke-direct {p0}, Lcom/android/systemui/globalactions/GlobalActionsDialog$ActionsDialog;->getAnimTranslation()F
+    invoke-direct {p0}, Lcom/android/systemui/globalactions/GlobalActionsDialog$ActionsDialog;->getAnimTranslationX()F
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->translationX(F)Landroid/view/ViewPropertyAnimator;
+
+    move-result-object v0
+
+    invoke-direct {p0}, Lcom/android/systemui/globalactions/GlobalActionsDialog$ActionsDialog;->getAnimTranslationY()F
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->translationY(F)Landroid/view/ViewPropertyAnimator;
 
     move-result-object v0
 
@@ -753,11 +825,20 @@
     .line 1475
     iget-object v0, p0, Lcom/android/systemui/globalactions/GlobalActionsDialog$ActionsDialog;->mHardwareLayout:Lcom/android/systemui/HardwareUiLayout;
 
-    invoke-direct {p0}, Lcom/android/systemui/globalactions/GlobalActionsDialog$ActionsDialog;->getAnimTranslation()F
+    invoke-direct {p0}, Lcom/android/systemui/globalactions/GlobalActionsDialog$ActionsDialog;->getAnimTranslationX()F
 
     move-result v1
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/HardwareUiLayout;->setTranslationX(F)V
+
+    .line 1475
+    iget-object v0, p0, Lcom/android/systemui/globalactions/GlobalActionsDialog$ActionsDialog;->mHardwareLayout:Lcom/android/systemui/HardwareUiLayout;
+
+    invoke-direct {p0}, Lcom/android/systemui/globalactions/GlobalActionsDialog$ActionsDialog;->getAnimTranslationY()F
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/HardwareUiLayout;->setTranslationY(F)V
 
     .line 1476
     iget-object v0, p0, Lcom/android/systemui/globalactions/GlobalActionsDialog$ActionsDialog;->mHardwareLayout:Lcom/android/systemui/HardwareUiLayout;
@@ -782,6 +863,11 @@
 
     .line 1479
     invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->translationX(F)Landroid/view/ViewPropertyAnimator;
+
+    move-result-object v0
+
+    .line 1479
+    invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->translationY(F)Landroid/view/ViewPropertyAnimator;
 
     move-result-object v0
 
