@@ -1,7 +1,7 @@
 #!/bin/sh
-setopt PUSHDSILENT
-source $BASE_DIR/env.sh
+
 BASE_DIR="$( cd "$( dirname "$0" )" >/dev/null && pwd )"
+source $BASE_DIR/env.sh
 OUT_DIR=$BASE_DIR/out
 APKS_DIR=$BASE_DIR/apks
 APPS_DIR=$BASE_DIR/apps
@@ -9,6 +9,14 @@ APPS_OUT_DIR=$OUT_DIR/priv-apps
 TMP_DIR=$BASE_DIR/tmp
 
 mkdir -p $APPS_OUT_DIR
+
+pushd () {
+  command pushd "$@" > /dev/null
+}
+
+popd () {
+  command popd "$@" > /dev/null
+}
 
 function get_dir() {
   pushd $1
@@ -42,8 +50,8 @@ function compile_overlay() {
   if [ -f "$DIR/links" ]
   then
     while IFS='' read -r link || [[ -n "$link" ]]; do
-      args+='-I'
-      args+=$APKS_DIR/$link
+      args+=('-I')
+      args+=($APKS_DIR/$link)
     done < "$DIR/links"
   fi
 
@@ -91,6 +99,20 @@ function compile_app() {
 sign_apk() {
   echo $KS_PASSWORD | apksigner sign --ks $KS_PATH $1 > /dev/null
   echo "Signed APK: $1"
+}
+
+pack_magisk_module() {
+  rm -rf $BASE_DIR/module.zip
+  rm -rf magisk/system/priv-app
+  rm -rf magisk/system/vendor
+  echo "Copying apps..."
+  cp -r $APPS_OUT_DIR magisk/system/priv-app
+  echo "Copying overlays..."
+  mkdir -p magisk/system/vendor
+  cp -r $OVERLAYS_OUT_DIR magisk/system/vendor/overlay
+  pushd $BASE_DIR/magisk
+  zip -r $BASE_DIR/module.zip .
+  popd
 }
 
 init_overlays
