@@ -345,7 +345,7 @@
     .line 198
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mColorExtractor:Lcom/android/systemui/colorextraction/SysuiColorExtractor;
 
-    invoke-virtual {v1}, Lcom/android/systemui/colorextraction/SysuiColorExtractor;->getFallbackColors()Lcom/android/internal/colorextraction/ColorExtractor$GradientColors;
+    invoke-virtual {v1, v0, v0, v0}, Lcom/android/systemui/colorextraction/SysuiColorExtractor;->getColors(IIZ)Lcom/android/internal/colorextraction/ColorExtractor$GradientColors;
 
     move-result-object v1
 
@@ -2041,15 +2041,6 @@
 
     :goto_0
     invoke-virtual {v0, v1, v1, v2}, Lcom/android/systemui/colorextraction/SysuiColorExtractor;->getColors(IIZ)Lcom/android/internal/colorextraction/ColorExtractor$GradientColors;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mSystemColors:Lcom/android/internal/colorextraction/ColorExtractor$GradientColors;
-
-    .line 878
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mColorExtractor:Lcom/android/systemui/colorextraction/SysuiColorExtractor;
-
-    invoke-virtual {v0}, Lcom/android/systemui/colorextraction/SysuiColorExtractor;->getFallbackColors()Lcom/android/internal/colorextraction/ColorExtractor$GradientColors;
 
     move-result-object v0
 
