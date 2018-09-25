@@ -5,7 +5,8 @@ source $BASE_DIR/env.sh
 OUT_DIR=$BASE_DIR/out
 APKS_DIR=$BASE_DIR/apks
 APPS_DIR=$BASE_DIR/apps
-APPS_OUT_DIR=$OUT_DIR/priv-apps
+APPS_OUT_DIR=$OUT_DIR/priv-app
+PREBUILTS_DIR=$BASE_DIR/prebuilts
 TMP_DIR=$BASE_DIR/tmp
 
 mkdir -p $APPS_OUT_DIR
@@ -105,13 +106,23 @@ pack_magisk_module() {
   rm -rf $BASE_DIR/module.zip
   rm -rf magisk/system/priv-app
   rm -rf magisk/system/vendor
+  mkdir -p magisk/system/priv-app
+  echo "Copying prebuilts..."
+  cp -r $PREBUILTS_DIR/ magisk/system/priv-app
   echo "Copying apps..."
-  cp -r $APPS_OUT_DIR magisk/system/priv-app
+  cp -r $APPS_OUT_DIR/ magisk/system/priv-app
   echo "Copying overlays..."
   mkdir -p magisk/system/vendor
   cp -r $OVERLAYS_OUT_DIR magisk/system/vendor/overlay
   pushd $BASE_DIR/magisk
   zip -r $BASE_DIR/module.zip .
+  popd
+}
+
+pack_magisk_cleanup_module() {
+  rm -rf $BASE_DIR/module_cleanup.zip
+  pushd $BASE_DIR/magisk_cleanup
+  zip -r $BASE_DIR/module_cleanup.zip .
   popd
 }
 
