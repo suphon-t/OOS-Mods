@@ -1304,7 +1304,7 @@
 
     .line 597
     :cond_3
-    iget v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->COLOR_KEY_LIGHT:I
+    iget v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->COLOR_KEY_DARK:I
 
     invoke-direct {p0, v1, v3}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateButtonColor(II)V
 
@@ -1362,7 +1362,7 @@
     if-eqz v1, :cond_7
 
     .line 617
-    iget v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->COLOR_KEY_LIGHT:I
+    iget v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->COLOR_KEY_DARK:I
 
     invoke-direct {p0, v1, v3}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateButtonColor(II)V
 
@@ -1399,7 +1399,7 @@
 
     .line 628
     :cond_9
-    iget v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->COLOR_KEY_LIGHT:I
+    iget v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->COLOR_KEY_DARK:I
 
     invoke-direct {p0, v1, v3}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateButtonColor(II)V
 
@@ -1420,7 +1420,7 @@
     if-eqz v1, :cond_b
 
     .line 632
-    iget v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->COLOR_KEY_LIGHT:I
+    iget v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->COLOR_KEY_DARK:I
 
     invoke-direct {p0, v1, v3}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateButtonColor(II)V
 
