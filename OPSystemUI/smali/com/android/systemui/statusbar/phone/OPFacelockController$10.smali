@@ -153,7 +153,7 @@
 
     move-result-object v1
 
-    const-string v2, " "
+    const v2, 0x0
 
     iget v3, p0, Lcom/android/systemui/statusbar/phone/OPFacelockController$10;->val$color:I
 
