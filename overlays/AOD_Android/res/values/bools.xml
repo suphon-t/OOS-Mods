@@ -4,4 +4,5 @@
   <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
   <bool name="config_dozeAfterScreenOffByDefault">false</bool>
   <bool name="config_displayBlanksAfterDoze">false</bool>
+  <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">false</bool>
 </resources>
