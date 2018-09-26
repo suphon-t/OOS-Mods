@@ -145,31 +145,49 @@
     .locals 1
     .param p1, "sensorValue"    # I
 
-    .line 142
-    if-ltz p1, :cond_1
+    const v0, 0x4
 
-    iget-object v0, p0, Lcom/android/systemui/doze/DozeScreenBrightness;->mSensorToBrightness:[I
+    div-int/2addr p1, v0
 
-    array-length v0, v0
+    const v0, 0x20
 
-    if-lt p1, v0, :cond_0
+    invoke-static {v0, p1}, Ljava/lang/Math;->min(II)I
 
-    goto :goto_0
+    move-result p1
 
-    .line 145
-    :cond_0
-    iget-object v0, p0, Lcom/android/systemui/doze/DozeScreenBrightness;->mSensorToBrightness:[I
+    const/4 v0, 0x1
 
-    aget v0, v0, p1
+    invoke-static {v0, p1}, Ljava/lang/Math;->max(II)I
 
-    return v0
+    move-result p1
 
-    .line 143
-    :cond_1
-    :goto_0
-    const/4 v0, -0x1
+    return p1
 
-    return v0
+    # .line 142
+    # if-ltz p1, :cond_1
+    #
+    # iget-object v0, p0, Lcom/android/systemui/doze/DozeScreenBrightness;->mSensorToBrightness:[I
+    #
+    # array-length v0, v0
+    #
+    # if-lt p1, v0, :cond_0
+    #
+    # goto :goto_0
+    #
+    # .line 145
+    # :cond_0
+    # iget-object v0, p0, Lcom/android/systemui/doze/DozeScreenBrightness;->mSensorToBrightness:[I
+    #
+    # aget v0, v0, p1
+    #
+    # return v0
+    #
+    # .line 143
+    # :cond_1
+    # :goto_0
+    # const/4 v0, -0x1
+    #
+    # return v0
 .end method
 
 .method private computeScrimOpacity(I)I
@@ -211,7 +229,7 @@
 
     iget v1, p0, Lcom/android/systemui/doze/DozeScreenBrightness;->mDefaultDozeBrightness:I
 
-    invoke-interface {v0, v1}, Lcom/android/systemui/doze/DozeMachine$Service;->setDozeScreenBrightness(I)V
+    # invoke-interface {v0, v1}, Lcom/android/systemui/doze/DozeMachine$Service;->setDozeScreenBrightness(I)V
 
     .line 154
     iget-object v0, p0, Lcom/android/systemui/doze/DozeScreenBrightness;->mDozeHost:Lcom/android/systemui/doze/DozeHost;
@@ -406,7 +424,7 @@
 .end method
 
 .method public onSensorChanged(Landroid/hardware/SensorEvent;)V
-    .locals 3
+    .locals 4
     .param p1, "event"    # Landroid/hardware/SensorEvent;
 
     .line 98
@@ -430,6 +448,10 @@
 
     move-result-object v0
 
+    const-string v3, "DozeScreenBrightness"
+
+    invoke-static {v3, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
     invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     .line 100
@@ -449,6 +471,10 @@
 
     .line 102
     invoke-direct {p0}, Lcom/android/systemui/doze/DozeScreenBrightness;->updateBrightnessAndReady()V
+
+    const v0, 0x0
+
+    invoke-direct {p0, v0}, Lcom/android/systemui/doze/DozeScreenBrightness;->setLightSensorEnabled(Z)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

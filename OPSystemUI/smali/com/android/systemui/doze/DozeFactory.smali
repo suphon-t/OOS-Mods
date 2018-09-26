@@ -38,6 +38,8 @@
     .line 81
     move-object v10, p3
 
+    const-string v0, "android.sensor.light"
+
     invoke-static {v10, v0}, Lcom/android/systemui/doze/DozeSensors;->findSensorWithType(Landroid/hardware/SensorManager;Ljava/lang/String;)Landroid/hardware/Sensor;
 
     move-result-object v0

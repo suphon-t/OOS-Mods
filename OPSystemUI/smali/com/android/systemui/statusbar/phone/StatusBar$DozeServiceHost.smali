@@ -769,6 +769,21 @@
     return-void
 .end method
 
+.method public setForceDozeBrightness(Z)V
+    .locals 1
+    .param p1, "force"    # I
+
+    .line 5823
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStatusBarWindowManager:Lcom/android/systemui/statusbar/phone/StatusBarWindowManager;
+
+    invoke-virtual {v0, p1}, Lcom/android/systemui/statusbar/phone/StatusBarWindowManager;->setForceDozeBrightness(Z)V
+
+    .line 5824
+    return-void
+.end method
+
 .method public shouldAnimateScreenOff()Z
     .locals 1
 
@@ -818,7 +833,11 @@
 
     invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->access$2100(Lcom/android/systemui/statusbar/phone/StatusBar;)Z
 
-    .line 5951
+    const v0, 0x1
+
+    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->setForceDozeBrightness(Z)V
+
+    .line 5695
     :cond_0
     return-void
 .end method
@@ -865,7 +884,11 @@
 
     invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->access$2600(Lcom/android/systemui/statusbar/phone/StatusBar;)V
 
-    .line 5994
+    const v0, 0x0
+
+    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->setForceDozeBrightness(Z)V
+
+    .line 5738
     :cond_0
     return-void
 .end method
