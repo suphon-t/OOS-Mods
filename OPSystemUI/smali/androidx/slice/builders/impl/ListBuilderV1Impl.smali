@@ -9,6 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroidx/slice/builders/impl/ListBuilderV1Impl$HeaderBuilderImpl;,
         Landroidx/slice/builders/impl/ListBuilderV1Impl$RowBuilderImpl;
     }
 .end annotation
@@ -192,6 +193,18 @@
     return-void
 .end method
 
+.method public createHeaderBuilder(Landroid/net/Uri;)Landroidx/slice/builders/impl/TemplateBuilderImpl;
+    .locals 1
+    .param p1, "uri"    # Landroid/net/Uri;
+
+    .line 380
+    new-instance v0, Landroidx/slice/builders/impl/ListBuilderV1Impl$HeaderBuilderImpl;
+
+    invoke-direct {v0, p1}, Landroidx/slice/builders/impl/ListBuilderV1Impl$HeaderBuilderImpl;-><init>(Landroid/net/Uri;)V
+
+    return-object v0
+.end method
+
 .method public createRowBuilder(Landroid/net/Uri;)Landroidx/slice/builders/impl/TemplateBuilderImpl;
     .locals 1
     .param p1, "uri"    # Landroid/net/Uri;
@@ -202,4 +215,19 @@
     invoke-direct {v0, p1}, Landroidx/slice/builders/impl/ListBuilderV1Impl$RowBuilderImpl;-><init>(Landroid/net/Uri;)V
 
     return-object v0
+.end method
+
+.method public setHeader(Landroidx/slice/builders/impl/TemplateBuilderImpl;)V
+    .locals 1
+    .param p1, "builder"    # Landroidx/slice/builders/impl/TemplateBuilderImpl;
+
+    .line 127
+    invoke-virtual {p1}, Landroidx/slice/builders/impl/TemplateBuilderImpl;->build()Landroidx/slice/Slice;
+
+    move-result-object v0
+
+    iput-object v0, p0, Landroidx/slice/builders/impl/ListBuilderV1Impl;->mSliceHeader:Landroidx/slice/Slice;
+
+    .line 128
+    return-void
 .end method
