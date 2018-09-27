@@ -9,6 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroidx/slice/builders/impl/ListBuilderBasicImpl$HeaderBuilderImpl;,
         Landroidx/slice/builders/impl/ListBuilderBasicImpl$RowBuilderImpl;
     }
 .end annotation
@@ -64,6 +65,18 @@
     return-void
 .end method
 
+.method public createHeaderBuilder(Landroid/net/Uri;)Landroidx/slice/builders/impl/TemplateBuilderImpl;
+    .locals 1
+    .param p1, "uri"    # Landroid/net/Uri;
+
+    .line 160
+    new-instance v0, Landroidx/slice/builders/impl/ListBuilderBasicImpl$HeaderBuilderImpl;
+
+    invoke-direct {v0, p1}, Landroidx/slice/builders/impl/ListBuilderBasicImpl$HeaderBuilderImpl;-><init>(Landroid/net/Uri;)V
+
+    return-object v0
+.end method
+
 .method public createRowBuilder(Landroid/net/Uri;)Landroidx/slice/builders/impl/TemplateBuilderImpl;
     .locals 1
     .param p1, "uri"    # Landroid/net/Uri;
@@ -74,4 +87,12 @@
     invoke-direct {v0, p1}, Landroidx/slice/builders/impl/ListBuilderBasicImpl$RowBuilderImpl;-><init>(Landroid/net/Uri;)V
 
     return-object v0
+.end method
+
+.method public setHeader(Landroidx/slice/builders/impl/TemplateBuilderImpl;)V
+    .locals 0
+    .param p1, "impl"    # Landroidx/slice/builders/impl/TemplateBuilderImpl;
+
+    .line 76
+    return-void
 .end method

@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroidx/slice/builders/ListBuilder$HeaderBuilder;,
         Landroidx/slice/builders/ListBuilder$RowBuilder;
     }
 .end annotation
@@ -118,6 +119,25 @@
     const/4 v0, 0x0
 
     return-object v0
+.end method
+
+.method public setHeader(Landroidx/slice/builders/ListBuilder$HeaderBuilder;)Landroidx/slice/builders/ListBuilder;
+    .locals 2
+    .param p1, "builder"    # Landroidx/slice/builders/ListBuilder$HeaderBuilder;
+
+    .line 279
+    iget-object v0, p0, Landroidx/slice/builders/ListBuilder;->mImpl:Landroidx/slice/builders/impl/ListBuilder;
+
+    invoke-static {p1}, Landroidx/slice/builders/ListBuilder$HeaderBuilder;->access$100(Landroidx/slice/builders/ListBuilder$HeaderBuilder;)Landroidx/slice/builders/impl/ListBuilder$HeaderBuilder;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/slice/builders/impl/TemplateBuilderImpl;
+
+    invoke-interface {v0, v1}, Landroidx/slice/builders/impl/ListBuilder;->setHeader(Landroidx/slice/builders/impl/TemplateBuilderImpl;)V
+
+    .line 280
+    return-object p0
 .end method
 
 .method setImpl(Landroidx/slice/builders/impl/TemplateBuilderImpl;)V
