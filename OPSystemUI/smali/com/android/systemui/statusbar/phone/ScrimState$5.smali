@@ -51,8 +51,13 @@
 
     .line 108
     .local v0, "alwaysOnEnabled":Z
-    iget-boolean v1, p0, Lcom/android/systemui/statusbar/phone/ScrimState$5;->mDisplayRequiresBlanking:Z
+    sget-object v1, Lcom/android/systemui/statusbar/phone/ScrimState;->UNLOCKED:Lcom/android/systemui/statusbar/phone/ScrimState;
 
+    if-ne p1, v1, :not_unlocked
+
+    const v1, 0x1
+
+    :put_blank_screen
     iput-boolean v1, p0, Lcom/android/systemui/statusbar/phone/ScrimState$5;->mBlankScreen:Z
 
     .line 109
@@ -117,4 +122,10 @@
 
     .line 118
     return-void
+
+    :not_unlocked
+
+    const v1, 0x0
+
+    goto :put_blank_screen
 .end method
