@@ -1,7 +1,7 @@
 id=xyz.paphonb.oosmods
 name=OOS mods for OnePlus 6
-version=v1
-versionCode=1
+version=v1.3
+versionCode=3
 author=paphonb
 description=Various mods for OnePlus 6 on Pie Stable
 minMagisk=17000
