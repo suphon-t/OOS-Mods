@@ -185,8 +185,20 @@
 .end method
 
 .method private getDurationText(Lcom/android/systemui/smartspace/nano/SmartspaceProto$SmartspaceUpdate$SmartspaceCard$Message$FormattedText$FormatParam;)Ljava/lang/String;
-    .locals 10
+    .locals 14
     .param p1, "param"    # Lcom/android/systemui/smartspace/nano/SmartspaceProto$SmartspaceUpdate$SmartspaceCard$Message$FormattedText$FormatParam;
+
+    iget-object v10, p0, Lcom/google/android/systemui/smartspace/SmartSpaceCard;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v10}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v10
+
+    const-string v11, "com.google.android.apps.nexuslauncher"
+
+    invoke-virtual {v10, v11}, Landroid/content/pm/PackageManager;->getResourcesForApplication(Ljava/lang/String;)Landroid/content/res/Resources;
+
+    move-result-object v10
 
     .line 247
     invoke-direct {p0, p1}, Lcom/google/android/systemui/smartspace/SmartSpaceCard;->getMinutesToEvent(Lcom/android/systemui/smartspace/nano/SmartspaceProto$SmartspaceUpdate$SmartspaceCard$Message$FormattedText$FormatParam;)I
@@ -195,7 +207,13 @@
 
     .line 249
     .local v0, "mins":I
-    const v1, 0x7f0f000e
+    const-string v12, "smartspace_minutes"
+
+    const-string v13, "plurals"
+
+    invoke-virtual {v10, v12, v13, v11}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v1
 
     const/16 v2, 0x3c
 
@@ -214,13 +232,13 @@
 
     .line 252
     .local v5, "min":I
-    iget-object v6, p0, Lcom/google/android/systemui/smartspace/SmartSpaceCard;->mContext:Landroid/content/Context;
+    const-string v12, "smartspace_hours"
 
-    invoke-virtual {v6}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    const-string v13, "plurals"
 
-    move-result-object v6
+    invoke-virtual {v10, v12, v13, v11}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
-    const v7, 0x7f0f000d
+    move-result v7
 
     new-array v8, v4, [Ljava/lang/Object;
 
@@ -231,7 +249,7 @@
 
     aput-object v9, v8, v3
 
-    invoke-virtual {v6, v7, v2, v8}, Landroid/content/res/Resources;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v10, v7, v2, v8}, Landroid/content/res/Resources;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -240,12 +258,6 @@
     if-lez v5, :cond_0
 
     .line 255
-    iget-object v7, p0, Lcom/google/android/systemui/smartspace/SmartSpaceCard;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v7}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v7
-
     new-array v8, v4, [Ljava/lang/Object;
 
     .line 256
@@ -255,15 +267,19 @@
 
     aput-object v9, v8, v3
 
-    invoke-virtual {v7, v1, v5, v8}, Landroid/content/res/Resources;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v10, v1, v5, v8}, Landroid/content/res/Resources;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
     .line 257
     .local v1, "minsText":Ljava/lang/String;
-    iget-object v7, p0, Lcom/google/android/systemui/smartspace/SmartSpaceCard;->mContext:Landroid/content/Context;
+    const-string v12, "smartspace_hours_mins"
 
-    const v8, 0x7f1104ec
+    const-string v13, "string"
+
+    invoke-virtual {v10, v12, v13, v11}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v8
 
     const/4 v9, 0x2
 
@@ -274,7 +290,7 @@
     aput-object v1, v9, v4
 
     .line 258
-    invoke-virtual {v7, v8, v9}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v10, v8, v9}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -300,12 +316,6 @@
     .line 263
     .end local v1    # "durationText":Ljava/lang/String;
     :cond_1
-    iget-object v2, p0, Lcom/google/android/systemui/smartspace/SmartSpaceCard;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v2
-
     new-array v4, v4, [Ljava/lang/Object;
 
     .line 264
@@ -315,7 +325,7 @@
 
     aput-object v5, v4, v3
 
-    invoke-virtual {v2, v1, v0, v4}, Landroid/content/res/Resources;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v10, v1, v0, v4}, Landroid/content/res/Resources;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
