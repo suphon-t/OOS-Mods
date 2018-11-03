@@ -1,11 +1,11 @@
-.class Lcom/android/systemui/keyguard/KeyguardSliceProvider$1;
+.class Lcom/android/systemui/keyguard/KeyguardSliceProviderBase$1;
 .super Landroid/content/BroadcastReceiver;
-.source "KeyguardSliceProvider.java"
+.source "KeyguardSliceProviderBase.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/systemui/keyguard/KeyguardSliceProvider;
+    value = Lcom/android/systemui/keyguard/KeyguardSliceProviderBase;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/systemui/keyguard/KeyguardSliceProvider;
+.field final synthetic this$0:Lcom/android/systemui/keyguard/KeyguardSliceProviderBase;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/systemui/keyguard/KeyguardSliceProvider;)V
+.method constructor <init>(Lcom/android/systemui/keyguard/KeyguardSliceProviderBase;)V
     .locals 0
-    .param p1, "this$0"    # Lcom/android/systemui/keyguard/KeyguardSliceProvider;
+    .param p1, "this$0"    # Lcom/android/systemui/keyguard/KeyguardSliceProviderBase;
 
     .line 96
-    iput-object p1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider$1;->this$0:Lcom/android/systemui/keyguard/KeyguardSliceProvider;
+    iput-object p1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProviderBase$1;->this$0:Lcom/android/systemui/keyguard/KeyguardSliceProviderBase;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -110,33 +110,33 @@
 
     .line 108
     :cond_1
-    iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider$1;->this$0:Lcom/android/systemui/keyguard/KeyguardSliceProvider;
+    iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProviderBase$1;->this$0:Lcom/android/systemui/keyguard/KeyguardSliceProviderBase;
 
-    invoke-static {v1}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->access$000(Lcom/android/systemui/keyguard/KeyguardSliceProvider;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/android/systemui/keyguard/KeyguardSliceProviderBase;->access$000(Lcom/android/systemui/keyguard/KeyguardSliceProviderBase;)Landroid/os/Handler;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider$1;->this$0:Lcom/android/systemui/keyguard/KeyguardSliceProvider;
+    iget-object v2, p0, Lcom/android/systemui/keyguard/KeyguardSliceProviderBase$1;->this$0:Lcom/android/systemui/keyguard/KeyguardSliceProviderBase;
 
     new-instance v3, Lcom/android/systemui/keyguard/-$$Lambda$UyKQdSvY5FC_Xuudb07cmVSuhU4;
 
-    invoke-direct {v3, v2}, Lcom/android/systemui/keyguard/-$$Lambda$UyKQdSvY5FC_Xuudb07cmVSuhU4;-><init>(Lcom/android/systemui/keyguard/KeyguardSliceProvider;)V
+    invoke-direct {v3, v2}, Lcom/android/systemui/keyguard/-$$Lambda$UyKQdSvY5FC_Xuudb07cmVSuhU4;-><init>(Lcom/android/systemui/keyguard/KeyguardSliceProviderBase;)V
 
     invoke-virtual {v1, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     .line 110
     :cond_2
-    iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider$1;->this$0:Lcom/android/systemui/keyguard/KeyguardSliceProvider;
+    iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardSliceProviderBase$1;->this$0:Lcom/android/systemui/keyguard/KeyguardSliceProviderBase;
 
-    invoke-static {v1}, Lcom/android/systemui/keyguard/KeyguardSliceProvider;->access$000(Lcom/android/systemui/keyguard/KeyguardSliceProvider;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/android/systemui/keyguard/KeyguardSliceProviderBase;->access$000(Lcom/android/systemui/keyguard/KeyguardSliceProviderBase;)Landroid/os/Handler;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/systemui/keyguard/KeyguardSliceProvider$1;->this$0:Lcom/android/systemui/keyguard/KeyguardSliceProvider;
+    iget-object v2, p0, Lcom/android/systemui/keyguard/KeyguardSliceProviderBase$1;->this$0:Lcom/android/systemui/keyguard/KeyguardSliceProviderBase;
 
     new-instance v3, Lcom/android/systemui/keyguard/-$$Lambda$iHhuB2gJvIMUcE0UtET88pejsrA;
 
-    invoke-direct {v3, v2}, Lcom/android/systemui/keyguard/-$$Lambda$iHhuB2gJvIMUcE0UtET88pejsrA;-><init>(Lcom/android/systemui/keyguard/KeyguardSliceProvider;)V
+    invoke-direct {v3, v2}, Lcom/android/systemui/keyguard/-$$Lambda$iHhuB2gJvIMUcE0UtET88pejsrA;-><init>(Lcom/android/systemui/keyguard/KeyguardSliceProviderBase;)V
 
     invoke-virtual {v1, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
