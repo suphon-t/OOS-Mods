@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="?android:activatedBackgroundIndicator" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/oneplus_contorl_list_item_height_one_line1" android:paddingEnd="@dimen/oneplus_contorl_layout_margin_right2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/icon_frame" android:layout_width="@dimen/oneplus_contorl_icon_size_list" android:layout_height="@dimen/oneplus_contorl_icon_size_list" android:layout_marginTop="@dimen/preferences_icon_top_padding" android:layout_marginStart="@dimen/oneplus_contorl_layout_margin_left2" android:layout_marginEnd="@dimen/oneplus_contorl_layout_margin_right8">
+        <com.android.internal.widget.PreferenceImageView android:id="@android:id/icon" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/oneplus_contorl_layout_margin_left2">
+        <Space android:id="@id/top_space" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/preferences_primary_text_top_padding" />
+        <TextView android:textColor="@color/oneplus_preference_title_text_color_dark" android:ellipsize="marquee" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/oneplus_contorl_text_style_subheading" />
+        <TextView android:textColor="@color/oneplus_preference_subtitle_text_color_dark" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/preferences_secondary_text_bottom_padding" android:maxLines="10" style="@style/oneplus_contorl_text_style_body1" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/preferences_icon_top_padding" android:layout_marginStart="@dimen/oneplus_contorl_layout_margin_left2" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:translateX="-252.0" android:translateY="-602.0">
+        <group android:translateX="109.0" android:translateY="514.0">
+            <group android:translateX="144.0" android:translateY="89.0">
+                <path android:pathData="M17,17 L5,17 L5,5 L17,5 L17,17 Z" android:strokeColor="@color/recents_task_bar_dark_icon_color" android:strokeWidth="2.0" />
+            </group>
+        </group>
+    </group>
+</vector>

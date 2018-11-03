@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">Ange SIM-kortets PIN-kod, du har %d försök kvar.</item>
+        <item quantity="one">Ange SIM-kortets PIN-kod, du har %d försök kvar innan du måste kontakta din operatör för att låsa upp enheten.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">Ange SIM%1$d PIN-koden, du har %2$d återstående försök innan du måste kontakte din operatör för att låsa upp enheten.</item>
+        <item quantity="one">Ange SIM%1$d PIN-koden, du har %2$d återstående försök innan du måste kontakte din operatör för att låsa upp enheten.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">SIM-kortet har inaktiverats. Ange PUK-koden för att fortsätta. Du har %d försök kvar innan SIM-kortet blir oanvändbart permanent. Kontakta operatören för mer information.</item>
+        <item quantity="one">SIM-kortet har inaktiverats. Ange PUK-koden för att fortsätta. Du har %d försök kvar innan SIM-kortet blir oanvändbart permanent. Kontakta operatören för mer information.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">Du angav fel pinkod för SIM-kortet. %d försök återstår.</item>
+        <item quantity="one">Du angav fel pinkod för SIM-kortet. %d försök återstår innan du måste kontakta operatören för att låsa upp enheten.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">Fel SIM%1$d PIN-kod, du har %2$d återstående försök innan du måste kontakta operatören för att låsa upp enheten.</item>
+        <item quantity="one">Fel SIM%1$d PIN-kod, du har %2$d återstående försök innan du måste kontakta operatören för att låsa upp enheten.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">Du angav fel PUK-kod för SIM-kortet. %d försök återstår innan SIM-kortet blir obrukbart.</item>
+        <item quantity="one">Du angav fel PUK-kod för SIM-kortet. %d försök återstår innan SIM-kortet blir obrukbart.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="other">Enheten har inte låsts upp på %d timmar. Bekräfta lösenordet.</item>
+        <item quantity="one">Enheten har inte låsts upp på %d timme. Bekräfta lösenordet.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="other">Enheten har inte låsts upp på %d timmar. Bekräfta det grafiska lösenordet.</item>
+        <item quantity="one">Enheten har inte låsts upp på %d timme. Bekräfta det grafiska lösenordet.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="other">Enheten har inte låsts upp på %d timmar. Bekräfta pinkoden.</item>
+        <item quantity="one">Enheten har inte låsts upp på %d timme. Bekräfta pinkoden.</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="other">Försök igen om %d sekunder.</item>
+        <item quantity="one">Försök igen om 1 sekund.</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="other">%s fler aviseringar i gruppen.</item>
+        <item quantity="one">%s till avisering i gruppen.</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="other">%d enheter</item>
+        <item quantity="one">%d enhet</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="other">%d timmar</item>
+        <item quantity="one">%d timme</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="other">%d minuter</item>
+        <item quantity="one">%d minut</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">%d skärmar i översikten</item>
+        <item quantity="one">En skärm i översikten</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="other">%1$d enheter är anslutna</item>
+        <item quantity="one">%1$d enhet är ansluten</item>
+    </plurals>
+</resources>

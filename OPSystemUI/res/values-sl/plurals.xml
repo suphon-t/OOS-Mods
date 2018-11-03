@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="abc_slice_duration_days">
+        <item quantity="other">pred %d dnevi</item>
+        <item quantity="one">pred %d dnem</item>
+        <item quantity="two">pred %d dnevoma</item>
+        <item quantity="few">pred %d dnevi</item>
+    </plurals>
+    <plurals name="abc_slice_duration_min">
+        <item quantity="other">pred %d minutami</item>
+        <item quantity="one">pred %d minuto</item>
+        <item quantity="two">pred %d minutama</item>
+        <item quantity="few">pred %d minutami</item>
+    </plurals>
+    <plurals name="abc_slice_duration_years">
+        <item quantity="other">pred %d leti</item>
+        <item quantity="one">pred %d letom</item>
+        <item quantity="two">pred %d letoma</item>
+        <item quantity="few">pred %d leti</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">Vnesite kodo PIN za kartico SIM, imate še %d poskusov, nato boste morali odklep naprave zahtevati pri svojem operaterju.</item>
+        <item quantity="one">Vnesite kodo PIN za kartico SIM, imate še %d poskus, nato boste morali odklep naprave zahtevati pri svojem operaterju.</item>
+        <item quantity="two">Vnesite kodo PIN za kartico SIM, imate še %d poskusa, nato boste morali odklep naprave zahtevati pri svojem operaterju.</item>
+        <item quantity="few">Vnesite kodo PIN za kartico SIM, imate še %d poskuse, nato boste morali odklep naprave zahtevati pri svojem operaterju.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">Vnesite kodo PIN za kartico SIM%1$d, imate še toliko poskusov: %2$d. Nato boste morali odklepanje naprave zahtevati pri svojem operaterju.</item>
+        <item quantity="one">Vnesite kodo PIN za kartico SIM%1$d, imate še %2$d poskus. Nato boste morali odklepanje naprave zahtevati pri svojem operaterju.</item>
+        <item quantity="two">Vnesite kodo PIN za kartico SIM%1$d, imate še %2$d poskusa. Nato boste morali odklepanje naprave zahtevati pri svojem operaterju.</item>
+        <item quantity="few">Vnesite kodo PIN za kartico SIM%1$d, imate še toliko poskusov: %2$d. Nato boste morali odklepanje naprave zahtevati pri svojem operaterju.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">Kartica SIM je onemogočena. Za nadaljevanje vnesite kodo PUK. Imate še %d poskusov, nato bo kartica SIM za stalno blokirana. Za več informacij se obrnite na operaterja.</item>
+        <item quantity="one">Kartica SIM je onemogočena. Za nadaljevanje vnesite kodo PUK. Imate še %d poskus, nato bo kartica SIM za stalno blokirana. Za več informacij se obrnite na operaterja.</item>
+        <item quantity="two">Kartica SIM je onemogočena. Za nadaljevanje vnesite kodo PUK. Imate še %d poskusa, nato bo kartica SIM za stalno blokirana. Za več informacij se obrnite na operaterja.</item>
+        <item quantity="few">Kartica SIM je onemogočena. Za nadaljevanje vnesite kodo PUK. Imate še %d poskuse, nato bo kartica SIM za stalno blokirana. Za več informacij se obrnite na operaterja.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">Napačna koda PIN kartice SIM. Na voljo imate še %d poskusov.</item>
+        <item quantity="one">Napačna koda PIN kartice SIM. Na voljo imate še %d poskus.</item>
+        <item quantity="two">Napačna koda PIN kartice SIM. Na voljo imate še %d poskusa.</item>
+        <item quantity="few">Napačna koda PIN kartice SIM. Na voljo imate še %d poskuse.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">Nepravilna koda PIN za kartico SIM%1$d, imate še toliko poskusov: %2$d. Nato boste morali odklepanje naprave zahtevati pri svojem operaterju.</item>
+        <item quantity="one">Nepravilna koda PIN za kartico SIM%1$d, imate še %2$d poskus. Nato boste morali odklepanje naprave zahtevati pri svojem operaterju.</item>
+        <item quantity="two">Nepravilna koda PIN za kartico SIM%1$d, imate še %2$d poskusa. Nato boste morali odklepanje naprave zahtevati pri svojem operaterju.</item>
+        <item quantity="few">Nepravilna koda PIN za kartico SIM%1$d, imate še toliko poskusov: %2$d. Nato boste morali odklepanje naprave zahtevati pri svojem operaterju.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">Napačna koda PUK kartice SIM. Na voljo imate še %d poskusov. Potem bo kartica SIM postala trajno neuporabna.</item>
+        <item quantity="one">Napačna koda PUK kartice SIM. Na voljo imate še %d poskus. Potem bo kartica SIM postala trajno neuporabna.</item>
+        <item quantity="two">Napačna koda PUK kartice SIM. Na voljo imate še %d poskusa. Potem bo kartica SIM postala trajno neuporabna.</item>
+        <item quantity="few">Napačna koda PUK kartice SIM. Na voljo imate še %d poskuse. Potem bo kartica SIM postala trajno neuporabna.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="other">Naprava ni bila odklenjena %d ur. Potrdite geslo.</item>
+        <item quantity="one">Naprava ni bila odklenjena %d uro. Potrdite geslo.</item>
+        <item quantity="two">Naprava ni bila odklenjena %d uri. Potrdite geslo.</item>
+        <item quantity="few">Naprava ni bila odklenjena %d ure. Potrdite geslo.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="other">Naprava ni bila odklenjena %d ur. Potrdite vzorec.</item>
+        <item quantity="one">Naprava ni bila odklenjena %d uro. Potrdite vzorec.</item>
+        <item quantity="two">Naprava ni bila odklenjena %d uri. Potrdite vzorec.</item>
+        <item quantity="few">Naprava ni bila odklenjena %d ure. Potrdite vzorec.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="other">Naprava ni bila odklenjena %d ur. Potrdite kodo PIN.</item>
+        <item quantity="one">Naprava ni bila odklenjena %d uro. Potrdite kodo PIN.</item>
+        <item quantity="two">Naprava ni bila odklenjena %d uri. Potrdite kodo PIN.</item>
+        <item quantity="few">Naprava ni bila odklenjena %d ure. Potrdite kodo PIN.</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="other">Poskusite znova čez %d sekund.</item>
+        <item quantity="one">Poskusite znova čez %d sekundo.</item>
+        <item quantity="two">Poskusite znova čez %d sekundi.</item>
+        <item quantity="few">Poskusite znova čez %d sekunde.</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="other">Notri je še %s obvestil.</item>
+        <item quantity="one">Notri je še %s obvestilo.</item>
+        <item quantity="two">Notri sta še %s obvestili.</item>
+        <item quantity="few">Notri so še %s obvestila.</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="other">%d naprav</item>
+        <item quantity="one">%d naprava</item>
+        <item quantity="two">%d napravi</item>
+        <item quantity="few">%d naprave</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="other">%d ur</item>
+        <item quantity="one">%d ura</item>
+        <item quantity="two">%d uri</item>
+        <item quantity="few">%d ure</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="other">%d minut</item>
+        <item quantity="one">%d minuta</item>
+        <item quantity="two">%d minuti</item>
+        <item quantity="few">%d minute</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">%d zaslonov v pregledu</item>
+        <item quantity="one">%d zaslon v pregledu</item>
+        <item quantity="two">%d zaslona v pregledu</item>
+        <item quantity="few">%d zasloni v pregledu</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="other">Povezanih je %1$d naprav</item>
+        <item quantity="one">Povezana je %1$d naprava</item>
+        <item quantity="two">Povezani sta %1$d napravi</item>
+        <item quantity="few">Povezane so %1$d naprave</item>
+    </plurals>
+</resources>

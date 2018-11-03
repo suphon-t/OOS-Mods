@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">SIM PIN-ஐ உள்ளிடுக, உங்கள் சாதனத்தைப் பூட்டுநீக்க, உங்கள் கேரியரை நீங்கள் தொடர்பு கொள்வதற்கு முன்பு, உங்களிடம் %d முயற்சிகள் மீதமுள்ளன.</item>
+        <item quantity="one">SIM PIN-ஐ உள்ளிடுக, உங்கள் சாதனத்தைப் பூட்டுநீக்க, உங்கள் கேரியரை நீங்கள் தொடர்பு கொள்வதற்கு முன்பு, உங்களிடம் %d முயற்சி மீதமுள்ளது.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">SIM%1$d PIN-ஐ உள்ளிடுக, உங்களிடம் %2$d முயற்சிகள் மீதமுள்ளன.</item>
+        <item quantity="one">SIM%1$d PIN-ஐ உள்ளிடுக, உங்கள் சாதனத்தைப் பூட்டுநீக்க உங்கள் கேரியரை நீங்கள் தொடர்பு கொள்வதற்கு முன்பு, உங்களிடம் %2$d முயற்சி மீதமுள்ளது.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">SIM இப்பொழுது முடக்கப்பட்டது. தொடர PUK குறியீட்டை உள்ளிடவும். SIM நிரந்தரமாய் பயனற்றதாக ஆவதற்கு முன்பு உங்களிடம் %d முயற்சிகள் மீதமுள்ளன. விவரங்களுக்கு கேரியரைத் தொடர்பு கொள்ளவும்.</item>
+        <item quantity="one">SIM இப்பொழுது முடக்கப்பட்டது. தொடர PUK குறியீட்டை உள்ளிடவும். SIM நிரந்தரமாய் பயனற்றதாக ஆவதற்கு முன்பு உங்களிடம் %d முயற்சி மீதமுள்ளது. விவரங்களுக்கு கேரியரைத் தொடர்பு கொள்ளவும்.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">தவறான SIM%1$d PIN குறியீடு, உங்களிடம் %2$d முயற்சிகள் மீதமுள்ளன.</item>
+        <item quantity="one">தவறான SIM%1$d PIN குறியீடு, உங்கள் சாதனத்தைப் பூட்டுநீக்க உங்கள் கேரியரை நீங்கள் தொடர்புகொள்வதற்கு முன்பு, உங்களிடம் %2$d முயற்சி மீதமுள்ளது.</item>
+    </plurals>
+</resources>

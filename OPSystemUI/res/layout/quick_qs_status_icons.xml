@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/quick_qs_status_icons" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:minHeight="20.0dip" android:layout_below="@id/quick_status_bar_system_icons" android:layout_marginStart="@dimen/status_bar_padding_start" android:layout_marginEnd="@dimen/status_bar_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+    <com.android.systemui.statusbar.policy.DateView android:textAppearance="@style/oneplus_contorl_text_style_body1" android:gravity="center_vertical" android:layout_gravity="start" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" systemui:datePattern="@string/abbrev_wday_month_day_no_year_alarm" />
+    <com.android.systemui.statusbar.phone.StatusIconContainer android:id="@id/statusIcons" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

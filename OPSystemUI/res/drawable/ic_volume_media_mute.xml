@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/op_volume_dialog_icon_size" android:width="@dimen/op_volume_dialog_icon_size" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ff1a1a1c" android:pathData="M13.75,10.57l-1.5-1.5V1h1.5c0,1.4,3.44,4.25,6.25,4.25v1.5a9.764,9.764,0,0,1-6.25-2.92Zm6.22,10.46-6.22-6.22V18A4.75,4.75,0,1,1,9,13.25a4.584,4.584,0,0,1,1.24 0.17 ,4.772,4.772,0,0,1,2.01,1.13V13.31L2.97,4.03,4.03,2.97l8.22,8.22,1.5,1.5,7.28,7.28ZM12.25,18A3.25,3.25,0,1,0,9,21.25,3.256,3.256,0,0,0,12.25,18Z" />
+</vector>

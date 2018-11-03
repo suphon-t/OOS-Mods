@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:interpolator="@interpolator/error_to_trustedstate_animation_interpolator_0" android:duration="283" android:valueFrom="M 0.0,-1.1 l 0.0,0.0 c 0.60751322478,0.0 1.1,0.49248677522 1.1,1.1 l 0.0,0.0 c 0.0,0.60751322478 -0.49248677522,1.1 -1.1,1.1 l 0.0,0.0 c -0.60751322478,0.0 -1.1,-0.49248677522 -1.1,-1.1 l 0.0,0.0 c 0.0,-0.60751322478 0.49248677522,-1.1 1.1,-1.1 Z" android:valueTo="M 0.0,0.0 l 0.0,0.0 c 0.0,0.0 0.0,0.0 0.0,0.0 l 0.0,0.0 c 0.0,0.0 0.0,0.0 0.0,0.0 l 0.0,0.0 c 0.0,0.0 0.0,0.0 0.0,0.0 l 0.0,0.0 c 0.0,0.0 0.0,0.0 0.0,0.0 Z" android:valueType="pathType" android:propertyName="pathData" />
+</set>

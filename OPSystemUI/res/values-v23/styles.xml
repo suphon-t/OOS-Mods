@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Menu" />
+    <style name="Base.TextAppearance.AppCompat.Widget.Button.Inverse" parent="@android:style/TextAppearance.Material.Widget.Button.Inverse" />
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V23.Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V23.Theme.AppCompat.Light" />
+    <style name="Base.Widget.AppCompat.Button.Borderless.Colored" parent="@android:style/Widget.Material.Button.Borderless.Colored" />
+    <style name="Base.Widget.AppCompat.Button.Colored" parent="@android:style/Widget.Material.Button.Colored" />
+    <style name="Base.Widget.AppCompat.RatingBar.Indicator" parent="@android:style/Widget.Material.RatingBar.Indicator" />
+    <style name="Base.Widget.AppCompat.RatingBar.Small" parent="@android:style/Widget.Material.RatingBar.Small" />
+    <style name="Base.Widget.AppCompat.Spinner.Underlined" parent="@android:style/Widget.Material.Spinner.Underlined" />
+    <style name="CardView" parent="@style/Base.CardView">
+        <item name="cardBackgroundColor">?android:colorBackgroundFloating</item>
+    </style>
+    <style name="Oneplus.Widget.Material.Light.TimePicker" parent="@android:style/Widget.Material.Light.TimePicker">
+        <item name="android:headerBackground">?onePlusPrimaryColor</item>
+        <item name="android:numbersTextColor">@color/op_timepicker_text_inverse_when_activated_material_light</item>
+        <item name="android:numbersBackgroundColor">@color/timepicker_numbers_background_color_light</item>
+        <item name="android:numbersSelectorColor">?opPickerColorActivated</item>
+        <item name="android:amPmTextColor">@color/timepicker_ampmlabel_text_color_light</item>
+        <item name="android:numbersInnerTextColor">@color/op_timepicker_text_inverse_when_activated_material_light</item>
+        <item name="headerTextColor">@color/op_primary_text_secondary_when_activated_material_inverse</item>
+        <item name="internalLayout">@layout/op_time_picker_material</item>
+        <item name="legacyLayout">@layout/op_time_picker_legacy_material</item>
+        <item name="numbersInnerTextColor">@color/op_timepicker_text_inverse_when_activated_material_light</item>
+        <item name="numbersTextColor">@color/op_timepicker_text_inverse_when_activated_material_light</item>
+    </style>
+    <style name="oneplus_contorl_text_style_base">
+        <item name="android:breakStrategy">simple</item>
+    </style>
+    <style name="oneplus_contorl_text_style_body1" parent="@style/oneplus_contorl_text_style_base">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:fontFamily">@string/oneplus_contorl_font_family_body1</item>
+        <item name="android:breakStrategy">simple</item>
+    </style>
+    <style name="oneplus_contorl_text_style_title_extended" parent="@style/Oneplus.TextAppearance.Material.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/oneplus_contorl_text_size_extended</item>
+        <item name="android:fontFamily">@string/oneplus_contorl_font_family_title_extended</item>
+        <item name="android:breakStrategy">simple</item>
+    </style>
+    <style name="oneplus_qs_theme_dark" parent="@style/qs_base">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:panelColorBackground">@android:color/material_grey_800</item>
+        <item name="android:tint">@color/oneplus_contorl_icon_color_accent_active_dark</item>
+        <item name="android:textColorTertiary">@color/oneplus_contorl_text_color_secondary_dark</item>
+        <item name="android:colorControlNormal">?android:textColorPrimary</item>
+        <item name="android:colorPrimary">#ff383838</item>
+        <item name="android:colorPrimaryDark">@android:color/primary_dark_device_default_settings</item>
+        <item name="android:colorAccent">@android:color/accent_device_default_dark</item>
+        <item name="android:colorBackgroundFloating">@color/oneplus_contorl_bg_color_bottomsheets_dark</item>
+        <item name="android:colorSecondary">@android:color/secondary_device_default_settings</item>
+        <item name="darkIconTheme">@style/QSIconTheme</item>
+        <item name="lightIconTheme">@style/QSIconTheme</item>
+    </style>
+    <style name="qs_theme" parent="@style/qs_base">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:tint">@color/oneplus_contorl_icon_color_accent_active_light</item>
+        <item name="android:textColorTertiary">@color/oneplus_contorl_text_color_secondary_light</item>
+        <item name="android:colorControlNormal">#de000000</item>
+        <item name="android:colorPrimary">#ffe8e8e8</item>
+        <item name="android:colorBackgroundFloating">#fff2f2f2</item>
+        <item name="darkIconTheme">@style/QSIconTheme</item>
+        <item name="lightIconTheme">@style/QSIconTheme</item>
+    </style>
+    <style name="Base.V23.Theme.AppCompat" parent="@style/Base.V22.Theme.AppCompat">
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:actionMenuTextColor</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:ratingBarStyleSmall</item>
+    </style>
+    <style name="Base.V23.Theme.AppCompat.Light" parent="@style/Base.V22.Theme.AppCompat.Light">
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:actionMenuTextColor</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:ratingBarStyleSmall</item>
+    </style>
+</resources>

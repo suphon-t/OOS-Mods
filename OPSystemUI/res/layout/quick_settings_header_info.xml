@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/header_text_container" android:layout_width="fill_parent" android:layout_height="@dimen/qs_header_tooltip_height" android:layout_marginTop="16.0dip" android:layout_below="@id/quick_status_bar_system_icons"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/oneplus_contorl_text_style_body1" android:textColor="?android:textColorSecondary" android:layout_gravity="bottom|center" android:id="@id/long_press_tooltip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quick_settings_header_onboarding_text" android:alpha="0.0" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom|center" android:id="@id/status_container" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/next_alarm_icon" android:visibility="gone" android:layout_width="@dimen/qs_header_alarm_icon_size" android:layout_height="@dimen/qs_header_alarm_icon_size" android:src="@drawable/stat_sys_alarm" android:tint="?android:textColorPrimary" />
+        <TextView android:textAppearance="@style/TextAppearance.QS.TileLabel" android:id="@id/next_alarm_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/qs_header_alarm_text_margin_start" />
+        <View android:id="@id/status_separator" android:background="@android:color/white" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" android:backgroundTint="?android:textColorPrimary" />
+        <ImageView android:id="@id/ringer_mode_icon" android:visibility="gone" android:layout_width="@dimen/qs_header_alarm_icon_size" android:layout_height="@dimen/qs_header_alarm_icon_size" android:tint="?android:textColorPrimary" />
+        <TextView android:textAppearance="@style/TextAppearance.QS.TileLabel" android:id="@id/ringer_mode_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/qs_header_alarm_text_margin_start" />
+    </LinearLayout>
+</FrameLayout>

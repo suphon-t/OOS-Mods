@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/op_volume_dialog_icon_size" android:width="@dimen/op_volume_dialog_icon_size" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:pathData="M 0 0 L 24 0 L 24 24 L 0 24 Z" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#ff000000" android:pathData="M17,22.75 L7,22.75 C6.03355684,22.75 5.25,21.9669843 5.25,21 L5.25,3 C5.25,2.03301571 6.03355684,1.25 7,1.25 L17,1.25 C17.9664432,1.25 18.75,2.03301571 18.75,3 L18.75,21 C18.75,21.9669843 17.9664432,22.75 17,22.75 Z M17,21.25 C17.1382479,21.25 17.25,21.1383251 17.25,21 L17.25,3 C17.25,2.8616749 17.1382479,2.75 17,2.75 L7,2.75 C6.86175208,2.75 6.75,2.8616749 6.75,3 L6.75,21 C6.75,21.1383251 6.86175208,21.25 7,21.25 L17,21.25 Z M11,19.75 C10.5857864,19.75 10.25,19.4142136 10.25,19 C10.25,18.5857864 10.5857864,18.25 11,18.25 L13,18.25 C13.4142136,18.25 13.75,18.5857864 13.75,19 C13.75,19.4142136 13.4142136,19.75 13,19.75 L11,19.75 Z" android:strokeWidth="1.0" />
+</vector>

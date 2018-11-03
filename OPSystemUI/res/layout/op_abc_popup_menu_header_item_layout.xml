@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="@dimen/oneplus_contorl_margin_left2" android:paddingRight="@dimen/oneplus_contorl_margin_right2" android:layout_width="fill_parent" android:layout_height="?opDropdownListPreferredItemHeight" android:minWidth="112.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?opTextAppearancePopupMenuHeader" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:textAlignment="viewStart" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/ic_bluetooth_transient"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="dot_left" android:animation="@anim/ic_bluetooth_transient_dot_left_animation" />
+    <target android:name="dot_right" android:animation="@anim/ic_bluetooth_transient_dot_right_animation" />
+</animated-vector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:id="@id/lock_out_message_container" android:background="@drawable/speed_bump_scrim" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/lock_out_drawable" android:layout_width="wrap_content" android:layout_height="@dimen/speed_bump_lock_out_message_height" android:layout_marginBottom="@dimen/speed_bump_lock_out_drawable_margin_bottom" android:src="@drawable/lock_out_message_animation" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <TextView android:textAppearance="@style/TextAppearance.Car.Body1" android:gravity="center" android:id="@id/lock_out_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/speed_bump_lockout_message" android:layout_alignTop="@id/lock_out_drawable" android:layout_alignBottom="@id/lock_out_drawable" android:layout_alignStart="@id/lock_out_drawable" android:layout_alignEnd="@id/lock_out_drawable" />
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="abc_slice_duration_days">
+        <item quantity="other">Prije %d dana</item>
+        <item quantity="one">Prije %d dan</item>
+        <item quantity="few">Prije %d dana</item>
+    </plurals>
+    <plurals name="abc_slice_duration_min">
+        <item quantity="other">Prije %d min</item>
+        <item quantity="one">Prije %d min</item>
+        <item quantity="few">Prije %d min</item>
+    </plurals>
+    <plurals name="abc_slice_duration_years">
+        <item quantity="other">Prije %d godina</item>
+        <item quantity="one">Prije %d godinu</item>
+        <item quantity="few">Prije %d godine</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">Unesite SIM PIN, preostalo vam je %d pokušaja prije nego se obratite operateru za otključavanje uređaja.</item>
+        <item quantity="one">Unesite SIM PIN, preostao vam je %d pokušaj prije nego se obratite operateru za otključavanje uređaja.</item>
+        <item quantity="few">Unesite SIM PIN, preostalo vam je %d pokušaja prije nego se obratite operateru za otključavanje uređaja.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">Unesite PIN za SIM%1$d, preostalo vam je %2$d pokušaja.</item>
+        <item quantity="one">Unesite PIN za SIM%1$d, preostao vam je %2$d pokušaj prije nego se obratite operateru za otključavanje uređaja.</item>
+        <item quantity="few">Unesite PIN za SIM%1$d, preostalo vam je %2$d pokušaja.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">SIM je sada onemogućen. Unesite PUK kod da biste nastavili. Preostao vam je %d pokušaj prije nego što SIM postane trajno neupotrebljiv. Za detalje se obratite pružatelju usluge.</item>
+        <item quantity="one">SIM je sada onemogućen. Unesite PUK kod da biste nastavili. Preostao vam je %d pokušaj prije nego što SIM postane trajno neupotrebljiv. Za detalje se obratite pružatelju usluge.</item>
+        <item quantity="few">SIM je sada onemogućen. Unesite PUK kod da biste nastavili. Preostao vam je %d pokušaj prije nego što SIM postane trajno neupotrebljiv. Za detalje se obratite pružatelju usluge.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">PIN kôd SIM-a nije točan. Imate još %d pokušaja.</item>
+        <item quantity="one">PIN kôd SIM-a nije točan. Imate još %d pokušaj.</item>
+        <item quantity="few">PIN kôd SIM-a nije točan. Imate još %d pokušaja.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">Pogrešan PIN za SIM %1$d, preostalo vam je %2$d pokušaja.</item>
+        <item quantity="one">Pogrešan PIN za SIM %1$d, preostao vam je %2$d pokušaj prije nego se obratite operateru za otključavanje uređaja.</item>
+        <item quantity="few">Pogrešan PIN za SIM %1$d, preostalo vam je %2$d pokušaja.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">PUK kôd SIM-a nije točan. Imate još %d pokušaja, a ako ne uspijete, SIM će postati trajno neupotrebljiv.</item>
+        <item quantity="one">PUK kôd SIM-a nije točan. Imate još %d pokušaj, a ako ne uspijete, SIM će postati trajno neupotrebljiv.</item>
+        <item quantity="few">PUK kôd SIM-a nije točan. Imate još %d pokušaja, a ako ne uspijete, SIM će postati trajno neupotrebljiv.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="other">Uređaj nije bio otključan %d sati. Potvrdite zaporku.</item>
+        <item quantity="one">Uređaj nije bio otključan %d sat. Potvrdite zaporku.</item>
+        <item quantity="few">Uređaj nije bio otključan %d sata. Potvrdite zaporku.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="other">Uređaj nije bio otključan %d sati. Potvrdite uzorak.</item>
+        <item quantity="one">Uređaj nije bio otključan %d sat. Potvrdite uzorak.</item>
+        <item quantity="few">Uređaj nije bio otključan %d sata. Potvrdite uzorak.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="other">Uređaj nije bio otključan %d sati. Potvrdite PIN.</item>
+        <item quantity="one">Uređaj nije bio otključan %d sat. Potvrdite PIN.</item>
+        <item quantity="few">Uređaj nije bio otključan %d sata. Potvrdite PIN.</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="other">Pokušajte ponovo za %d sekundi</item>
+        <item quantity="one">Pokušajte ponovo za %d sekundu</item>
+        <item quantity="few">Pokušajte ponovo za %d sekunde</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="other">U skupini je još %s obavijesti.</item>
+        <item quantity="one">U skupini je još %s obavijest.</item>
+        <item quantity="few">U skupini su još %s obavijesti.</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="other">%d uređaja</item>
+        <item quantity="one">%d uređaj</item>
+        <item quantity="few">%d uređaja</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="other">%d sati</item>
+        <item quantity="one">%d sat</item>
+        <item quantity="few">%d sata</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="other">%d minuta</item>
+        <item quantity="one">%d minuta</item>
+        <item quantity="few">%d minute</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">%d zaslona u Pregledu</item>
+        <item quantity="one">%d zaslon u Pregledu</item>
+        <item quantity="few">%d zaslona u Pregledu</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="other">Povezano je %1$d uređaja</item>
+        <item quantity="one">Povezan je %1$d uređaj</item>
+        <item quantity="few">Povezana su %1$d uređaja</item>
+    </plurals>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/primary_icon" android:layout_width="@dimen/car_single_line_list_item_height" android:layout_height="@dimen/car_single_line_list_item_height" />
+    <LinearLayout android:orientation="vertical" android:id="@id/seek_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/car_padding_1" android:layout_marginBottom="@dimen/car_padding_1">
+        <TextView android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/car_seekbar_text_overlap" />
+        <SeekBar android:id="@id/seek_bar" android:paddingTop="@dimen/car_seekbar_padding" android:paddingBottom="@dimen/car_seekbar_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:thumbOffset="0.0dip" android:paddingStart="0.0dip" android:paddingEnd="0.0dip" android:splitTrack="false" android:min="0" />
+    </LinearLayout>
+    <ImageView android:id="@id/supplemental_icon" android:background="@drawable/car_button_ripple_background" android:layout_width="@dimen/car_primary_icon_size" android:layout_height="@dimen/car_primary_icon_size" android:scaleType="fitCenter" />
+    <View android:id="@id/supplemental_icon_divider" android:background="@color/car_list_divider" android:layout_width="@dimen/car_vertical_line_divider_width" android:layout_height="@dimen/car_vertical_line_divider_height" />
+</RelativeLayout>

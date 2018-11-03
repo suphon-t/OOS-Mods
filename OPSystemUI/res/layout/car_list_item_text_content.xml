@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:foreground="@drawable/car_card_ripple_background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/primary_icon" android:layout_width="@dimen/car_single_line_list_item_height" android:layout_height="@dimen/car_single_line_list_item_height" />
+    <TextView android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:id="@id/body" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/supplemental_icon_divider" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/car_padding_4" android:layout_toStartOf="@id/supplemental_icon" style="@style/CarListVerticalDivider" />
+    <ImageView android:id="@id/supplemental_icon" android:background="@drawable/car_button_ripple_background" android:layout_width="@dimen/car_primary_icon_size" android:layout_height="@dimen/car_primary_icon_size" android:scaleType="fitCenter" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/car_keyline_1" android:layout_alignParentEnd="true" />
+    <View android:id="@id/switch_divider" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/car_padding_4" android:layout_toStartOf="@id/switch_widget" style="@style/CarListVerticalDivider" />
+    <Switch android:id="@id/switch_widget" android:layout_width="@dimen/car_primary_icon_size" android:layout_height="@dimen/car_primary_icon_size" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/car_keyline_1" android:layout_alignParentEnd="true" style="@android:style/Widget.Material.CompoundButton.Switch" />
+    <View android:id="@id/action2_divider" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/car_padding_4" android:layout_toStartOf="@id/action2" style="@style/CarListVerticalDivider" />
+    <Button android:ellipsize="end" android:id="@id/action2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="@integer/car_borderless_button_text_length_limit" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/car_padding_4" android:layout_toStartOf="@id/action1_divider" style="?android:borderlessButtonStyle" />
+    <View android:id="@id/action1_divider" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/car_padding_4" android:layout_toStartOf="@id/action1" style="@style/CarListVerticalDivider" />
+    <Button android:ellipsize="end" android:id="@id/action1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="@integer/car_borderless_button_text_length_limit" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/car_keyline_1" android:layout_alignParentEnd="true" style="?android:borderlessButtonStyle" />
+</RelativeLayout>

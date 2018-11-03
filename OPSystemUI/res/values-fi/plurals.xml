@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">Anna SIM-kortin pin-koodi. Sinulla on jäljellä %d yritystä.</item>
+        <item quantity="one">Anna SIM-kortin pin-koodi. Sinulla on jäljellä %d yritys, jonka jälkeen operaattorisi on avattava laitteen lukitus.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">Anna SIM%1$d-kortin PIN, sinulla on %2$d yritystä jäljellä.</item>
+        <item quantity="one">Anna SIM%1$d-kortin PIN, sinulla on %2$d yritystä jäljellä, ennen kuin sinun on pyydettävä operaattoria avaamaan laitteesi lukitus.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">SIM on nyt pois käytöstä. Jatka antamalla PUK-koodi. Voit yrittää %d kertaa, ennen kuin SIM-kortti muuttuu lopullisesti käyttökelvottomaksi. Lisätietoa saat ottamalla yhteyttä palveluntarjoajaan.</item>
+        <item quantity="one">SIM on nyt pois käytöstä. Jatka antamalla PUK-koodi. Voit yrittää %d kerran, ennen kuin SIM-kortti muuttuu lopullisesti käyttökelvottomaksi. Lisätietoa saat ottamalla yhteyttä palveluntarjoajaan.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">Virheellinen SIM-kortin PIN-koodi. Sinulla on %d yritystä jäljellä.</item>
+        <item quantity="one">Virheellinen SIM-kortin PIN-koodi. Sinulla on %d yritys jäljellä, ennen kuin sinun on otettava yhteys operaattoriin laitteen lukituksen avaamiseksi.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">Virheellinen SIM%1$d-kortin PIN-koodi, sinulla on %2$d yritystä jäljellä, ennen kuin sinun täytyy pyytää operaattoria avaamaan laitteesi lukitus.</item>
+        <item quantity="one">Virheellinen SIM%1$d-kortin PIN-koodi, sinulla on %2$d yritystä jäljellä, ennen kuin sinun täytyy pyytää operaattoria avaamaan laitteesi lukitus.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">Virheellinen SIM-kortin PUK-koodi. Sinulla on %d yritystä jäljellä, ennen kuin SIM-kortista tulee pysyvästi käyttökelvoton.</item>
+        <item quantity="one">Virheellinen SIM-kortin PUK-koodi. Sinulla on %d yritys jäljellä, ennen kuin SIM-kortista tulee pysyvästi käyttökelvoton.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="other">Laitteen lukitusta ei ole avattu %d tuntiin. Vahvista salasana.</item>
+        <item quantity="one">Laitteen lukitusta ei ole avattu %d tuntiin. Vahvista salasana.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="other">Laitteen lukitusta ei ole avattu %d tuntiin. Vahvista kuvio.</item>
+        <item quantity="one">Laitteen lukitusta ei ole avattu %d tuntiin. Vahvista kuvio.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="other">Laitteen lukitusta ei ole avattu %d tuntiin. Vahvista PIN-koodi.</item>
+        <item quantity="one">Laitteen lukitusta ei ole avattu %d tuntiin. Vahvista PIN-koodi.</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="other">Yritä uudelleen %d sekunnin kuluttua.</item>
+        <item quantity="one">Yritä uudelleen 1 sekunnin kuluttua.</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="other">+%s ilmoitusta ryhmässä</item>
+        <item quantity="one">+%s ilmoitus ryhmässä</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="other">%d laitetta</item>
+        <item quantity="one">%d laite</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="other">%d tuntia</item>
+        <item quantity="one">%d tunti</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="other">%d minuuttia</item>
+        <item quantity="one">%d minuutti</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">%d näyttöä Yleistä-kohdassa</item>
+        <item quantity="one">1 näyttö Yleistä-kohdassa</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="other">%1$d laitetta liitetty</item>
+        <item quantity="one">%1$d laite liitetty</item>
+    </plurals>
+</resources>

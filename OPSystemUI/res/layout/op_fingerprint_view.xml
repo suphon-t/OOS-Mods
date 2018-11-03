@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/op_fingerprint_view" android:background="@color/op_fingerprint_dim_color_default" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/op_fingerprint_dim_view" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    <com.android.systemui.fingerprint.FingerprintAnimationView android:id="@id/op_fingerprint_animation_view_1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <com.android.systemui.fingerprint.FingerprintAnimationView android:id="@id/op_fingerprint_animation_view_2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <com.android.systemui.fingerprint.FingerprintAnimationView android:id="@id/op_fingerprint_animation_view_3" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <com.android.systemui.fingerprint.FingerprintAnimationView android:id="@id/op_fingerprint_animation_view_4" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <com.android.systemui.fingerprint.FingerprintAnimationView android:id="@id/op_fingerprint_animation_view_5" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <com.android.systemui.fingerprint.CircleImageView android:id="@id/op_fingerprint_icon_disable" android:visibility="invisible" android:layout_width="@dimen/op_biometric_icon_normal_width" android:layout_height="@dimen/op_biometric_icon_normal_width" />
+    <com.android.systemui.fingerprint.CircleImageView android:id="@id/op_fingerprint_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/op_ic_biometric" />
+    <com.android.systemui.fingerprint.CircleImageView android:id="@id/op_fingerprint_icon_white" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:visibility="gone" layout="@layout/fingerprint_dialog" />
+</RelativeLayout>

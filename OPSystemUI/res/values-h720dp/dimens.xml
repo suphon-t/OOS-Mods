@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_alert_dialog_button_bar_height">54.0dip</dimen>
+    <dimen name="qs_lower_pager_height">250.0dip</dimen>
+    <dimen name="qs_upper_frame_height">366.0dip</dimen>
+    <dimen name="qs_upper_pager_height">361.0dip</dimen>
+</resources>

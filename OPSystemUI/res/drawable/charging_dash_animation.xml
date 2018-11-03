@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="15" android:drawable="@drawable/dash00" />
+    <item android:duration="15" android:drawable="@drawable/dash01" />
+    <item android:duration="15" android:drawable="@drawable/dash02" />
+    <item android:duration="15" android:drawable="@drawable/dash03" />
+    <item android:duration="15" android:drawable="@drawable/dash04" />
+    <item android:duration="15" android:drawable="@drawable/dash05" />
+    <item android:duration="15" android:drawable="@drawable/dash06" />
+    <item android:duration="15" android:drawable="@drawable/dash07" />
+    <item android:duration="15" android:drawable="@drawable/dash08" />
+    <item android:duration="15" android:drawable="@drawable/dash09" />
+    <item android:duration="15" android:drawable="@drawable/dash10" />
+    <item android:duration="15" android:drawable="@drawable/dash11" />
+    <item android:duration="15" android:drawable="@drawable/dash12" />
+    <item android:duration="15" android:drawable="@drawable/dash13" />
+    <item android:duration="15" android:drawable="@drawable/dash14" />
+    <item android:duration="15" android:drawable="@drawable/dash15" />
+    <item android:duration="15" android:drawable="@drawable/dash16" />
+    <item android:duration="15" android:drawable="@drawable/dash17" />
+    <item android:duration="15" android:drawable="@drawable/dash18" />
+    <item android:duration="15" android:drawable="@drawable/dash19" />
+    <item android:duration="15" android:drawable="@drawable/dash20" />
+    <item android:duration="15" android:drawable="@drawable/dash21" />
+    <item android:duration="15" android:drawable="@drawable/dash22" />
+    <item android:duration="15" android:drawable="@drawable/dash23" />
+    <item android:duration="15" android:drawable="@drawable/dash24" />
+    <item android:duration="15" android:drawable="@drawable/dash25" />
+    <item android:duration="15" android:drawable="@drawable/dash26" />
+    <item android:duration="15" android:drawable="@drawable/dash27" />
+    <item android:duration="15" android:drawable="@drawable/dash28" />
+    <item android:duration="15" android:drawable="@drawable/dash29" />
+    <item android:duration="15" android:drawable="@drawable/dash30" />
+    <item android:duration="15" android:drawable="@drawable/dash31" />
+    <item android:duration="15" android:drawable="@drawable/dash32" />
+    <item android:duration="15" android:drawable="@drawable/dash33" />
+    <item android:duration="15" android:drawable="@drawable/dash34" />
+    <item android:duration="15" android:drawable="@drawable/dash35" />
+</animation-list>

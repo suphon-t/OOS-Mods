@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">SIM の PIN を入力してください。あと %d 回間違うと 携帯電話会社に連絡のうえ、お使いのデバイスのロックを解除していただく必要があります。</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">SIM カード %1$d の PIN を入力してください。残り %2$d 回試行できます。</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">SIM が無効化されました。続行するには PUK コードを入力してください。あと %d 回間違うと SIM は永久に使用できなくなります。詳細については携帯電話会社にお問い合わせください。</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">SIM PIN コードが無効です。入力できるのはあと %d 回です。</item>
+        <item quantity="one">SIM PIN コードが無効です。入力できるのはあと %d 回です。この回数を超えると、お使いの端末をロック解除するのに携帯通信会社にお問い合わせいただく必要があります。</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">SIM カード %1$d の PIN が正しくありません。残り %2$d 回試行できます。</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">SIM PUK コードが無効です。入力できるのはあと %d 回です。この回数を超えると SIM は完全に使用できなくなります。</item>
+        <item quantity="one">SIM PUK コードが無効です。入力できるのはあと %d 回です。この回数を超えると SIM は完全に使用できなくなります。</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="other">端末のロックが %d 時間、解除されていません。パスワードを確認してください。</item>
+        <item quantity="one">端末のロックが %d 時間、解除されていません。パスワードを確認してください。</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="other">端末のロックが %d 時間、解除されていません。パターンを確認してください。</item>
+        <item quantity="one">端末のロックが %d 時間、解除されていません。パターンを確認してください。</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="other">端末のロックが %d 時間、解除されていません。PIN を確認してください。</item>
+        <item quantity="one">端末のロックが %d 時間、解除されていません。PIN を確認してください。</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="other">%d 秒後にもう一度お試しください。</item>
+        <item quantity="one">1 秒後にもう一度お試しください。</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="other">他 %s 件の通知</item>
+        <item quantity="one">他 %s 件の通知</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="other">%d 台の端末</item>
+        <item quantity="one">%d 台の端末</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="other">%d時間</item>
+        <item quantity="one">%d時間</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="other">%d分</item>
+        <item quantity="one">%d分</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">[最近]に%d個の画面があります</item>
+        <item quantity="one">[最近]に1個の画面があります</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="other">%1$d 台の端末が接続されています</item>
+        <item quantity="one">%1$d 台の端末が接続されています</item>
+    </plurals>
+</resources>

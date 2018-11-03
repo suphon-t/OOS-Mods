@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:shareInterpolator="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <alpha android:interpolator="@interpolator/oneplus_control_fast_out_linear_in" android:duration="@integer/oneplus_contorl_time_part5" android:fromAlpha="@dimen/oneplus_contorl_alpha1" android:toAlpha="@dimen/oneplus_contorl_alpha11" />
+</set>

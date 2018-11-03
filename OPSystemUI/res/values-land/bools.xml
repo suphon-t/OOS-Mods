@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="quick_settings_wide">true</bool>
+    <bool name="kg_sim_puk_account_full_screen">false</bool>
+</resources>

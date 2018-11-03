@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@android:interpolator/linear" android:duration="150" android:valueFrom="190.0" android:valueTo="190.0" android:valueType="floatType" android:propertyName="rotation" />
+        <objectAnimator android:interpolator="@interpolator/ic_fingerprint_toerror_animation_interpolator_2" android:duration="549" android:valueFrom="190.0" android:valueTo="-6.0" android:valueType="floatType" android:propertyName="rotation" />
+    </set>
+</set>

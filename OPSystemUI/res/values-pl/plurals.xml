@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">Wpisz kod PIN do karty SIM. Pozostało %d prób.</item>
+        <item quantity="one">Wpisz kod PIN do karty SIM. Pozostała %d próba, po czym należy skontaktować się z operatorem do odblokowania urządzenia.</item>
+        <item quantity="few">Wpisz kod PIN do karty SIM. Pozostało %d próby, po czym należy skontaktować się z operatorem do odblokowania urządzenia.</item>
+        <item quantity="many">Wpisz kod PIN do karty SIM. Pozostało %d prób, po czym należy skontaktować się z operatorem do odblokowania urządzenia.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">Wpisz kod PIN do karty SIM %1$d . Pozostało %2$d prób, po czym należy skontaktować się z operatorem do odblokowania urządzenia.</item>
+        <item quantity="one">Wpisz kod PIN do karty SIM %1$d . Pozostała %2$d próba, po czym należy skontaktować się z operatorem do odblokowania urządzenia.</item>
+        <item quantity="few">Wpisz kod PIN do karty SIM %1$d . Pozostały %2$d próby, po czym należy skontaktować się z operatorem do odblokowania urządzenia.</item>
+        <item quantity="many">Wpisz kod PIN do karty SIM %1$d . Pozostało %2$d prób, po czym należy skontaktować się z operatorem do odblokowania urządzenia.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">Karta SIM jest teraz wyłączona. Wprowadź kod PUK, aby kontynuować. Pozostało Ci %d prób, zanim SIM stanie się kompletnie bezużyteczna. W celu uzyskania dodatkowych informacji skontaktuj się z operatorem.</item>
+        <item quantity="one">Karta SIM jest teraz wyłączona. Wprowadź kod PUK, aby kontynuować. Pozostała Ci %d próba, zanim SIM stanie się kompletnie bezużyteczna. W celu uzyskania dodatkowych informacji skontaktuj się z operatorem.</item>
+        <item quantity="few">Karta SIM jest teraz wyłączona. Wprowadź kod PUK, aby kontynuować. Pozostało Ci %d próby, zanim SIM stanie się kompletnie bezużyteczna. W celu uzyskania dodatkowych informacji skontaktuj się z operatorem.</item>
+        <item quantity="many">Karta SIM jest teraz wyłączona. Wprowadź kod PUK, aby kontynuować. Pozostała Ci %d prób, zanim SIM stanie się kompletnie bezużyteczna. W celu uzyskania dodatkowych informacji skontaktuj się z operatorem.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">Nieprawidłowy kod PIN karty SIM. Masz jeszcze %d próby.</item>
+        <item quantity="one">Nieprawidłowy kod PIN karty SIM. Masz jeszcze %d próbę, zanim będziesz musiał skontaktować się z operatorem, by odblokował Twoje urządzenie.</item>
+        <item quantity="few">Nieprawidłowy kod PIN karty SIM. Masz jeszcze %d próby.</item>
+        <item quantity="many">Nieprawidłowy kod PIN karty SIM. Masz jeszcze %d prób.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">Niepoprawny kod PIN do karty SIM %1$d . Pozostało %2$d prób, po czym należy skontaktować się z operatorem do odblokowania urządzenia.</item>
+        <item quantity="one">Niepoprawny kod PIN do karty SIM %1$d . Pozostała %2$d próba, po czym należy skontaktować się z operatorem do odblokowania urządzenia.</item>
+        <item quantity="few">Niepoprawny kod PIN do karty SIM %1$d . Pozostały %2$d próby, po czym należy skontaktować się z operatorem do odblokowania urządzenia.</item>
+        <item quantity="many">Niepoprawny kod PIN do karty SIM %1$d . Pozostało %2$d prób, po czym należy skontaktować się z operatorem do odblokowania urządzenia.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">Nieprawidłowy kod PUK karty SIM. Masz jeszcze %d próby, zanim karta SIM zostanie trwale zablokowana.</item>
+        <item quantity="one">Nieprawidłowy kod PUK karty SIM. Masz jeszcze %d próbę, zanim karta SIM zostanie trwale zablokowana.</item>
+        <item quantity="few">Nieprawidłowy kod PUK karty SIM. Masz jeszcze %d próby, zanim karta SIM zostanie trwale zablokowana.</item>
+        <item quantity="many">Nieprawidłowy kod PUK karty SIM. Masz jeszcze %d prób, zanim karta SIM zostanie trwale zablokowana.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="other">Urządzenie nie zostało odblokowane od %d godziny. Potwierdź hasło.</item>
+        <item quantity="one">Urządzenie nie zostało odblokowane od %d godziny. Potwierdź hasło.</item>
+        <item quantity="few">Urządzenie nie zostało odblokowane od %d godzin. Potwierdź hasło.</item>
+        <item quantity="many">Urządzenie nie zostało odblokowane od %d godzin. Potwierdź hasło.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="other">Urządzenie nie zostało odblokowane od %d godziny. Potwierdź wzór.</item>
+        <item quantity="one">Urządzenie nie zostało odblokowane od %d godziny. Potwierdź wzór.</item>
+        <item quantity="few">Urządzenie nie zostało odblokowane od %d godzin. Potwierdź wzór.</item>
+        <item quantity="many">Urządzenie nie zostało odblokowane od %d godzin. Potwierdź wzór.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="other">Urządzenie nie zostało odblokowane od %d godziny. Potwierdź kod PIN.</item>
+        <item quantity="one">Urządzenie nie zostało odblokowane od %d godziny. Potwierdź kod PIN.</item>
+        <item quantity="few">Urządzenie nie zostało odblokowane od %d godzin. Potwierdź kod PIN.</item>
+        <item quantity="many">Urządzenie nie zostało odblokowane od %d godzin. Potwierdź kod PIN.</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="other">Spróbuj ponownie za %d sekundy.</item>
+        <item quantity="one">Spróbuj ponownie za sekundę</item>
+        <item quantity="few">Spróbuj ponownie za %d sekundy.</item>
+        <item quantity="many">Spróbuj ponownie za %d sekund.</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="other">Jeszcze %s powiadomienia w grupie.</item>
+        <item quantity="one">Jeszcze %s powiadomienie w grupie.</item>
+        <item quantity="few">Jeszcze %s powiadomienia w grupie.</item>
+        <item quantity="many">Jeszcze %s powiadomień w grupie.</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="other">%d urządzenia</item>
+        <item quantity="one">%d urządzenie</item>
+        <item quantity="few">%d urządzenia</item>
+        <item quantity="many">%d urządzeń</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="other">%d godziny</item>
+        <item quantity="one">%d godzina</item>
+        <item quantity="few">%d godziny</item>
+        <item quantity="many">%d godzin</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="other">%d minuty</item>
+        <item quantity="one">]%d minuta</item>
+        <item quantity="few">%d minuty</item>
+        <item quantity="many">%d minut</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">%d ekranu w widoku przeglądu</item>
+        <item quantity="one">1 ekran w widoku przeglądu</item>
+        <item quantity="few">%d ekrany w widoku przeglądu</item>
+        <item quantity="many">%d ekranów w widoku przeglądu</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="other">%1$d urządzenia podłączonego</item>
+        <item quantity="one">%1$d urządzenie podłączone</item>
+        <item quantity="few">%1$d urządzenia podłączone</item>
+        <item quantity="many">%1$d urządzeń podłączonych</item>
+    </plurals>
+</resources>

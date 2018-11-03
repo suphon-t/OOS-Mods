@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.qs.PageIndicator android:gravity="center" android:layout_gravity="center" android:id="@id/page_indicator" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="11.0dip" android:importantForAccessibility="yes"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

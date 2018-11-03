@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.StatusBarWindowView android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sysui="http://schemas.android.com/apk/res-auto">
+    <com.android.systemui.statusbar.BackDropView android:id="@id/backdrop" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" sysui:ignoreRightInset="true">
+        <ImageView android:id="@id/backdrop_back" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/backdrop_front" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </com.android.systemui.statusbar.BackDropView>
+    <ImageView android:layout_gravity="center|top" android:id="@id/screendecor_up" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/status_bar_header_height_keyguard" android:scaleType="center" />
+    <com.android.systemui.statusbar.ScrimView android:id="@id/scrim_behind" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" sysui:ignoreRightInset="true" />
+    <FrameLayout android:id="@id/status_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/fullscreen_user_switcher_stub" android:layout="@layout/car_fullscreen_user_switcher" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/status_bar_expanded" />
+    <include layout="@layout/brightness_mirror" />
+    <com.android.systemui.statusbar.ScrimView android:id="@id/scrim_in_front" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" sysui:ignoreRightInset="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/opfacelock_light_view" />
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/keyguard_prevent_mode" />
+    </LinearLayout>
+</com.android.systemui.statusbar.phone.StatusBarWindowView>

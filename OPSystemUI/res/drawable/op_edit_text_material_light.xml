@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetTop="@dimen/oneplus_contorl_margin_text_top2" android:insetBottom="@dimen/oneplus_contorl_margin_bottom1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <selector>
+        <item android:state_enabled="false">
+            <nine-patch android:src="@drawable/op_textfield_default_mtrl_alpha" android:tint="@color/edittext_normal_color" android:alpha="?android:disabledAlpha" />
+        </item>
+        <item android:state_focused="false" android:state_pressed="false">
+            <nine-patch android:src="@drawable/op_textfield_default_mtrl_alpha" android:tint="@color/edittext_normal_color" />
+        </item>
+        <item>
+            <nine-patch android:src="@drawable/op_textfield_activated_mtrl_alpha" android:tint="?onePlusPrimaryColor" />
+        </item>
+    </selector>
+</inset>

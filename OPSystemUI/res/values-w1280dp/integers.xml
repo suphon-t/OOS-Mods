@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="car_dialog_column_number">8</integer>
+    <integer name="column_card_default_column_span">8</integer>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@android:interpolator/linear" android:duration="200" android:valueFrom="M 0.0,-7.0 l 0.0,0.0 c 1.9329966243,0.0 3.5,1.5670033757 3.5,3.5 l 0.0,7.0 c 0.0,1.9329966243 -1.5670033757,3.5 -3.5,3.5 l 0.0,0.0 c -1.9329966243,0.0 -3.5,-1.5670033757 -3.5,-3.5 l 0.0,-7.0 c 0.0,-1.9329966243 1.5670033757,-3.5 3.5,-3.5 Z" android:valueTo="M 0.0,-7.0 l 0.0,0.0 c 1.9329966243,0.0 3.5,1.5670033757 3.5,3.5 l 0.0,7.0 c 0.0,1.9329966243 -1.5670033757,3.5 -3.5,3.5 l 0.0,0.0 c -1.9329966243,0.0 -3.5,-1.5670033757 -3.5,-3.5 l 0.0,-7.0 c 0.0,-1.9329966243 1.5670033757,-3.5 3.5,-3.5 Z" android:valueType="pathType" android:propertyName="pathData" />
+        <objectAnimator android:interpolator="@interpolator/trusted_state_to_error_animation_interpolator_2" android:duration="300" android:valueFrom="M 0.0,-7.0 l 0.0,0.0 c 1.9329966243,0.0 3.5,1.5670033757 3.5,3.5 l 0.0,7.0 c 0.0,1.9329966243 -1.5670033757,3.5 -3.5,3.5 l 0.0,0.0 c -1.9329966243,0.0 -3.5,-1.5670033757 -3.5,-3.5 l 0.0,-7.0 c 0.0,-1.9329966243 1.5670033757,-3.5 3.5,-3.5 Z" android:valueTo="M 0.0,-3.0 l 0.0,0.0 c 0.5522847498,0.0 1.0,0.4477152502 1.0,1.0 l 0.0,4.0 c 0.0,0.5522847498 -0.4477152502,1.0 -1.0,1.0 l 0.0,0.0 c -0.5522847498,0.0 -1.0,-0.4477152502 -1.0,-1.0 l 0.0,-4.0 c 0.0,-0.5522847498 0.4477152502,-1.0 1.0,-1.0 Z" android:valueType="pathType" android:propertyName="pathData" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@android:interpolator/linear" android:duration="183" android:valueFrom="0.0" android:valueTo="0.0" android:valueType="floatType" android:propertyName="fillAlpha" />
+        <objectAnimator android:interpolator="@android:interpolator/linear" android:duration="16" android:valueFrom="0.0" android:valueTo="1.0" android:valueType="floatType" android:propertyName="fillAlpha" />
+    </set>
+</set>

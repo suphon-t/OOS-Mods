@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="16.0dip" android:width="11.0dip" android:viewportWidth="11.0" android:viewportHeight="16.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <path android:name="Bolt" android:fillColor="#4dffffff" android:pathData="M4,9 L0,9 L7,0 L7,7 L11,7 L4,16 L4,9 Z" />
+    <path android:name="Fill" android:fillColor="#ffffffff" android:pathData="M3.88888889,4 L0,9 L4,9 L4,16 L11,7 L7,7 L7,4 L3.88888889,4 L3.88888889,4 Z" />
+</vector>

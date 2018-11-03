@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="?listItemBackgroundColor" />
+    <corners android:topLeftRadius="@dimen/car_radius_3" android:topRightRadius="@dimen/car_radius_3" />
+</shape>

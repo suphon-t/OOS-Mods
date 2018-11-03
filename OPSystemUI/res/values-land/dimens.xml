@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_default_height_material">48.0dip</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">12.0dip</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">14.0dip</dimen>
+    <item type="dimen" name="appbar_layout_default_height_material">@dimen/oneplus_contorl_appbar_size_landscape</item>
+    <dimen name="battery_detail_graph_space_bottom">9.0dip</dimen>
+    <dimen name="battery_detail_graph_space_top">9.0dip</dimen>
+    <dimen name="brightness_mirror_height">40.0dip</dimen>
+    <dimen name="docked_divider_handle_height">16.0dip</dimen>
+    <dimen name="docked_divider_handle_width">2.0dip</dimen>
+    <dimen name="mr_controller_volume_group_list_item_height">61.0dip</dimen>
+    <dimen name="mr_controller_volume_group_list_item_icon_size">18.0dip</dimen>
+    <dimen name="mr_controller_volume_group_list_max_height">132.0dip</dimen>
+    <item type="dimen" name="navigation_bar_size">@android:dimen/navigation_bar_width</item>
+    <dimen name="op_progress_dialog_right_padding">48.0dip</dimen>
+    <dimen name="qs_detail_margin_top">0.0dip</dimen>
+    <dimen name="qs_header_tooltip_height">24.0dip</dimen>
+    <dimen name="qs_paged_tile_layout_padding_bottom">0.0dip</dimen>
+    <dimen name="qs_quick_tile_space_width">38.0dip</dimen>
+    <dimen name="qs_statusbar_header_margin_top">6.0dip</dimen>
+    <dimen name="qs_tile_margin_top">2.0dip</dimen>
+    <dimen name="status_bar_header_height_custom">190.0dip</dimen>
+</resources>

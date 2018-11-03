@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="car_drawer_max_width">1200.0dip</dimen>
+    <dimen name="car_keyline_4">182.0dip</dimen>
+    <dimen name="car_keyline_4_neg">-182.0dip</dimen>
+    <dimen name="car_margin">148.0dip</dimen>
+</resources>

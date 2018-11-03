@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/quick_status_bar_system_icons" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@android:dimen/quick_qs_offset_height" android:paddingStart="@dimen/status_bar_padding_start" android:paddingEnd="@dimen/status_bar_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+    <com.android.systemui.statusbar.policy.Clock android:textAppearance="@style/TextAppearance.StatusBar.Clock" android:gravity="start|center" android:id="@id/clock" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="48.0dip" android:singleLine="true" android:paddingStart="@dimen/status_bar_left_clock_starting_padding" android:paddingEnd="@dimen/status_bar_left_clock_end_padding" systemui:showDark="false" />
+    <android.widget.Space android:gravity="center" android:id="@id/space" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <com.android.systemui.BatteryMeterView android:gravity="end|center" android:id="@id/battery" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</LinearLayout>
