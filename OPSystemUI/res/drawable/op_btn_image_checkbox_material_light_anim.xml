@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:state_checked="true" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_015" android:alpha="?android:disabledAlpha" />
+    <item android:state_enabled="false" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_transparent" android:alpha="?android:disabledAlpha" />
+    <item android:state_checked="true" android:id="@id/on" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_015" />
+    <item android:id="@id/off" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_transparent" />
+    <transition android:toId="@id/on" android:fromId="@id/off">
+        <animation-list>
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_transparent" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_000" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_001" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_002" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_003" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_004" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_005" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_006" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_007" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_008" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_009" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_010" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_011" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_012" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_013" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_014" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_015" />
+        </animation-list>
+    </transition>
+    <transition android:toId="@id/off" android:fromId="@id/on">
+        <animation-list>
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_015" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_014" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_013" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_012" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_011" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_010" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_009" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_008" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_007" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_006" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_005" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_004" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_003" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_002" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_001" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_light_000" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_transparent" />
+        </animation-list>
+    </transition>
+</animated-selector>

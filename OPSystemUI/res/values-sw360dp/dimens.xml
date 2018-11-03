@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="keyguard_security_height">400.0dip</dimen>
+    <dimen name="navigation_extra_key_width">40.0dip</dimen>
+    <dimen name="navigation_key_width">80.0dip</dimen>
+    <dimen name="navigation_side_padding">40.0dip</dimen>
+    <dimen name="preference_category_padding_start">56.0dip</dimen>
+</resources>

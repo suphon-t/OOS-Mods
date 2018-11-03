@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start" android:orientation="horizontal" android:id="@id/highlight_hint_notification" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/highlight_hint_notification_icon" android:layout_width="@dimen/highlight_hint_width" android:layout_height="@dimen/highlight_hint_height" android:layout_marginStart="4.0dip" />
+    <TextView android:textAppearance="@style/TextAppearance.StatusBar.Clock" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/highlight_hint_notification_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="1.0dip" />
+    <FrameLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/highlight_hint_view_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="1.0dip" />
+</LinearLayout>

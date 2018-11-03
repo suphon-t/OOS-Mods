@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="126.0" android:viewportHeight="126.0" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@drawable/$ic_wechat_qrcode__0" android:pathData="M63,63m-63,0a63,63 0,1 1,126 0a63,63 0,1 1,-126 0" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+    <path android:fillColor="#ffffffff" android:pathData="M33.158,38.025L28.024,38.025L28.024,38.041L28,38.041L28,43.133L28.024,43.133L28.024,53.349L33.158,53.349L33.158,43.133L43.448,43.133L43.448,38.041L33.158,38.041L33.158,38.025ZM94.83,38.025L94.83,38.041L84.507,38.041L84.507,43.133L94.83,43.133L94.83,53.349L99.964,53.349L99.964,38.025L94.83,38.025ZM33.158,73.668L28.024,73.668L28.024,83.884L28,83.884L28,88.976L28.024,88.976L28.024,89L33.158,89L33.158,88.976L43.448,88.976L43.448,83.884L33.158,83.884L33.158,73.668ZM94.83,83.884L84.507,83.884L84.507,88.976L94.83,88.976L94.83,89L99.964,89L99.964,73.668L94.83,73.668L94.83,83.884ZM84.531,49.585L58.896,68.616L47.33,60.255L45.405,62.156L58.896,78.641L86.36,51.399L84.531,49.585Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+</vector>

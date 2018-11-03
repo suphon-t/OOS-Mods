@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.oneplus.lib.widget.DayPickerViewPager android:id="@id/day_picker_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageButton android:id="@id/prev" android:background="?android:selectableItemBackgroundBorderless" android:visibility="invisible" android:nextFocusDown="@id/month_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/op_ic_chevron_start" android:minWidth="46.0dip" android:minHeight="46.0dip" android:nextFocusForward="@id/next" />
+    <ImageButton android:id="@id/next" android:background="?android:selectableItemBackgroundBorderless" android:visibility="invisible" android:nextFocusDown="@id/month_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/op_ic_chevron_end" android:minWidth="46.0dip" android:minHeight="46.0dip" android:nextFocusForward="@id/month_view" />
+</FrameLayout>

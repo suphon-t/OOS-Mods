@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.SignalClusterView android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/signal_cluster" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingEnd="@dimen/signal_cluster_battery_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/volte" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/stat_sys_volte" android:paddingEnd="6.0dip" />
+        <ImageView android:id="@id/vowifi" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/stat_sys_vowifi" android:paddingEnd="6.0dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/vpn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/stat_sys_vpn_ic" android:tint="@color/background_protect_secondary" android:contentDescription="@string/accessibility_vpn_on" android:paddingEnd="6.0dip" />
+    <FrameLayout android:id="@id/ethernet_combo" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.android.systemui.statusbar.AlphaOptimizedImageView android:theme="?lightIconTheme" android:id="@id/ethernet" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.android.systemui.statusbar.AlphaOptimizedImageView android:theme="?darkIconTheme" android:id="@id/ethernet_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.0" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="17.0dip">
+        <ImageView android:id="@id/wifi_in" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_activity_down" android:paddingEnd="2.0dip" />
+        <ImageView android:id="@id/wifi_out" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_activity_up" android:paddingEnd="2.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/wifi_combo" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.android.systemui.statusbar.AlphaOptimizedImageView android:theme="?lightIconTheme" android:id="@id/wifi_signal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.android.systemui.statusbar.AlphaOptimizedImageView android:theme="?darkIconTheme" android:id="@id/wifi_signal_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.0" />
+        <ImageView android:layout_gravity="start|bottom|center" android:id="@id/wifi_inout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <View android:id="@id/wifi_signal_spacer" android:visibility="gone" android:layout_width="@dimen/status_bar_wifi_signal_spacer_width" android:layout_height="4.0dip" />
+    <ViewStub android:id="@id/connected_device_signals_stub" android:layout="@layout/connected_device_signal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@id/mobile_signal_group" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/wifi_airplane_spacer" android:visibility="gone" android:layout_width="@dimen/status_bar_airplane_spacer_width" android:layout_height="4.0dip" />
+    <ImageView android:id="@id/airplane" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.android.systemui.statusbar.SignalClusterView>

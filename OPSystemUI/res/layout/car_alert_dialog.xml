@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.car.widget.ColumnCardView android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:elevation="@dimen/car_dialog_elevation" app:cardBackgroundColor="?dialogBackgroundColor" app:cardCornerRadius="@dimen/car_radius_3"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/content_view" android:paddingTop="@dimen/car_padding_4" android:paddingBottom="@dimen/car_padding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/car_keyline_1" android:layout_marginEnd="@dimen/car_keyline_1">
+        <TextView android:gravity="start|center" android:id="@id/title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/car_dialog_header_height" style="?dialogTitleStyle" />
+        <TextView android:id="@id/body" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?dialogBodyStyle" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/button_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/car_dialog_action_bar_height">
+            <Button android:textColor="@color/car_accent" android:id="@id/positive_button" android:padding="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:minWidth="0.0dip" android:layout_marginEnd="@dimen/car_padding_4" style="?dialogButtonStyle" />
+            <Button android:textColor="@color/car_accent" android:id="@id/negative_button" android:padding="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:minWidth="0.0dip" style="?dialogButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.car.widget.ColumnCardView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/oneplus_contorl_icon_size_button" android:width="@dimen/oneplus_contorl_icon_size_button" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:translateX="4.0" android:translateY="1.0">
+        <path android:fillColor="?wallpaperTextColor" android:pathData="M5,21.75 L5,20.25 L11,20.25 L11,21.75 L5,21.75 Z M14.25,9 L15.75,9 L15.7482896,10.5056225 C15.4725261,14.581892 12.0855867,17.7474432 8,17.7474432 C3.91441332,17.7474432 0.527473941,14.581892 0.25,10.455 L0.25,9 L1.75,9 L1.74828962,10.4043775 C1.97078956,13.693317 4.70354286,16.2474432 8,16.2474432 C11.2964571,16.2474432 14.0292104,13.693317 14.25,10.455 L14.25,9 Z M8,1.75 C6.20507456,1.75 4.75,3.20507456 4.75,5 L4.75,10 C4.75,11.7949254 6.20507456,13.25 8,13.25 C9.79492544,13.25 11.25,11.7949254 11.25,10 L11.25,5 C11.25,3.20507456 9.79492544,1.75 8,1.75 Z M8,0.25 C10.6233526,0.25 12.75,2.37664744 12.75,5 L12.75,10 C12.75,12.6233526 10.6233526,14.75 8,14.75 C5.37664744,14.75 3.25,12.6233526 3.25,10 L3.25,5 C3.25,2.37664744 5.37664744,0.25 8,0.25 Z M8.75,21 L7.25,21 L7.25,17 L8.75,17 L8.75,21 Z" android:strokeWidth="1.0" />
+    </group>
+</vector>

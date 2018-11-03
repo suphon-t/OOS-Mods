@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:theme="@style/qs_theme" android:tag="row" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/op_volume_dialog_panel_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.Volume.Header" android:textColor="?android:colorControlNormal" android:ellipsize="end" android:id="@id/volume_row_header" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="10" />
+        <FrameLayout android:id="@id/volume_row_slider_frame" android:layout_width="@dimen/op_volume_dialog_slider_width" android:layout_height="@dimen/op_volume_dialog_slider_height" android:layout_marginBottom="@dimen/op_volume_dialog_slider_margin_bottom" android:layoutDirection="rtl">
+            <SeekBar android:layout_gravity="center" android:id="@id/volume_row_slider" android:paddingLeft="50.0px" android:paddingRight="50.0px" android:clickable="true" android:layout_width="@dimen/op_volume_dialog_slider_height" android:layout_height="@dimen/op_volume_dialog_slider_width" android:color="#ff2296f3" android:rotation="90.0" android:layoutDirection="rtl" android:paddingStart="50.0px" android:paddingEnd="50.0px" />
+        </FrameLayout>
+        <com.android.keyguard.AlphaOptimizedImageButton android:layout_gravity="center" android:id="@id/volume_row_icon" android:background="@drawable/ripple_drawable_20dp" android:layout_width="@dimen/op_volume_dialog_icon_size" android:layout_height="@dimen/op_volume_dialog_icon_size" android:layout_marginBottom="@dimen/op_volume_dialog_row_margin_bottom" android:scaleType="fitCenter" android:soundEffectsEnabled="false" />
+    </LinearLayout>
+</FrameLayout>

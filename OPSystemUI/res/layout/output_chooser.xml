@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:paddingLeft="@dimen/oneplus_contorl_layout_margin_left1" android:paddingTop="@dimen/oneplus_contorl_layout_margin_left1" android:paddingRight="@dimen/oneplus_contorl_layout_margin_left1" android:paddingBottom="@dimen/oneplus_contorl_layout_margin_left1" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.systemui.volume.OutputChooserLayout android:layout_gravity="end|center" android:orientation="vertical" android:id="@id/output_chooser" android:paddingBottom="@dimen/oneplus_contorl_padding_space2" android:layout_width="@dimen/op_output_chooser_dialog_panel_width" android:layout_height="@dimen/op_output_chooser_dialog_panel_height" android:translationZ="@dimen/op_volume_dialog_elevation"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sysui="http://schemas.android.com/apk/res-auto">
+        <FrameLayout android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/op_output_chooser_dialog_title_height">
+            <TextView android:layout_gravity="bottom" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:textDirection="locale" style="@style/oneplus_contorl_text_style_subtitle" />
+        </FrameLayout>
+        <com.android.systemui.qs.AutoSizingList android:orientation="vertical" android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" sysui:itemHeight="@dimen/qs_detail_item_height" style="@style/AutoSizingList" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@android:id/empty" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:gravity="center" android:id="@id/empty_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_volume_empty" />
+            <TextView android:textAppearance="@style/TextAppearance.QS.DetailEmpty" android:id="@id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oneplus_contorl_padding_space2" android:text="@string/output_chooser_empty_hint" android:textDirection="locale" style="@style/oneplus_contorl_text_style_body1" />
+        </LinearLayout>
+    </com.android.systemui.volume.OutputChooserLayout>
+</FrameLayout>

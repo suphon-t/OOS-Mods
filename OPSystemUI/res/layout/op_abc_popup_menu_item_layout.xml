@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oneplus.lib.menu.ListMenuItemView android:layout_width="fill_parent" android:layout_height="@dimen/oneplus_contorl_list_item_height_one_line1" android:maxWidth="270.0dip" android:maxHeight="@dimen/oneplus_contorl_list_item_height_two_line1" android:minWidth="112.0dip" android:minHeight="@dimen/oneplus_contorl_list_item_height_one_line1" style="@style/OPRtlOverlay.Widget.AppCompat.PopupMenuItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/title_layout" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/OPRtlOverlay.Widget.AppCompat.PopupMenuItem.InternalGroup">
+        <TextView android:textAppearance="?android:textAppearanceLargePopupMenu" android:ellipsize="marquee" android:id="@id/title" android:fadingEdge="horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentTop="true" style="@style/OPRtlOverlay.Widget.AppCompat.PopupMenuItem.Text" />
+        <TextView android:textAppearance="?android:textAppearanceSmallPopupMenu" android:id="@id/shortcut" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/title" style="@style/OPRtlOverlay.Widget.AppCompat.PopupMenuItem.Text" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/submenuarrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/oneplus_contorl_margin_left2" android:scaleType="center" android:layout_marginStart="@dimen/oneplus_contorl_margin_left2" />
+</com.oneplus.lib.menu.ListMenuItemView>

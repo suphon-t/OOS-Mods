@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="oneplus_contorl_avatar_mini">37.0dip</dimen>
+    <dimen name="oneplus_contorl_avatar_standard">47.0dip</dimen>
+    <dimen name="oneplus_contorl_fab_size_mini">45.0dip</dimen>
+    <dimen name="oneplus_contorl_fab_size_scrolling">26.0dip</dimen>
+    <dimen name="oneplus_contorl_fab_size_standard">62.0dip</dimen>
+    <dimen name="oneplus_contorl_icon_size_button">23.0dip</dimen>
+    <dimen name="oneplus_contorl_icon_size_display1">35.0dip</dimen>
+    <dimen name="oneplus_contorl_icon_size_display2">47.0dip</dimen>
+    <dimen name="oneplus_contorl_icon_size_display3">70.0dip</dimen>
+    <dimen name="oneplus_contorl_icon_size_display4">93.0dip</dimen>
+    <dimen name="oneplus_contorl_icon_size_display5">116.0dip</dimen>
+    <dimen name="oneplus_contorl_icon_size_indicator">17.0dip</dimen>
+    <dimen name="oneplus_contorl_icon_size_list">23.0dip</dimen>
+    <dimen name="oneplus_contorl_text_size_body1">13.0sp</dimen>
+    <dimen name="oneplus_contorl_text_size_button">13.0sp</dimen>
+    <dimen name="oneplus_contorl_text_size_display1">31.0sp</dimen>
+    <dimen name="oneplus_contorl_text_size_display2">37.0sp</dimen>
+    <dimen name="oneplus_contorl_text_size_display3">56.0sp</dimen>
+    <dimen name="oneplus_contorl_text_size_display4">74.0sp</dimen>
+    <dimen name="oneplus_contorl_text_size_extended">17.0sp</dimen>
+    <dimen name="oneplus_contorl_text_size_headline">31.0sp</dimen>
+    <dimen name="oneplus_contorl_text_size_highlight">25.0sp</dimen>
+    <dimen name="oneplus_contorl_text_size_subheading">16.0sp</dimen>
+    <dimen name="oneplus_contorl_text_size_title">17.0sp</dimen>
+    <dimen name="op_bottom_navigation_max_height">74.0dip</dimen>
+    <dimen name="op_bottom_navigation_min_height">71.0dip</dimen>
+</resources>

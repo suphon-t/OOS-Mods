@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">SIM PIN ਦਾਖਲ ਕਰੋ, ਤੁਹਾਡੇ ਕੋਲ %d ਮੌਕੇ ਬਾਕੀ ਬਚੇ ਹਨ।</item>
+        <item quantity="one">SIM PIN ਦਾਖਲ ਕਰੋ, ਤੁਹਾਡੇ ਕੋਲ %d ਮੌਕਾ ਬਾਕੀ ਬਚਿਆ ਹੈ, ਇਸ ਤੋਂ ਬਾਅਦ ਤੁਹਾਨੂੰ ਆਪਣੇ ਡਿਵਾਈਸ ਨੂੰ ਅਣਲੌਕ ਕਰਨ ਲਈ ਆਪਣੇ ਕੈਰੀਅਰ ਨਾਲ ਸੰਪਰਕ ਕਰਨਾ ਪਵੇਗਾ।</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">SIM%1$d PIN ਦਾਖਲ ਕਰੋ, ਤੁਹਾਡੇ ਕੋਲ %2$d ਮੌਕੇ ਬਾਕੀ ਹਨ।</item>
+        <item quantity="one">SIM%1$d PIN ਦਾਖਲ ਕਰੋ, ਇਸ ਤੋਂ ਪਹਿਲਾਂ ਕਿ ਤੁਹਾਨੂੰ ਆਪਣਾ ਡਿਵਾਈਸ ਅਣਲੌਕ ਕਰਨ ਲਈ ਆਪਣੇ ਕੈਰੀਅਰ ਨਾਲ ਸੰਪਰਕ ਕਰਨਾ ਪਵੇ, ਤੁਹਾਡੇ ਕੋਲ %2$d ਮੌਕੇ ਬਾਕੀ ਹਨ।</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">"SIM ਹੁਣ ਅਸਮਰੱਥ ਹੈ। ਜਾਰੀ ਰੱਖਣ ਲਈ PUK ਕੋਡ ਦਾਖਲ ਕਰੋ। ਤੁਹਾਡੇ ਕੋਲ %d ਮੌਕੇ ਬਾਕੀ ਬਚੇ ਹਨ, ਇਸ ਤੋਂ ਬਾਅਦ SIM ਸਥਾਈ ਤੌਰ 'ਤੇ ਉਪਯੋਗ ਕਰਨਯੋਗ ਨਹੀਂ ਰਹਿ ਜਾਵੇਗਾ। ਵੇਰਵੇ ਲਈ ਕੈਰੀਅਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ।"</item>
+        <item quantity="one">"SIM ਹੁਣ ਅਸਮਰੱਥ ਹੈ। ਜਾਰੀ ਰੱਖਣ ਲਈ PUK ਕੋਡ ਦਾਖਲ ਕਰੋ। ਤੁਹਾਡੇ ਕੋਲ %d ਮੌਕਾ ਬਾਕੀ ਬਚਿਆ ਹੈ, ਇਸ ਤੋਂ ਬਾਅਦ SIM ਸਥਾਈ ਤੌਰ 'ਤੇ ਉਪਯੋਗ ਕਰਨਯੋਗ ਨਹੀਂ ਰਹਿ ਜਾਵੇਗਾ। ਵੇਰਵੇ ਲਈ ਕੈਰੀਅਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ।"</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">ਗ਼ਲਤ SIM%1$d PIN ਕੋਡ, ਤੁਹਾਡੇ ਕੋਲ %2$d ਮੌਕੇ ਬਾਕੀ ਹਨ।</item>
+        <item quantity="one">ਗ਼ਲਤ SIM%1$d PIN ਕੋਡ, ਇਸ ਤੋਂ ਪਹਿਲਾਂ ਕਿ ਤੁਹਾਨੂੰ ਆਪਣਾ ਡਿਵਾਈਸ ਅਣਲੌਕ ਕਰਨ ਲਈ ਆਪਣੇ ਕੈਰੀਅਰ ਨਾਲ ਸੰਪਰਕ ਕਰਨਾ ਪਵੇ, ਤੁਹਾਡੇ ਕੋਲ %2$d ਮੌਕਾ ਬਾਕੀ ਹੈ।</item>
+    </plurals>
+</resources>

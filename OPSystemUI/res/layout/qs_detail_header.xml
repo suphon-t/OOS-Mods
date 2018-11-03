@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.AlphaOptimizedLinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/btn_borderless_rect" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/margin_right2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.systemui.ResizingSpace android:layout_width="fill_parent" android:layout_height="@dimen/qs_detail_margin_top" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/oneplus_contorl_list_item_height_one_line1" android:layout_marginTop="@dimen/margin_top1" android:layout_marginBottom="4.0dip">
+        <ImageView android:id="@android:id/up" android:background="@drawable/ripple_drawable_dark" android:clickable="true" android:layout_width="56.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_qs_edit_back" android:scaleType="centerInside" android:contentDescription="@android:string/action_bar_up_description" android:layout_marginEnd="@dimen/margin_right2" />
+        <TextView android:textAppearance="@style/TextAppearance.QS.DetailHeader" android:id="@android:id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textDirection="locale" />
+        <ImageView android:id="@id/settings" android:background="?android:selectableItemBackground" android:padding="@dimen/qs_detail_image_padding" android:visibility="gone" android:layout_width="@dimen/qs_detail_image_width" android:layout_height="@dimen/qs_detail_image_height" android:src="@drawable/ic_settings" />
+        <Switch android:textAppearance="@style/TextAppearance.QS.DetailHeader" android:id="@android:id/toggle" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.android.keyguard.AlphaOptimizedLinearLayout>

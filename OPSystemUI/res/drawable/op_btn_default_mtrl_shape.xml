@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/oneplus_contorl_padding_space2" android:insetRight="@dimen/oneplus_contorl_padding_space2" android:insetTop="@dimen/oneplus_contorl_layout_margin_top1" android:insetBottom="@dimen/oneplus_contorl_layout_margin_bottom1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:tint="?onePlusColorButtonNormal" android:shape="rectangle">
+        <corners android:radius="@dimen/oneplus_contorl_radius_r4" />
+        <solid android:color="@android:color/white" />
+        <padding android:left="@dimen/oneplus_contorl_layout_margin_right2" android:top="@dimen/button_padding_vertical_material" android:right="@dimen/oneplus_contorl_layout_margin_right2" android:bottom="@dimen/button_padding_vertical_material" />
+    </shape>
+</inset>

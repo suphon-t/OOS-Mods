@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:name="ic_caret_down" android:tint="?android:colorControlNormal" android:height="24.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:name="caret___4">
+        <group android:name="right" android:rotation="45.0" android:translateX="11.287" android:translateY="8.701">
+            <group android:name="right_pivot" android:translateX="4.242">
+                <path android:name="rectangle_path_1" android:fillColor="#ffffffff" android:pathData="M -3.242,-1.0 l 6.484,0.0 c 0.5522847498,0.0 1.0,0.4477152502 1.0,1.0 l 0.0,0.0 c 0.0,0.5522847498 -0.4477152502,1.0 -1.0,1.0 l -6.484,0.0 c -0.5522847498,0.0 -1.0,-0.4477152502 -1.0,-1.0 l 0.0,0.0 c 0.0,-0.5522847498 0.4477152502,-1.0 1.0,-1.0 Z" />
+            </group>
+        </group>
+        <group android:name="left" android:rotation="-45.0" android:translateX="12.699" android:translateY="8.701">
+            <group android:name="left_pivot" android:translateX="-4.242">
+                <path android:name="rectangle_path_2" android:fillColor="#ffffffff" android:pathData="M -3.242,-1.0 l 6.484,0.0 c 0.5522847498,0.0 1.0,0.4477152502 1.0,1.0 l 0.0,0.0 c 0.0,0.5522847498 -0.4477152502,1.0 -1.0,1.0 l -6.484,0.0 c -0.5522847498,0.0 -1.0,-0.4477152502 -1.0,-1.0 l 0.0,0.0 c 0.0,-0.5522847498 0.4477152502,-1.0 1.0,-1.0 Z" />
+            </group>
+        </group>
+    </group>
+</vector>

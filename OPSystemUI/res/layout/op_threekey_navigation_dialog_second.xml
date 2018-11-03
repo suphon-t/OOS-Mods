@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center|top" android:id="@id/threekey_navigation" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#01000000" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/threekey_navigation_right_triangle_row" android:background="#01000000" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/status_bar_height" />
+            <ImageView android:id="@id/threekey_navigation_triangle_icon" android:layout_width="wrap_content" android:layout_height="29.696625px" android:layout_marginTop="@dimen/oneplus_contorl_layout_margin_top1_px" android:src="@drawable/dialog_threekey_triangle_top" android:tint="#ff208de3" android:alpha="0.9" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_threekey_navigation_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/oneplus_contorl_layout_margin_top1_px" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="126.0px">
+                    <TextView android:textSize="@dimen/fix_oneplus_contorl_text_size_subheading" android:textColor="@color/oneplus_contorl_text_color_primary_dark" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/threekey_navigation_first" android:paddingLeft="@dimen/oneplus_contorl_layout_margin_left2_px" android:paddingRight="@dimen/oneplus_contorl_layout_margin_left2_px" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/oneplus_threekey_navigation_disturb_changed" android:lines="2" style="@style/oneplus_contorl_text_style_subheading" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/threekey_navigation_silent_row" android:layout_width="fill_parent" android:layout_height="126.0px">
+                    <FrameLayout android:paddingLeft="@dimen/oneplus_contorl_layout_margin_left2_px" android:paddingRight="@dimen/oneplus_contorl_layout_margin_left2_px" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <ImageView android:layout_gravity="center" android:id="@id/threekey_navigation_silent_icon" android:layout_width="63.0px" android:layout_height="63.0px" android:src="@drawable/ic_dnd" android:scaleType="fitXY" android:tint="@color/oneplus_contorl_icon_color_accent_active_dark" />
+                    </FrameLayout>
+                    <TextView android:textSize="@dimen/fix_oneplus_contorl_text_size_subheading" android:textColor="@color/oneplus_contorl_text_color_primary_dark" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/threekey_navigation_silent_text" android:paddingRight="@dimen/oneplus_contorl_layout_margin_left2_px" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/oneplus_threekey_navigation_turned_on_here" android:lines="2" style="@style/oneplus_contorl_text_style_subheading" />
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/threekey_navigation_next_row" android:layout_width="fill_parent" android:layout_height="126.0px">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/oneplus_contorl_layout_margin_right1_px" android:layout_marginTop="@dimen/oneplus_contorl_layout_margin_top1_px" android:layout_marginRight="@dimen/oneplus_contorl_layout_margin_right1_px" android:layout_marginBottom="@dimen/oneplus_contorl_layout_margin_top1_px">
+                        <TextView android:textSize="@dimen/fix_oneplus_contorl_text_size_button" android:textStyle="bold" android:textColor="@color/oneplus_contorl_text_color_primary_dark" android:ellipsize="end" android:gravity="center" android:id="@id/threekey_navigation_gotit_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/oneplus_contorl_layout_margin_right1_px" android:layout_marginRight="@dimen/oneplus_contorl_layout_margin_right1_px" android:text="@string/got_it" android:lines="2" android:textAllCaps="true" style="@style/oneplus_contorl_text_style_button" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

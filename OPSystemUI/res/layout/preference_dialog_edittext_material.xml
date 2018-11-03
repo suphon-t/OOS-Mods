@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="ifContentScrolls"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/edittext_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/oneplus_contorl_margin_bottom2" android:paddingStart="@dimen/oneplus_contorl_layout_margin_left3" android:paddingEnd="@dimen/oneplus_contorl_layout_margin_right3">
+        <TextView android:textColor="?android:textColorSecondary" android:id="@android:id/message" android:paddingTop="@dimen/oneplus_contorl_padding_space2" android:paddingBottom="@dimen/oneplus_contorl_padding_space2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/oneplus_contorl_padding_space2" style="?android:textAppearanceSmall" />
+    </LinearLayout>
+</ScrollView>

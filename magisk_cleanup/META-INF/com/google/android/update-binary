@@ -1,0 +1,25 @@
+#!/sbin/sh
+##########################################################################################
+#
+# Magisk Module Template Install Script
+# by topjohnwu
+#
+##########################################################################################
+
+# Default permissions
+umask 022
+
+# echo before loading util_functions
+ui_print() { echo "$1"; }
+
+print_modname() {
+  ui_print "*******************************"
+  ui_print "     Rebuild overlays cache    "
+  ui_print "*******************************"
+}
+
+print_modname
+
+rm /data/resource-cache/overlays.list
+
+exit 0

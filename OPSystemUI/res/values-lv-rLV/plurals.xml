@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">Ievadiet SIM kartes PIN kodu, jums vēl atlikuši %d mēģinājumi.</item>
+        <item quantity="one">Ievadiet SIM kartes PIN kodu, jums atlikuši %d mēģinājumi, pirms jums būs jāsazinās ar savu operatoru, lai atbloķētu ierīci.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">Ievadiet %1$d. SIM kartes PIN kodu, jums atlikuši %2$d mēģinājumi.</item>
+        <item quantity="one">Ievadiet %1$d. SIM kartes PIN kodu, jums atlikuši %2$d mēģinājumi pirms jums būs jāsazinās ar operatoru, lai atbloķētu ierīci.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">SIM karte ir atspējota. Ievadiet PUK kodu, lai turpinātu. Jums vēl atlikuši %d mēģinājumi, pirms SIM karte kļūst neatgriezeniski nelietojama. Sazinieties ar operatoru, lai iegūtu sīkāku informāciju.</item>
+        <item quantity="one">SIM karte ir atspējota. Ievadiet PUK kodu, lai turpinātu. Jums atlikuši %d mēģinājumi, pirms SIM karte kļūst neatgriezeniski nelietojama. Sazinieties ar operatoru, lai iegūtu sīkāku informāciju.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">Nepareizs %1$d. SIM kartes PIN kods, jums atlikuši %2$d mēģinājumi.</item>
+        <item quantity="one">Nepareizs %1$d. SIM kartes PIN kods, jums atlikuši %2$d mēģinājumi, pirms jums būs jāsazinās ar savu operatoru, lai atbloķētu ierīci.</item>
+    </plurals>
+</resources>

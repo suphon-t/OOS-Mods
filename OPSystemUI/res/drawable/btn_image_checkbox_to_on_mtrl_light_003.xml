@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/oneplus_contorl_avatar_standard" android:width="@dimen/oneplus_contorl_avatar_standard" android:viewportWidth="126.0" android:viewportHeight="126.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ff000000" android:pathData="M0,0L126,0L126,126L0,126L0,0ZM43,35C38.58,35 35,38.58 35,43L35,84C35,88.42 38.58,92 43,92L84,92C88.42,92 92,88.42 92,84L92,43C92,38.58 88.42,35 84,35L43,35Z" android:strokeColor="#00000000" android:strokeWidth="1.0" />
+</vector>

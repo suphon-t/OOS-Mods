@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:state_checked="true" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_015" android:alpha="?android:disabledAlpha" />
+    <item android:state_enabled="false" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_transparent" android:alpha="?android:disabledAlpha" />
+    <item android:state_checked="true" android:id="@id/on" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_015" />
+    <item android:id="@id/off" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_transparent" />
+    <transition android:toId="@id/on" android:fromId="@id/off">
+        <animation-list>
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_transparent" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_000" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_001" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_002" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_003" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_004" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_005" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_006" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_007" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_008" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_009" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_010" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_011" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_012" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_013" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_014" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_015" />
+        </animation-list>
+    </transition>
+    <transition android:toId="@id/off" android:fromId="@id/on">
+        <animation-list>
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_015" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_014" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_013" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_012" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_011" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_010" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_009" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_008" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_007" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_006" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_005" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_004" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_003" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_002" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_001" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_000" />
+            <item android:duration="@integer/oneplus_selector_button_frame_druation" android:drawable="@drawable/btn_image_checkbox_to_on_mtrl_transparent" />
+        </animation-list>
+    </transition>
+</animated-selector>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#ff1d1d1d" />
+            <corners android:topLeftRadius="@dimen/op_threekey_mid_top_left_radius" android:topRightRadius="@dimen/op_threekey_mid_top_right_radius" android:bottomLeftRadius="@dimen/op_threekey_mid_bottom_left_radius" android:bottomRightRadius="@dimen/op_threekey_mid_bottom_right_radius" />
+        </shape>
+    </item>
+</layer-list>

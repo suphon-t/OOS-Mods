@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/ic_volume_collapse"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="right" android:animation="@anim/ic_caret_down_right_animation" />
+    <target android:name="left" android:animation="@anim/ic_caret_down_left_animation" />
+</animated-vector>

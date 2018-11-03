@@ -1,0 +1,7 @@
+id=xyz.paphonb.oosmods
+name=OOS mods for OnePlus 6
+version=v1.6
+versionCode=6
+author=paphonb
+description=Various mods for OnePlus 6 on OB16
+minMagisk=17000

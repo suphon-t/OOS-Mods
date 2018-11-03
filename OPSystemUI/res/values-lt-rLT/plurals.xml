@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">Įveskite SIM PIN, dar turite %d likusius bandymus.</item>
+        <item quantity="one">Įveskite SIM PIN, dar turite %d likusius bandymus, o paskui reikės kreiptis į operatorių, kad atrakintų jūsų įrenginį.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">Įveskite SIM%1$d PIN, dar turite %2$d likusius (-ių) bandymus (-ų).</item>
+        <item quantity="one">Įveskite SIM%1$d PIN, dar turite %2$d likusį bandymą, o paskui reikės kreiptis į operatorių, kad atrakintų jūsų įrenginį.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">SIM dabar išjungta. Įveskite PUK kodą, kad tęstumėte. Dar turite %d likusius bandymus. Paskui SIM bus visam laikui nebetinkama naudoti. Dėl informacijos susisiekite su operatoriumi.</item>
+        <item quantity="one">SIM dabar išjungta. Įveskite PUK kodą, kad tęstumėte. Dar turite %d likusį bandymą. Paskui SIM bus visam laikui nebetinkama naudoti. Dėl informacijos susisiekite su operatoriumi.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">Klaidingas SIM%1$d PIN kodas, dar turite %2$d likusius (-ių) bandymus (-ų).</item>
+        <item quantity="one">Klaidingas SIM%1$d PIN kodas, dar turite %2$d likusį bandymą. Paskui reikės susisiekti su savo operatoriumi, kad įrenginį atrakintų.</item>
+    </plurals>
+</resources>

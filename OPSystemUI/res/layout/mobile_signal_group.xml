@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.AlphaOptimizedLinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/mobile_combo" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/data_inout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="2.0dip" />
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="17.0dip">
+        <ImageView android:id="@id/mobile_in" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_activity_down" android:paddingEnd="2.0dip" />
+        <ImageView android:id="@id/mobile_out" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_activity_up" android:paddingEnd="2.0dip" />
+    </FrameLayout>
+    <Space android:id="@id/mobile_roaming_space" android:visibility="gone" android:layout_width="@dimen/roaming_icon_start_padding" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="end|bottom|center" android:id="@id/mobile_inout" android:layout_width="6.0dip" android:layout_height="17.0dip" android:layout_marginRight="2.0dip" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/mobile_signal_single" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.android.systemui.statusbar.AnimatedImageView android:id="@id/mobile_signal" android:layout_width="wrap_content" android:layout_height="wrap_content" systemui:hasOverlappingRendering="false" />
+            <ImageView android:id="@id/mobile_type" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/mobile_roaming" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/stat_sys_roaming" android:contentDescription="@string/data_connection_roaming" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/mobile_signal_stacked" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/mobile_signal_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.33000004dip" android:layout_marginBottom="1.0dip" />
+            <ImageView android:id="@id/mobile_signal_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+</com.android.keyguard.AlphaOptimizedLinearLayout>

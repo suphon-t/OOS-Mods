@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">Sisestage SIM-kaardi PIN-kood. Teil on jäänud veel %d katset.</item>
+        <item quantity="one">Sisestage SIM-kaardi PIN-kood. Teil on jäänud veel %d katse. Pärast seda tuleb seadme avamiseks võtta ühendust mobiilioperaatoriga.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">Sisestage SIM-kaardi %1$d PIN-kood. Teil on jäänud veel %2$d katset.</item>
+        <item quantity="one">Sisestage SIM-kaardi %1$d PIN-kood. Teil on jäänud veel %2$d katse. Pärast seda tuleb seadme avamiseks võtta ühendust mobiilioperaatoriga.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">SIM-kaart on nüüd blokeeritud. Jätkamiseks sisestage PUK-kood. SIM-kaardi jäädavalt kasutuskõlbmatuks muutumiseni in jäänud veel %d katset. Lisateavet saate mobiilioperaatorilt.</item>
+        <item quantity="one">SIM-kaart on nüüd blokeeritud. Jätkamiseks sisestage PUK-kood. SIM-kaardi jäädavalt kasutuskõlbmatuks muutumiseni in jäänud veel %d katse. Lisateavet saate mobiilioperaatorilt.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">SIM-kaardi %1$d vale PIN-kood. Teil on jäänud veel %2$d katset.</item>
+        <item quantity="one">SIM-kaardi %1$d vale PIN-kood. Teil on jäänud veel %2$d katse. Pärast seda tuleb seadme avamiseks võtta ühendust mobiilioperaatoriga.</item>
+    </plurals>
+</resources>

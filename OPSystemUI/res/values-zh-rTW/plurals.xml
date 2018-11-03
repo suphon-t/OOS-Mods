@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="abc_slice_duration_days">
+        <item quantity="other">%d 天前</item>
+        <item quantity="one">%d 天前</item>
+    </plurals>
+    <plurals name="abc_slice_duration_min">
+        <item quantity="other">%d 分鐘前</item>
+        <item quantity="one">%d 分鐘前</item>
+    </plurals>
+    <plurals name="abc_slice_duration_years">
+        <item quantity="other">%d 年前</item>
+        <item quantity="one">%d 年前</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">請輸入 SIM 卡的 PIN 碼，你還可以再試 %d 次。</item>
+        <item quantity="one">請輸入 SIM 卡的 PIN 碼，你還可以再試 %d 次。如果仍然失敗，就必須請電信業者為裝置解鎖。</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message_multi_sim">
+        <item quantity="other">請輸入 SIM 卡%1$d的 PIN 碼，你還可以再試 %2$d 次。</item>
+        <item quantity="one">請輸入 SIM 卡的%1$d PIN 碼，你還可以再試 %2$d 次。如果仍然失敗，就必須請電信業者為裝置解鎖。</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">SIM 卡現在已遭停用。請輸入 PUK 碼以繼續進行。你還可以再試 %d 次，如果仍然失敗，SIM 卡將永久無法使用。詳情請與電信業者聯絡。</item>
+        <item quantity="one">SIM 卡現在已遭停用。請輸入 PUK 碼以繼續進行。你還可以再試 %d 次，如果仍然失敗，SIM 卡將永久無法使用。詳情請與電信業者聯絡。</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">SIM 卡的 PIN 碼輸入錯誤，你還可以再試 %d 次。</item>
+        <item quantity="one">SIM 卡的 PIN 碼輸入錯誤，你還可以再試 %d 次。如果仍然失敗，就必須請電信業者為裝置解鎖。</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code_multi_sim">
+        <item quantity="other">SIM 卡%1$d的 PIN 碼輸入錯誤，你還可以再試 %2$d 次。</item>
+        <item quantity="one">SIM 卡%1$d的 PIN 碼輸入錯誤，你還可以再試 %2$d 次。如果仍然失敗，就必須請電信業者為裝置解鎖。</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">SIM 卡的 PUK 碼輸入錯誤，你還可以再試 %d 次。如果仍然失敗，SIM 卡將永久無法使用。</item>
+        <item quantity="one">SIM 卡的 PUK 碼輸入錯誤，你還可以再試 %d 次。如果仍然失敗，SIM 卡將永久無法使用。</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="other">裝置已有 %d 小時未解鎖。請確認密碼。</item>
+        <item quantity="one">裝置已有 %d 小時未解鎖。請確認密碼。</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="other">裝置已有 %d 小時未解鎖。請確認解鎖圖案。</item>
+        <item quantity="one">裝置已有 %d 小時未解鎖。請確認解鎖圖案。</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="other">裝置已有 %d 小時未解鎖。請確認 PIN 碼。</item>
+        <item quantity="one">裝置已有 %d 小時未解鎖。請確認 PIN 碼。</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="other">請於 %d 秒後再試一次。</item>
+        <item quantity="one">請於 1 秒後再試一次。</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="other">群組中還有 %s 則通知。</item>
+        <item quantity="one">群組中還有 %s 則通知。</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="other">%d 個裝置</item>
+        <item quantity="one">%d 個裝置</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="other">%d 小時</item>
+        <item quantity="one">%d 小時</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="other">%d 分鐘</item>
+        <item quantity="one">%d 分鐘</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">總覽中有 %d 個畫面</item>
+        <item quantity="one">總覽中有 1 個畫面</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="other">%1$d 個已連線的裝置</item>
+        <item quantity="one">%1$d 個已連線的裝置</item>
+    </plurals>
+</resources>

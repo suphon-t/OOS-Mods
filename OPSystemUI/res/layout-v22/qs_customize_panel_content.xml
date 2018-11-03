@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">-> <View android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@android:dimen/quick_qs_offset_height" />
+    <com.android.keyguard.AlphaOptimizedLinearLayout android:orientation="vertical" android:id="@id/customize_container" android:background="@drawable/qs_customizer_background" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/notification_side_paddings" android:layout_marginRight="@dimen/notification_side_paddings" android:layout_weight="1.0">
+        <Toolbar android:id="@android:id/action_bar" android:background="@drawable/qs_customizer_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:navigationContentDescription="@android:string/action_bar_up_description" style="?android:toolbarStyle" />
+        <android.support.v7.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@android:id/list" android:paddingLeft="@dimen/qs_tile_layout_margin_side" android:paddingTop="28.0dip" android:paddingRight="@dimen/qs_tile_layout_margin_side" android:paddingBottom="28.0dip" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:importantForAccessibility="no" android:scrollIndicators="top" />
+    </com.android.keyguard.AlphaOptimizedLinearLayout>
+    <View android:layout_gravity="bottom" android:id="@id/nav_bar_background" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="@dimen/navigation_bar_size" />
+</merge>

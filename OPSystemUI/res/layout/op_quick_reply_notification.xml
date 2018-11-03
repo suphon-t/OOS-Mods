@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/notification_content" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/app_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginStart="@dimen/margin_left2" android:layout_marginEnd="@dimen/margin_left2" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_left2">
+            <TextView android:textAppearance="@style/oneplus_contorl_text_style_body1" android:textColor="@color/oneplus_contorl_text_color_primary_light" android:ellipsize="end" android:gravity="start|bottom|center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="0.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textAppearance="@style/oneplus_contorl_text_style_descriptions" android:textColor="@color/oneplus_contorl_text_color_secondary_light" android:ellipsize="end" android:gravity="start|center|top" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="0.0dip" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/oneplus_contorl_divider_color_light" android:layout_width="1.0dip" android:layout_height="36.0dip" />
+    <Button android:textAppearance="@style/oneplus_contorl_text_style_button" android:textColor="@color/oneplus_accent_color" android:ellipsize="end" android:id="@id/btn_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quick_reply" android:singleLine="true" style="@android:style/Widget.Material.Light.Button.Borderless.Small" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carVolumeItems xmlns:car="http://schemas.android.com/apk/res-auto">
+    <item car:icon="@drawable/car_ic_music" car:usage="unknown" />
+    <item car:icon="@drawable/car_ic_music" car:usage="media" />
+    <item car:icon="@android:drawable/ic_audio_ring_notif" car:usage="voice_communication" />
+    <item car:icon="@android:drawable/ic_audio_ring_notif" car:usage="voice_communication_signalling" />
+    <item car:icon="@android:drawable/ic_audio_alarm" car:usage="alarm" />
+    <item car:icon="@drawable/car_ic_notification" car:usage="notification" />
+    <item car:icon="@android:drawable/ic_audio_ring_notif" car:usage="notification_ringtone" />
+    <item car:icon="@drawable/car_ic_notification" car:usage="notification_communication_request" />
+    <item car:icon="@drawable/car_ic_notification" car:usage="notification_communication_instant" />
+    <item car:icon="@drawable/car_ic_notification" car:usage="notification_communication_delayed" />
+    <item car:icon="@drawable/car_ic_notification" car:usage="notification_event" />
+    <item car:icon="@drawable/car_ic_notification" car:usage="assistance_accessibility" />
+    <item car:icon="@drawable/car_ic_navigation" car:usage="assistance_navigation_guidance" />
+    <item car:icon="@drawable/car_ic_notification" car:usage="assistance_sonification" />
+    <item car:icon="@drawable/car_ic_music" car:usage="game" />
+    <item car:icon="@drawable/car_ic_music" car:usage="assistant" />
+</carVolumeItems>

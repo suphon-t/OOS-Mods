@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_content_inset_material">24.0dip</dimen>
+    <dimen name="abc_action_bar_content_inset_with_nav">80.0dip</dimen>
+    <dimen name="abc_action_bar_default_height_material">64.0dip</dimen>
+    <dimen name="abc_action_bar_default_padding_end_material">8.0dip</dimen>
+    <dimen name="abc_action_bar_default_padding_start_material">8.0dip</dimen>
+    <dimen name="abc_config_prefDialogWidth">580.0dip</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">16.0dip</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">20.0dip</dimen>
+    <dimen name="design_navigation_max_width">320.0dip</dimen>
+    <dimen name="design_snackbar_action_inline_max_width">0.0dip</dimen>
+    <dimen name="design_snackbar_background_corner_radius">2.0dip</dimen>
+    <dimen name="design_snackbar_extra_spacing_horizontal">24.0dip</dimen>
+    <dimen name="design_snackbar_max_width">576.0dip</dimen>
+    <dimen name="design_snackbar_min_width">320.0dip</dimen>
+    <item type="dimen" name="design_snackbar_padding_vertical_2lines">@dimen/design_snackbar_padding_vertical</item>
+    <dimen name="design_tab_scrollable_min_width">160.0dip</dimen>
+    <dimen name="eca_overlap">0.0dip</dimen>
+    <dimen name="edge_tap_area_width">80.0dip</dimen>
+    <dimen name="fab_margin">24.0dip</dimen>
+    <dimen name="keyguard_affordance_height">80.0dip</dimen>
+    <dimen name="keyguard_affordance_width">120.0dip</dimen>
+    <dimen name="keyguard_carrier_text_margin">24.0dip</dimen>
+    <dimen name="keyguard_clock_notifications_margin">44.0dip</dimen>
+    <dimen name="keyguard_indication_margin_bottom">90.0dip</dimen>
+    <dimen name="keyguard_security_view_top_margin">12.0dip</dimen>
+    <dimen name="kg_status_line_font_size">16.0sp</dimen>
+    <dimen name="ksh_layout_width">488.0dip</dimen>
+    <item type="dimen" name="mr_dialog_fixed_width_major">60.000004%</item>
+    <item type="dimen" name="mr_dialog_fixed_width_minor">90.0%</item>
+    <dimen name="multi_user_avatar_keyguard_size">30.0dip</dimen>
+    <dimen name="multi_user_switch_keyguard_margin">6.0dip</dimen>
+    <dimen name="multi_user_switch_width_keyguard">48.0dip</dimen>
+    <dimen name="navbar_search_outerring_diameter">430.0dip</dimen>
+    <dimen name="navbar_search_outerring_radius">215.0dip</dimen>
+    <dimen name="navbar_search_panel_height">280.0dip</dimen>
+    <dimen name="navigation_extra_key_width">48.0dip</dimen>
+    <dimen name="navigation_key_padding">25.0dip</dimen>
+    <dimen name="navigation_key_width">128.0dip</dimen>
+    <item type="dimen" name="notification_panel_min_height_frac">39.999996%</item>
+    <item type="dimen" name="notification_panel_width">@dimen/standard_notification_panel_width</item>
+    <dimen name="recents_task_stack_animation_launched_while_docking_offset">192.0dip</dimen>
+    <dimen name="screen_pinning_request_button_width">128.0dip</dimen>
+    <dimen name="screen_pinning_request_frame_padding">22.0dip</dimen>
+    <dimen name="screen_pinning_request_side_width">8.0dip</dimen>
+    <dimen name="screen_pinning_request_width">400.0dip</dimen>
+    <dimen name="status_bar_header_height_keyguard">60.0dip</dimen>
+    <dimen name="system_icons_keyguard_padding_end">2.0dip</dimen>
+    <dimen name="widget_big_font_size">100.0dip</dimen>
+    <dimen name="widget_label_font_size">16.0sp</dimen>
+    <item type="dimen" name="peek_height">@dimen/close_handle_height</item>
+</resources>

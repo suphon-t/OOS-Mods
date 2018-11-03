@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <vector android:height="@dimen/stacked_type_height" android:width="8.0dip" android:viewportWidth="7.33" android:viewportHeight="4.44">
+        <path android:fillColor="#ff000000" android:pathData="M0.94,1a0.79,0.79,0,0,1-0.18 0.12 l-0.15 0.07 -0.42 0.13 L0,0.66A1.31,1.31,0,0,0,0.3 0.57 l0.34-0.16A1.67,1.67,0,0,0,0.94 0.2 ,0.56,0.56,0,0,0,1.1,0H1.83V4.44H0.92V1h0Z" />
+        <path android:fillColor="#ff000000" android:pathData="M 5.24 2.67 L 4.2 4.44 L 3.12 4.44 L 4.67 2.15 L 3.28 0 L 4.31 0 L 5.22 1.62 L 6.14 0 L 7.21 0 L 5.8 2.15 L 7.33 4.44 L 6.29 4.44 L 5.24 2.67 Z" />
+    </vector>
+</inset>

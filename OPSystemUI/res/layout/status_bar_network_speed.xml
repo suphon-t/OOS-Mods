@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.NetworkSpeedView android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/network_speed_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0dip" android:id="@id/speed_word_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-bold" />
+    <TextView android:textSize="6.279999dip" android:id="@id/speed_word_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0dip" android:fontFamily="sans-serif-black" />
+    <Space android:layout_width="0.0px" android:layout_height="2.5dip" />
+</com.android.systemui.statusbar.NetworkSpeedView>

@@ -1,0 +1,7 @@
+out
+tmp
+magisk/system
+module.zip
+module_cleanup.zip
+OPSystemUI/build
+OPSystemUI/dist

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/shelf_menu_anchor_anchor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.0" />
+</FrameLayout>

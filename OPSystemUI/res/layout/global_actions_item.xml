@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/op_global_actions_item_min_size" android:minHeight="@dimen/op_global_actions_item_min_size" android:paddingStart="@dimen/op_global_actions_item_side_padding" android:paddingEnd="@dimen/op_global_actions_item_side_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@android:id/icon" android:layout_width="@dimen/op_global_actions_item_icon_size" android:layout_height="@dimen/op_global_actions_item_icon_size" android:scaleType="centerInside" android:alpha="?android:primaryContentAlpha" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/op_global_actions_text_size" android:gravity="center" android:layout_gravity="center|top" android:id="@android:id/message" android:paddingTop="@dimen/op_global_actions_text_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/op_global_actions_text_size" android:textColor="?android:textColorTertiary" android:gravity="center" android:layout_gravity="center|top" android:id="@android:id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

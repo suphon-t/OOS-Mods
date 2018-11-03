@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.globalactions.OpGlobalActionsView android:layout_gravity="center" android:id="@id/zzz_global_action_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/zzz_global_action_view_bg" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/zzz_global_action_panel" android:layout_width="936.0px" android:layout_height="1920.0px" android:rotation="90.0" />
+</com.android.systemui.globalactions.OpGlobalActionsView>

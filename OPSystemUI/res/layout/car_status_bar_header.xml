@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.qs.car.CarStatusBarHeader android:id="@id/header" android:layout_width="fill_parent" android:layout_height="@dimen/car_qs_header_system_icons_area_height" android:paddingStart="8.0dip" android:paddingEnd="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+    <include android:gravity="end|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/system_icons" />
+    <com.android.systemui.statusbar.policy.Clock android:textAppearance="@style/TextAppearance.StatusBar.Clock" android:gravity="end|center" android:id="@id/clock" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:paddingEnd="@dimen/status_bar_clock_end_padding" />
+</com.android.systemui.qs.car.CarStatusBarHeader>

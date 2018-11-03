@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="false" android:state_enabled="false" android:drawable="@drawable/op_ic_clear_material_disabled" />
+    <item android:state_focused="false" android:state_enabled="true" android:drawable="@drawable/op_ic_clear_material" />
+</selector>

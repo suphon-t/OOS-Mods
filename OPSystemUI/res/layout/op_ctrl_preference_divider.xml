@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/oneplus_contorl_divider_color_default" android:layout_width="fill_parent" android:layout_height="@dimen/oneplus_contorl_divider_height_standard"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

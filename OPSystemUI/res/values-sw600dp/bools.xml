@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_keyguardUserSwitcher">true</bool>
+    <bool name="qs_show_user_switcher_for_single_user">true</bool>
+    <bool name="kg_sim_puk_account_full_screen">false</bool>
+</resources>

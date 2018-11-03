@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@android:interpolator/linear" android:duration="64" android:valueFrom="0" android:valueTo="20" android:valueType="floatType" android:propertyName="translationX" />
+        <objectAnimator android:interpolator="@android:interpolator/linear" android:duration="64" android:valueFrom="20" android:valueTo="-20" android:valueType="floatType" android:propertyName="translationX" />
+        <objectAnimator android:interpolator="@android:interpolator/linear" android:duration="64" android:valueFrom="-20" android:valueTo="20" android:valueType="floatType" android:propertyName="translationX" />
+        <objectAnimator android:interpolator="@android:interpolator/linear" android:duration="64" android:valueFrom="20" android:valueTo="-20" android:valueType="floatType" android:propertyName="translationX" />
+        <objectAnimator android:interpolator="@android:interpolator/linear" android:duration="64" android:valueFrom="-20" android:valueTo="20" android:valueType="floatType" android:propertyName="translationX" />
+        <objectAnimator android:interpolator="@android:interpolator/linear" android:duration="64" android:valueFrom="20" android:valueTo="0" android:valueType="floatType" android:propertyName="translationX" />
+    </set>
+</set>

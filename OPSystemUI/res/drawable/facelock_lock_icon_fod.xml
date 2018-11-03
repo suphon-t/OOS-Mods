@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/op_keyguard_lockicon_size" android:width="@dimen/op_keyguard_lockicon_size" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:translateX="1.0" android:translateY="1.0">
+        <path android:fillColor="?wallpaperTextColor" android:pathData="M0.25,11 C0.25,5.06345266 5.06312019,0.25 11,0.25 C16.9368798,0.25 21.75,5.06345266 21.75,11 C21.75,16.9365473 16.9368798,21.75 11,21.75 C5.06312019,21.75 0.25,16.9365473 0.25,11 Z M1.75,11 C1.75,16.1081434 5.89157051,20.25 11,20.25 C16.1084295,20.25 20.25,16.1081434 20.25,11 C20.25,5.89185659 16.1084295,1.75 11,1.75 C5.89157051,1.75 1.75,5.89185659 1.75,11 Z M11,16.5 C8.243,16.5 6,14.481 6,12 L16,12 C16,14.481 13.757,16.5 11,16.5 Z M9,8.5 C9,9.328 8.329,10 7.5,10 C6.671,10 6,9.328 6,8.5 C6,7.672 6.671,7 7.5,7 C8.329,7 9,7.672 9,8.5 Z M16,8.5 C16,9.328 15.329,10 14.5,10 C13.671,10 13,9.328 13,8.5 C13,7.672 13.671,7 14.5,7 C15.329,7 16,7.672 16,8.5 Z" android:strokeWidth="1.0" />
+    </group>
+</vector>
