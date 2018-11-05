@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="op_keyguard_clock_YRegular">2280px</dimen>
+  <dimen name="op_keyguard_clock_y">2280px</dimen>
+</resources>
