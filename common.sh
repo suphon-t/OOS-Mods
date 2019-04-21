@@ -106,6 +106,8 @@ pack_magisk_module() {
   rm -rf $BASE_DIR/module.zip
   rm -rf magisk/system/priv-app
   rm -rf magisk/system/vendor
+  rm -rf magisk/system/etc
+  rm -rf magisk/system/fonts
   mkdir -p magisk/system/priv-app
   echo "Copying prebuilts..."
   cp -r $PREBUILTS_DIR/ magisk/system/priv-app
@@ -114,6 +116,9 @@ pack_magisk_module() {
   echo "Copying overlays..."
   mkdir -p magisk/system/vendor
   cp -r $OVERLAYS_OUT_DIR magisk/system/vendor/overlay
+  echo "Copying fonts..."
+  cp -r etc magisk/system
+  cp -r fonts magisk/system
   pushd $BASE_DIR/magisk
   zip -r $BASE_DIR/module.zip .
   popd
