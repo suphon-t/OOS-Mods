@@ -1,5 +1,5 @@
 .class public Lcom/android/systemui/OPBatteryMeterDrawable;
-.super Lcom/android/settingslib/graph/BatteryMeterDrawableBase;
+.super Lcom/android/settingslib/graph/ThemedBatteryDrawable;
 .source "OPBatteryMeterDrawable.java"
 
 
@@ -40,7 +40,7 @@
     .param p2, "frameColor"    # I
 
     .line 40
-    invoke-direct {p0, p1, p2}, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;-><init>(Landroid/content/Context;I)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settingslib/graph/ThemedBatteryDrawable;-><init>(Landroid/content/Context;I)V
 
     .line 19
     const/4 v0, 0x0
@@ -458,7 +458,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 125
-    invoke-super {p0, p1}, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->draw(Landroid/graphics/Canvas;)V
+    invoke-super {p0, p1}, Lcom/android/settingslib/graph/ThemedBatteryDrawable;->draw(Landroid/graphics/Canvas;)V
 
     .line 129
     return-void
@@ -495,14 +495,14 @@
 
     if-ne v0, v1, :cond_0
 
-    invoke-super {p0}, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->getIntrinsicHeight()I
+    invoke-super {p0}, Lcom/android/settingslib/graph/ThemedBatteryDrawable;->getIntrinsicHeight()I
 
     move-result v0
 
     goto :goto_0
 
     :cond_0
-    invoke-super {p0}, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->getIntrinsicWidth()I
+    invoke-super {p0}, Lcom/android/settingslib/graph/ThemedBatteryDrawable;->getIntrinsicWidth()I
 
     move-result v0
 
@@ -537,7 +537,7 @@
     .param p4, "bottom"    # I
 
     .line 90
-    invoke-super {p0, p1, p2, p3, p4}, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->setBounds(IIII)V
+    invoke-super {p0, p1, p2, p3, p4}, Lcom/android/settingslib/graph/ThemedBatteryDrawable;->setBounds(IIII)V
 
     .line 93
     sub-int v0, p4, p2
@@ -583,10 +583,11 @@
     return-void
 .end method
 
-.method public setColors(II)V
+.method public setColors(III)V
     .locals 1
     .param p1, "fillColor"    # I
     .param p2, "backgroundColor"    # I
+    .param p3, "singleToneColor"    # I
 
     .line 106
     iget-object v0, p0, Lcom/android/systemui/OPBatteryMeterDrawable;->mCircleBackPaint:Landroid/graphics/Paint;
@@ -604,7 +605,7 @@
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 110
-    invoke-super {p0, p1, p2}, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->setColors(II)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/settingslib/graph/ThemedBatteryDrawable;->setColors(III)V
 
     .line 111
     return-void

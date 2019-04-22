@@ -1278,7 +1278,7 @@
     .line 294
     iget-object v4, p0, Lcom/android/systemui/qs/QuickStatusBarHeader;->mBatteryMeterView:Lcom/android/systemui/BatteryMeterView;
 
-    invoke-virtual {v4, v0, v1}, Lcom/android/systemui/BatteryMeterView;->updateColors(II)V
+    invoke-virtual {v4, v0, v1, v0}, Lcom/android/systemui/BatteryMeterView;->updateColors(III)V
 
     .line 304
     iget-object v4, p0, Lcom/android/systemui/qs/QuickStatusBarHeader;->mIconManager:Lcom/android/systemui/statusbar/phone/StatusBarIconController$TintedIconManager;

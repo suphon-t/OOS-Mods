@@ -34,6 +34,8 @@
 
 .field private mDarkIntensity:F
 
+.field private mDarkModeSingleToneColor:I
+
 .field private mDarkModeBackgroundColor:I
 
 .field private mDarkModeFillColor:I
@@ -48,9 +50,13 @@
 
 .field private mLevel:I
 
+.field private mLightModeSingleToneColor:I
+
 .field private mLightModeBackgroundColor:I
 
 .field private mLightModeFillColor:I
+
+.field private mNonAdaptedSingleToneColor:I
 
 .field private mNonAdaptedBackgroundColor:I
 
@@ -1092,7 +1098,7 @@
 .end method
 
 .method public onDarkChanged(Landroid/graphics/Rect;FI)V
-    .locals 4
+    .locals 5
     .param p1, "area"    # Landroid/graphics/Rect;
     .param p2, "darkIntensity"    # F
     .param p3, "tint"    # I
@@ -1117,6 +1123,16 @@
     .line 487
     .local v0, "intensity":F
     :goto_0
+    iget v1, p0, Lcom/android/systemui/BatteryMeterView;->mLightModeSingleToneColor:I
+
+    iget v2, p0, Lcom/android/systemui/BatteryMeterView;->mDarkModeSingleToneColor:I
+
+    invoke-direct {p0, v0, v1, v2}, Lcom/android/systemui/BatteryMeterView;->getColorForDarkIntensity(FII)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/android/systemui/BatteryMeterView;->mNonAdaptedSingleToneColor:I
+
     iget v1, p0, Lcom/android/systemui/BatteryMeterView;->mLightModeFillColor:I
 
     iget v2, p0, Lcom/android/systemui/BatteryMeterView;->mDarkModeFillColor:I
@@ -1178,7 +1194,9 @@
 
     iget v3, p0, Lcom/android/systemui/BatteryMeterView;->mNonAdaptedBackgroundColor:I
 
-    invoke-virtual {p0, v2, v3}, Lcom/android/systemui/BatteryMeterView;->updateColors(II)V
+    iget v4, p0, Lcom/android/systemui/BatteryMeterView;->mNonAdaptedSingleToneColor:I
+
+    invoke-virtual {p0, v2, v3, v4}, Lcom/android/systemui/BatteryMeterView;->updateColors(III)V
 
     .line 509
     :cond_2
@@ -1340,6 +1358,10 @@
     .param p1, "isPowerSave"    # Z
 
     .line 351
+    iget-object p0, p0, Lcom/android/systemui/BatteryMeterView;->mDrawable:Lcom/android/systemui/OPBatteryMeterDrawable;
+
+    invoke-virtual {p0, p1}, Lcom/android/settingslib/graph/ThemedBatteryDrawable;->setPowerSaveEnabled(Z)V
+
     return-void
 .end method
 
@@ -1413,7 +1435,7 @@
 .end method
 
 .method public setColorsFromContext(Landroid/content/Context;)V
-    .locals 5
+    .locals 6
     .param p1, "context"    # Landroid/content/Context;
 
     .line 215
@@ -1450,6 +1472,14 @@
 
     .line 223
     .local v1, "dualToneLightTheme":Landroid/content/Context;
+    const v4, 0x7f0403c8
+
+    invoke-static {v0, v4}, Lcom/android/settingslib/Utils;->getColorAttr(Landroid/content/Context;I)I
+
+    move-result v3
+
+    iput v3, p0, Lcom/android/systemui/BatteryMeterView;->mDarkModeSingleToneColor:I
+
     const v2, 0x7f040052
 
     invoke-static {v0, v2}, Lcom/android/settingslib/Utils;->getColorAttr(Landroid/content/Context;I)I
@@ -1468,6 +1498,15 @@
     iput v4, p0, Lcom/android/systemui/BatteryMeterView;->mDarkModeFillColor:I
 
     .line 225
+    const v4, 0x7f0403c8
+    invoke-static {v1, v4}, Lcom/android/settingslib/Utils;->getColorAttr(Landroid/content/Context;I)I
+
+    move-result v2
+
+    iput v2, p0, Lcom/android/systemui/BatteryMeterView;->mLightModeSingleToneColor:I
+
+    .line 225
+    const v2, 0x7f040052
     invoke-static {v1, v2}, Lcom/android/settingslib/Utils;->getColorAttr(Landroid/content/Context;I)I
 
     move-result v2
@@ -1579,15 +1618,16 @@
     return-void
 .end method
 
-.method public updateColors(II)V
+.method public updateColors(III)V
     .locals 1
     .param p1, "foregroundColor"    # I
     .param p2, "backgroundColor"    # I
+    .param p3, "singleToneColor"    # I
 
     .line 512
     iget-object v0, p0, Lcom/android/systemui/BatteryMeterView;->mDrawable:Lcom/android/systemui/OPBatteryMeterDrawable;
 
-    invoke-virtual {v0, p1, p2}, Lcom/android/systemui/OPBatteryMeterDrawable;->setColors(II)V
+    invoke-virtual {v0, p1, p2, p3}, Lcom/android/systemui/OPBatteryMeterDrawable;->setColors(III)V
 
     .line 520
     iget-object v0, p0, Lcom/android/systemui/BatteryMeterView;->mBatteryDashChargeView:Lcom/android/systemui/BatteryDashChargeView;
@@ -1638,7 +1678,7 @@
 .end method
 
 .method public useWallpaperTextColor(Z)V
-    .locals 3
+    .locals 4
     .param p1, "shouldUseWallpaperTextColor"    # Z
 
     .line 199
@@ -1678,7 +1718,7 @@
     move-result v1
 
     .line 206
-    invoke-virtual {p0, v0, v1}, Lcom/android/systemui/BatteryMeterView;->updateColors(II)V
+    invoke-virtual {p0, v0, v1, v0}, Lcom/android/systemui/BatteryMeterView;->updateColors(III)V
 
     goto :goto_0
 
@@ -1688,7 +1728,9 @@
 
     iget v1, p0, Lcom/android/systemui/BatteryMeterView;->mNonAdaptedBackgroundColor:I
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/systemui/BatteryMeterView;->updateColors(II)V
+    iget v2, p0, Lcom/android/systemui/BatteryMeterView;->mNonAdaptedBackgroundColor:I
+
+    invoke-virtual {p0, v0, v1, v2}, Lcom/android/systemui/BatteryMeterView;->updateColors(III)V
 
     .line 212
     :goto_0
