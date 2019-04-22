@@ -2864,6 +2864,8 @@
 
     move-result-object v0
 
+    const-string v0, ""
+
     .line 561
     .local v0, "percentage":Ljava/lang/String;
     iget-object v1, p0, Lcom/android/systemui/statusbar/KeyguardIndicationController;->mTextView:Lcom/android/systemui/statusbar/phone/KeyguardIndicationTextView;

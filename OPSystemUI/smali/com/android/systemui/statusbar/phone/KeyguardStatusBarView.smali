@@ -52,6 +52,18 @@
 
 .field private mUserSwitcherController:Lcom/android/systemui/statusbar/policy/UserSwitcherController;
 
+.field private mDozing:Z
+
+.field private mDarkAmount:F
+
+.field private mCurrentBurnInOffsetX:I
+
+.field private mCurrentBurnInOffsetY:I
+
+.field private mStatusIconContainer:Lcom/android/systemui/statusbar/phone/StatusIconContainer;
+
+.field private mBurnInOffset:I
+
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -186,24 +198,27 @@
 .method private loadDimens()V
     .locals 3
 
-    .line 217
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
     .line 230
     .local v0, "res":Landroid/content/res/Resources;
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v1
+    move-result-object v0
 
     const v2, 0x7f0701b0
 
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v1
 
     iput v1, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mCutoutSideNudge:I
+
+    const v2, 0x7f070099
+
+    invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mBurnInOffset:I
 
     .line 232
     return-void
@@ -1250,6 +1265,17 @@
 
     iput v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mFontScale:F
 
+    .line 132
+    const v0, 0x7f0a03e8
+
+    invoke-virtual {p0, v0}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/android/systemui/statusbar/phone/StatusIconContainer;
+
+    iput-object v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mStatusIconContainer:Lcom/android/systemui/statusbar/phone/StatusIconContainer;
+
     .line 153
     return-void
 .end method
@@ -1620,5 +1646,194 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 562
+    return-void
+.end method
+
+.method public setDozing(Z)V
+    .locals 1
+    .param p1, "dozing"    # I
+
+    iget-boolean v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mDozing:Z
+
+    if-eq v0, p1, :goto_0
+
+    iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mDozing:Z
+
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->updateVisibilities()V
+
+    :goto_0
+    return-void
+.end method
+
+# virtual methods
+.method public dozeTimeTick()V
+    .locals 2
+
+    .line 527
+    iget v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mBurnInOffset:I
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, v1}, Lcom/android/systemui/doze/util/BurnInHelperKt;->getBurnInOffset(IZ)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mCurrentBurnInOffsetX:I
+
+    .line 528
+    iget v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mBurnInOffset:I
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Lcom/android/systemui/doze/util/BurnInHelperKt;->getBurnInOffset(IZ)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mCurrentBurnInOffsetY:I
+
+    .line 529
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->updateDarkState()V
+
+    return-void
+.end method
+
+.method public setDarkAmount(F)V
+    .locals 1
+
+    .line 519
+    iput p1, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mDarkAmount:F
+
+    const/4 v0, 0x0
+
+    cmpl-float p1, p1, v0
+
+    if-nez p1, :cond_0
+
+    .line 521
+    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->dozeTimeTick()V
+
+    .line 523
+    :cond_0
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->updateDarkState()V
+
+    return-void
+.end method
+
+.method private updateDarkState()V
+    .locals 4
+
+    .line 533
+    iget v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mDarkAmount:F
+
+    const/high16 v1, 0x3f800000    # 1.0f
+
+    sub-float/2addr v1, v0
+
+    const/4 v0, 0x0
+
+    cmpl-float v0, v1, v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x4
+
+    .line 535
+    :goto_0
+    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mCarrierLabel:Landroid/widget/TextView;
+
+    mul-float v3, v1, v1
+
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setAlpha(F)V
+
+    .line 536
+    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mStatusIconContainer:Lcom/android/systemui/statusbar/phone/StatusIconContainer;
+
+    invoke-virtual {v2, v1}, Landroid/widget/LinearLayout;->setAlpha(F)V
+
+    .line 537
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mStatusIconContainer:Lcom/android/systemui/statusbar/phone/StatusIconContainer;
+
+    invoke-virtual {v1, v0}, Landroid/widget/LinearLayout;->setVisibility(I)V
+
+    .line 539
+    iget v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mCurrentBurnInOffsetX:I
+
+    neg-int v0, v0
+
+    int-to-float v0, v0
+
+    .line 540
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mMultiUserSwitch:Lcom/android/systemui/statusbar/phone/MultiUserSwitch;
+
+    invoke-virtual {v1}, Landroid/widget/FrameLayout;->getVisibility()I
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    .line 542
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mMultiUserAvatar:Landroid/widget/ImageView;
+
+    invoke-virtual {v1, v3}, Landroid/widget/ImageView;->setAlpha(F)V
+
+    .line 543
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mMultiUserAvatar:Landroid/widget/ImageView;
+
+    invoke-virtual {v1}, Landroid/widget/ImageView;->getPaddingLeft()I
+
+    move-result v1
+
+    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mMultiUserAvatar:Landroid/widget/ImageView;
+
+    invoke-virtual {v2}, Landroid/widget/ImageView;->getWidth()I
+
+    move-result v2
+
+    add-int/2addr v1, v2
+
+    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mMultiUserAvatar:Landroid/widget/ImageView;
+
+    .line 544
+    invoke-virtual {v2}, Landroid/widget/ImageView;->getPaddingRight()I
+
+    move-result v2
+
+    add-int/2addr v1, v2
+
+    int-to-float v1, v1
+
+    add-float/2addr v0, v1
+
+    .line 546
+    :cond_1
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mSystemIconsContainer:Landroid/view/View;
+
+    iget v2, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mDarkAmount:F
+
+    mul-float/2addr v0, v2
+
+    invoke-virtual {v1, v0}, Landroid/view/View;->setTranslationX(F)V
+
+    .line 547
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mSystemIconsContainer:Landroid/view/View;
+
+    iget v1, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mCurrentBurnInOffsetY:I
+
+    int-to-float v1, v1
+
+    iget v2, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mDarkAmount:F
+
+    mul-float/2addr v1, v2
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationY(F)V
+
+    .line 548
+    # invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->updateIconsAndTextColors()V
+
     return-void
 .end method
